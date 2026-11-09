@@ -1,7 +1,7 @@
 import pandas as pd
  
 # ---------------- Configuración ----------------
-RUTA_ENTRADA = "data/raw/poblacion.csv"
+RUTA_ENTRADA = "data/raw/poblacion/poblacion.csv"
 RUTA_SALIDA = "data/processed/poblacion_provincias.csv"
 MINIMO_HABITANTES = 200000          
 ANIO = None                    

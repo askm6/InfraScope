@@ -1,0 +1,30 @@
+cod_ine,municipio,aceleracion_sismica_basica_g,coeficiente_K,en_anejo_ncse02,nota
+28079,Madrid,,,no,"No aparece en el anejo: ab < 0,04g (riesgo sismico bajo)"
+08019,Barcelona,0.04,1.0,si,
+46250,València,0.06,1.0,si,
+41091,Sevilla,0.07,1.1,si,
+50297,Zaragoza,,,no,"No aparece en el anejo: ab < 0,04g (riesgo sismico bajo)"
+29067,Málaga,0.11,1.0,si,
+30030,Murcia,0.15,1.0,si,
+07040,Palma,0.04,1.0,si,
+35016,Las Palmas de Gran Canaria,0.04,1.0,si,
+48020,Bilbao,,,no,"No aparece en el anejo: ab < 0,04g (riesgo sismico bajo)"
+03014,Alicante/Alacant,0.14,1.0,si,
+14021,Córdoba,0.05,1.1,si,
+47186,Valladolid,,,no,"No aparece en el anejo: ab < 0,04g (riesgo sismico bajo)"
+36057,Vigo,,,no,"No aparece en el anejo: ab < 0,04g (riesgo sismico bajo)"
+33024,Gijón,,,no,"No aparece en el anejo: ab < 0,04g (riesgo sismico bajo)"
+08101,L'Hospitalet de Llobregat,0.04,1.0,si,
+01059,Vitoria-Gasteiz,,,no,"No aparece en el anejo: ab < 0,04g (riesgo sismico bajo)"
+15030,A Coruña,,,no,"No aparece en el anejo: ab < 0,04g (riesgo sismico bajo)"
+03065,Elche/Elx,0.15,1.0,si,
+18087,Granada,0.23,1.0,si,
+08279,Terrassa,0.04,1.0,si,
+08015,Badalona,0.04,1.0,si,
+30016,Cartagena,0.07,1.0,si,
+11020,Jerez de la Frontera,0.06,1.2,si,
+08187,Sabadell,0.04,1.0,si,
+28092,Móstoles,,,no,"No aparece en el anejo: ab < 0,04g (riesgo sismico bajo)"
+38038,Santa Cruz de Tenerife,0.04,1.0,si,
+31201,Pamplona/Iruña,0.04,1.0,si,
+04013,Almería,0.14,1.0,si,
