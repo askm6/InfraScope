@@ -13,3 +13,5 @@ seaborn>=0.13
 plotly>=5.20
 streamlit>=1.35
 pytest>=8.0
+requests>=2.31
+python-dotenv>=1.0
