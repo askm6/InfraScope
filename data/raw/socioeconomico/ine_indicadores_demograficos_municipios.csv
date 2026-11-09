@@ -1,0 +1,1161 @@
+cod_ine,municipio,indicador,anio,valor
+01059,"Vitoria-Gasteiz",Edad media de la población,2015,42.9
+01059,"Vitoria-Gasteiz",Edad media de la población,2016,43.1
+01059,"Vitoria-Gasteiz",Edad media de la población,2017,43.3
+01059,"Vitoria-Gasteiz",Edad media de la población,2018,43.4
+01059,"Vitoria-Gasteiz",Edad media de la población,2019,43.6
+01059,"Vitoria-Gasteiz",Edad media de la población,2020,43.9
+01059,"Vitoria-Gasteiz",Edad media de la población,2021,44.2
+01059,"Vitoria-Gasteiz",Edad media de la población,2022,44.4
+01059,"Vitoria-Gasteiz",Edad media de la población,2023,44.6
+01059,"Vitoria-Gasteiz",Edad media de la población,2024,44.9
+33024,"Gijón",Edad media de la población,2015,46.8
+33024,"Gijón",Edad media de la población,2016,47.1
+33024,"Gijón",Edad media de la población,2017,47.3
+33024,"Gijón",Edad media de la población,2018,47.6
+33024,"Gijón",Edad media de la población,2019,47.8
+33024,"Gijón",Edad media de la población,2020,48.1
+33024,"Gijón",Edad media de la población,2021,48.4
+33024,"Gijón",Edad media de la población,2022,48.5
+33024,"Gijón",Edad media de la población,2023,48.7
+33024,"Gijón",Edad media de la población,2024,48.9
+03014,"Alacant/Alicante",Edad media de la población,2015,41.9
+03014,"Alacant/Alicante",Edad media de la población,2016,42.2
+03014,"Alacant/Alicante",Edad media de la población,2017,42.4
+03014,"Alacant/Alicante",Edad media de la población,2018,42.5
+03014,"Alacant/Alicante",Edad media de la población,2019,42.7
+03014,"Alacant/Alicante",Edad media de la población,2020,42.9
+03014,"Alacant/Alicante",Edad media de la población,2021,43.2
+03014,"Alacant/Alicante",Edad media de la población,2022,43.2
+03014,"Alacant/Alicante",Edad media de la población,2023,43.2
+03014,"Alacant/Alicante",Edad media de la población,2024,43.4
+48020,"Bilbao",Edad media de la población,2015,45.8
+48020,"Bilbao",Edad media de la población,2016,46
+48020,"Bilbao",Edad media de la población,2017,46.2
+48020,"Bilbao",Edad media de la población,2018,46.3
+48020,"Bilbao",Edad media de la población,2019,46.3
+48020,"Bilbao",Edad media de la población,2020,46.6
+48020,"Bilbao",Edad media de la población,2021,46.8
+48020,"Bilbao",Edad media de la población,2022,46.8
+48020,"Bilbao",Edad media de la población,2023,46.9
+48020,"Bilbao",Edad media de la población,2024,47
+15030,"Coruña, A",Edad media de la población,2015,45.6
+15030,"Coruña, A",Edad media de la población,2016,45.8
+15030,"Coruña, A",Edad media de la población,2017,46
+15030,"Coruña, A",Edad media de la población,2018,46.1
+15030,"Coruña, A",Edad media de la población,2019,46.3
+15030,"Coruña, A",Edad media de la población,2020,46.6
+15030,"Coruña, A",Edad media de la población,2021,46.9
+15030,"Coruña, A",Edad media de la población,2022,46.9
+15030,"Coruña, A",Edad media de la población,2023,47
+15030,"Coruña, A",Edad media de la población,2024,47.1
+14021,"Córdoba",Edad media de la población,2015,41.6
+14021,"Córdoba",Edad media de la población,2016,41.9
+14021,"Córdoba",Edad media de la población,2017,42.2
+14021,"Córdoba",Edad media de la población,2018,42.5
+14021,"Córdoba",Edad media de la población,2019,42.8
+14021,"Córdoba",Edad media de la población,2020,43.3
+14021,"Córdoba",Edad media de la población,2021,43.6
+14021,"Córdoba",Edad media de la población,2022,43.8
+14021,"Córdoba",Edad media de la población,2023,44
+14021,"Córdoba",Edad media de la población,2024,44.4
+04013,"Almería",Edad media de la población,2015,39.8
+04013,"Almería",Edad media de la población,2016,40.1
+04013,"Almería",Edad media de la población,2017,40.3
+04013,"Almería",Edad media de la población,2018,40.6
+04013,"Almería",Edad media de la población,2019,40.8
+04013,"Almería",Edad media de la población,2020,41.1
+04013,"Almería",Edad media de la población,2021,41.4
+04013,"Almería",Edad media de la población,2022,41.5
+04013,"Almería",Edad media de la población,2023,41.9
+04013,"Almería",Edad media de la población,2024,42.1
+07040,"Palma",Edad media de la población,2015,40.5
+07040,"Palma",Edad media de la población,2016,40.6
+07040,"Palma",Edad media de la población,2017,40.8
+07040,"Palma",Edad media de la población,2018,40.9
+07040,"Palma",Edad media de la población,2019,41.1
+07040,"Palma",Edad media de la población,2020,41.5
+07040,"Palma",Edad media de la población,2021,41.8
+07040,"Palma",Edad media de la población,2022,42
+07040,"Palma",Edad media de la población,2023,42.2
+07040,"Palma",Edad media de la población,2024,42.3
+11020,"Jerez de la Frontera",Edad media de la población,2015,39.7
+11020,"Jerez de la Frontera",Edad media de la población,2016,40.1
+11020,"Jerez de la Frontera",Edad media de la población,2017,40.5
+11020,"Jerez de la Frontera",Edad media de la población,2018,40.9
+11020,"Jerez de la Frontera",Edad media de la población,2019,41.3
+11020,"Jerez de la Frontera",Edad media de la población,2020,41.7
+11020,"Jerez de la Frontera",Edad media de la población,2021,42
+11020,"Jerez de la Frontera",Edad media de la población,2022,42.4
+11020,"Jerez de la Frontera",Edad media de la población,2023,42.7
+11020,"Jerez de la Frontera",Edad media de la población,2024,43.1
+18087,"Granada",Edad media de la población,2015,43.1
+18087,"Granada",Edad media de la población,2016,43.5
+18087,"Granada",Edad media de la población,2017,43.6
+18087,"Granada",Edad media de la población,2018,43.8
+18087,"Granada",Edad media de la población,2019,44
+18087,"Granada",Edad media de la población,2020,44.2
+18087,"Granada",Edad media de la población,2021,44.5
+18087,"Granada",Edad media de la población,2022,44.6
+18087,"Granada",Edad media de la población,2023,44.8
+18087,"Granada",Edad media de la población,2024,45.1
+08015,"Badalona",Edad media de la población,2015,41.6
+08015,"Badalona",Edad media de la población,2016,41.8
+08015,"Badalona",Edad media de la población,2017,41.9
+08015,"Badalona",Edad media de la población,2018,42
+08015,"Badalona",Edad media de la población,2019,42.2
+08015,"Badalona",Edad media de la población,2020,42.4
+08015,"Badalona",Edad media de la población,2021,42.6
+08015,"Badalona",Edad media de la población,2022,42.8
+08015,"Badalona",Edad media de la población,2023,43
+08015,"Badalona",Edad media de la población,2024,43.1
+29067,"Málaga",Edad media de la población,2015,40.9
+29067,"Málaga",Edad media de la población,2016,41.1
+29067,"Málaga",Edad media de la población,2017,41.4
+29067,"Málaga",Edad media de la población,2018,41.7
+29067,"Málaga",Edad media de la población,2019,41.9
+29067,"Málaga",Edad media de la población,2020,42.3
+29067,"Málaga",Edad media de la población,2021,42.5
+29067,"Málaga",Edad media de la población,2022,42.7
+29067,"Málaga",Edad media de la población,2023,42.9
+29067,"Málaga",Edad media de la población,2024,43.2
+31201,"Pamplona/Iruña",Edad media de la población,2015,43.6
+31201,"Pamplona/Iruña",Edad media de la población,2016,43.7
+31201,"Pamplona/Iruña",Edad media de la población,2017,43.8
+31201,"Pamplona/Iruña",Edad media de la población,2018,43.9
+31201,"Pamplona/Iruña",Edad media de la población,2019,44.1
+31201,"Pamplona/Iruña",Edad media de la población,2020,44.3
+31201,"Pamplona/Iruña",Edad media de la población,2021,44.5
+31201,"Pamplona/Iruña",Edad media de la población,2022,44.5
+31201,"Pamplona/Iruña",Edad media de la población,2023,44.6
+31201,"Pamplona/Iruña",Edad media de la población,2024,44.9
+30016,"Cartagena",Edad media de la población,2015,40.1
+30016,"Cartagena",Edad media de la población,2016,40.3
+30016,"Cartagena",Edad media de la población,2017,40.5
+30016,"Cartagena",Edad media de la población,2018,40.9
+30016,"Cartagena",Edad media de la población,2019,41.1
+30016,"Cartagena",Edad media de la población,2020,41.4
+30016,"Cartagena",Edad media de la población,2021,41.6
+30016,"Cartagena",Edad media de la población,2022,41.8
+30016,"Cartagena",Edad media de la población,2023,42
+30016,"Cartagena",Edad media de la población,2024,42.2
+35016,"Palmas de Gran Canaria, Las",Edad media de la población,2015,42.2
+35016,"Palmas de Gran Canaria, Las",Edad media de la población,2016,42.7
+35016,"Palmas de Gran Canaria, Las",Edad media de la población,2017,42.9
+35016,"Palmas de Gran Canaria, Las",Edad media de la población,2018,43.2
+35016,"Palmas de Gran Canaria, Las",Edad media de la población,2019,43.6
+35016,"Palmas de Gran Canaria, Las",Edad media de la población,2020,44
+35016,"Palmas de Gran Canaria, Las",Edad media de la población,2021,44.4
+35016,"Palmas de Gran Canaria, Las",Edad media de la población,2022,44.7
+35016,"Palmas de Gran Canaria, Las",Edad media de la población,2023,45
+35016,"Palmas de Gran Canaria, Las",Edad media de la población,2024,45.3
+41091,"Sevilla",Edad media de la población,2015,41.9
+41091,"Sevilla",Edad media de la población,2016,42.2
+41091,"Sevilla",Edad media de la población,2017,42.4
+41091,"Sevilla",Edad media de la población,2018,42.6
+41091,"Sevilla",Edad media de la población,2019,42.9
+41091,"Sevilla",Edad media de la población,2020,43.2
+41091,"Sevilla",Edad media de la población,2021,43.4
+41091,"Sevilla",Edad media de la población,2022,43.5
+41091,"Sevilla",Edad media de la población,2023,43.7
+41091,"Sevilla",Edad media de la población,2024,43.9
+36057,"Vigo",Edad media de la población,2015,44.1
+36057,"Vigo",Edad media de la población,2016,44.4
+36057,"Vigo",Edad media de la población,2017,44.7
+36057,"Vigo",Edad media de la población,2018,45
+36057,"Vigo",Edad media de la población,2019,45.3
+36057,"Vigo",Edad media de la población,2020,45.6
+36057,"Vigo",Edad media de la población,2021,46
+36057,"Vigo",Edad media de la población,2022,46.2
+36057,"Vigo",Edad media de la población,2023,46.5
+36057,"Vigo",Edad media de la población,2024,46.7
+01059,"Vitoria-Gasteiz",Porcentaje de población menor de 18 años,2015,17.3
+01059,"Vitoria-Gasteiz",Porcentaje de población menor de 18 años,2016,17.6
+01059,"Vitoria-Gasteiz",Porcentaje de población menor de 18 años,2017,17.6
+01059,"Vitoria-Gasteiz",Porcentaje de población menor de 18 años,2018,17.6
+01059,"Vitoria-Gasteiz",Porcentaje de población menor de 18 años,2019,17.5
+01059,"Vitoria-Gasteiz",Porcentaje de población menor de 18 años,2020,17.4
+01059,"Vitoria-Gasteiz",Porcentaje de población menor de 18 años,2021,17.2
+01059,"Vitoria-Gasteiz",Porcentaje de población menor de 18 años,2022,17
+01059,"Vitoria-Gasteiz",Porcentaje de población menor de 18 años,2023,16.8
+01059,"Vitoria-Gasteiz",Porcentaje de población menor de 18 años,2024,16.4
+33024,"Gijón",Porcentaje de población menor de 18 años,2015,13.4
+33024,"Gijón",Porcentaje de población menor de 18 años,2016,13.5
+33024,"Gijón",Porcentaje de población menor de 18 años,2017,13.5
+33024,"Gijón",Porcentaje de población menor de 18 años,2018,13.5
+33024,"Gijón",Porcentaje de población menor de 18 años,2019,13.4
+33024,"Gijón",Porcentaje de población menor de 18 años,2020,13.2
+33024,"Gijón",Porcentaje de población menor de 18 años,2021,13
+33024,"Gijón",Porcentaje de población menor de 18 años,2022,12.9
+33024,"Gijón",Porcentaje de población menor de 18 años,2023,12.7
+33024,"Gijón",Porcentaje de población menor de 18 años,2024,12.5
+03014,"Alacant/Alicante",Porcentaje de población menor de 18 años,2015,17.9
+03014,"Alacant/Alicante",Porcentaje de población menor de 18 años,2016,17.9
+03014,"Alacant/Alicante",Porcentaje de población menor de 18 años,2017,17.9
+03014,"Alacant/Alicante",Porcentaje de población menor de 18 años,2018,17.9
+03014,"Alacant/Alicante",Porcentaje de población menor de 18 años,2019,17.8
+03014,"Alacant/Alicante",Porcentaje de población menor de 18 años,2020,17.6
+03014,"Alacant/Alicante",Porcentaje de población menor de 18 años,2021,17.3
+03014,"Alacant/Alicante",Porcentaje de población menor de 18 años,2022,17.1
+03014,"Alacant/Alicante",Porcentaje de población menor de 18 años,2023,16.9
+03014,"Alacant/Alicante",Porcentaje de población menor de 18 años,2024,16.6
+50297,"Zaragoza",Edad media de la población,2015,43.3
+50297,"Zaragoza",Edad media de la población,2016,43.5
+50297,"Zaragoza",Edad media de la población,2017,43.7
+50297,"Zaragoza",Edad media de la población,2018,43.9
+50297,"Zaragoza",Edad media de la población,2019,44.1
+50297,"Zaragoza",Edad media de la población,2020,44.2
+50297,"Zaragoza",Edad media de la población,2021,44.5
+50297,"Zaragoza",Edad media de la población,2022,44.5
+50297,"Zaragoza",Edad media de la población,2023,44.7
+50297,"Zaragoza",Edad media de la población,2024,44.8
+48020,"Bilbao",Porcentaje de población menor de 18 años,2015,14.6
+48020,"Bilbao",Porcentaje de población menor de 18 años,2016,14.7
+48020,"Bilbao",Porcentaje de población menor de 18 años,2017,14.6
+48020,"Bilbao",Porcentaje de población menor de 18 años,2018,14.4
+48020,"Bilbao",Porcentaje de población menor de 18 años,2019,14.3
+48020,"Bilbao",Porcentaje de población menor de 18 años,2020,14.1
+48020,"Bilbao",Porcentaje de población menor de 18 años,2021,13.9
+48020,"Bilbao",Porcentaje de población menor de 18 años,2022,13.7
+48020,"Bilbao",Porcentaje de población menor de 18 años,2023,13.5
+48020,"Bilbao",Porcentaje de población menor de 18 años,2024,13.3
+15030,"Coruña, A",Porcentaje de población menor de 18 años,2015,14.4
+15030,"Coruña, A",Porcentaje de población menor de 18 años,2016,14.5
+15030,"Coruña, A",Porcentaje de población menor de 18 años,2017,14.6
+15030,"Coruña, A",Porcentaje de población menor de 18 años,2018,14.6
+15030,"Coruña, A",Porcentaje de población menor de 18 años,2019,14.5
+15030,"Coruña, A",Porcentaje de población menor de 18 años,2020,14.4
+15030,"Coruña, A",Porcentaje de población menor de 18 años,2021,14.3
+15030,"Coruña, A",Porcentaje de población menor de 18 años,2022,14.2
+15030,"Coruña, A",Porcentaje de población menor de 18 años,2023,13.9
+15030,"Coruña, A",Porcentaje de población menor de 18 años,2024,13.8
+14021,"Córdoba",Porcentaje de población menor de 18 años,2015,18.7
+14021,"Córdoba",Porcentaje de población menor de 18 años,2016,18.6
+14021,"Córdoba",Porcentaje de población menor de 18 años,2017,18.5
+14021,"Córdoba",Porcentaje de población menor de 18 años,2018,18.2
+14021,"Córdoba",Porcentaje de población menor de 18 años,2019,18
+14021,"Córdoba",Porcentaje de población menor de 18 años,2020,17.7
+14021,"Córdoba",Porcentaje de población menor de 18 años,2021,17.4
+14021,"Córdoba",Porcentaje de población menor de 18 años,2022,17.1
+14021,"Córdoba",Porcentaje de población menor de 18 años,2023,16.8
+14021,"Córdoba",Porcentaje de población menor de 18 años,2024,16.4
+04013,"Almería",Porcentaje de población menor de 18 años,2015,19.9
+04013,"Almería",Porcentaje de población menor de 18 años,2016,19.9
+04013,"Almería",Porcentaje de población menor de 18 años,2017,19.8
+04013,"Almería",Porcentaje de población menor de 18 años,2018,19.7
+04013,"Almería",Porcentaje de población menor de 18 años,2019,19.5
+04013,"Almería",Porcentaje de población menor de 18 años,2020,19.3
+04013,"Almería",Porcentaje de población menor de 18 años,2021,19.3
+04013,"Almería",Porcentaje de población menor de 18 años,2022,19.1
+04013,"Almería",Porcentaje de población menor de 18 años,2023,18.7
+04013,"Almería",Porcentaje de población menor de 18 años,2024,18.4
+07040,"Palma",Porcentaje de población menor de 18 años,2015,17.7
+07040,"Palma",Porcentaje de población menor de 18 años,2016,17.7
+07040,"Palma",Porcentaje de población menor de 18 años,2017,17.6
+07040,"Palma",Porcentaje de población menor de 18 años,2018,17.5
+07040,"Palma",Porcentaje de población menor de 18 años,2019,17.1
+07040,"Palma",Porcentaje de población menor de 18 años,2020,16.9
+07040,"Palma",Porcentaje de población menor de 18 años,2021,16.8
+07040,"Palma",Porcentaje de población menor de 18 años,2022,16.2
+07040,"Palma",Porcentaje de población menor de 18 años,2023,15.8
+07040,"Palma",Porcentaje de población menor de 18 años,2024,15.5
+11020,"Jerez de la Frontera",Porcentaje de población menor de 18 años,2015,20.7
+11020,"Jerez de la Frontera",Porcentaje de población menor de 18 años,2016,20.6
+11020,"Jerez de la Frontera",Porcentaje de población menor de 18 años,2017,20.4
+11020,"Jerez de la Frontera",Porcentaje de población menor de 18 años,2018,20.1
+11020,"Jerez de la Frontera",Porcentaje de población menor de 18 años,2019,19.8
+11020,"Jerez de la Frontera",Porcentaje de población menor de 18 años,2020,19.3
+11020,"Jerez de la Frontera",Porcentaje de población menor de 18 años,2021,18.9
+11020,"Jerez de la Frontera",Porcentaje de población menor de 18 años,2022,18.4
+11020,"Jerez de la Frontera",Porcentaje de población menor de 18 años,2023,17.8
+11020,"Jerez de la Frontera",Porcentaje de población menor de 18 años,2024,17.2
+18087,"Granada",Porcentaje de población menor de 18 años,2015,16.7
+18087,"Granada",Porcentaje de población menor de 18 años,2016,16.7
+18087,"Granada",Porcentaje de población menor de 18 años,2017,16.8
+18087,"Granada",Porcentaje de población menor de 18 años,2018,16.7
+18087,"Granada",Porcentaje de población menor de 18 años,2019,16.6
+18087,"Granada",Porcentaje de población menor de 18 años,2020,16.3
+18087,"Granada",Porcentaje de población menor de 18 años,2021,16.2
+18087,"Granada",Porcentaje de población menor de 18 años,2022,15.9
+18087,"Granada",Porcentaje de población menor de 18 años,2023,15.6
+18087,"Granada",Porcentaje de población menor de 18 años,2024,15.2
+08015,"Badalona",Porcentaje de población menor de 18 años,2015,18.7
+08015,"Badalona",Porcentaje de población menor de 18 años,2016,18.8
+08015,"Badalona",Porcentaje de población menor de 18 años,2017,18.8
+08015,"Badalona",Porcentaje de población menor de 18 años,2018,18.6
+08015,"Badalona",Porcentaje de población menor de 18 años,2019,18.5
+08015,"Badalona",Porcentaje de población menor de 18 años,2020,18.3
+08015,"Badalona",Porcentaje de población menor de 18 años,2021,18.2
+08015,"Badalona",Porcentaje de población menor de 18 años,2022,18
+08015,"Badalona",Porcentaje de población menor de 18 años,2023,17.8
+08015,"Badalona",Porcentaje de población menor de 18 años,2024,17.3
+29067,"Málaga",Porcentaje de población menor de 18 años,2015,18.9
+29067,"Málaga",Porcentaje de población menor de 18 años,2016,18.9
+29067,"Málaga",Porcentaje de población menor de 18 años,2017,18.7
+29067,"Málaga",Porcentaje de población menor de 18 años,2018,18.5
+29067,"Málaga",Porcentaje de población menor de 18 años,2019,18.2
+29067,"Málaga",Porcentaje de población menor de 18 años,2020,18
+29067,"Málaga",Porcentaje de población menor de 18 años,2021,17.7
+29067,"Málaga",Porcentaje de población menor de 18 años,2022,17.4
+29067,"Málaga",Porcentaje de población menor de 18 años,2023,17
+29067,"Málaga",Porcentaje de población menor de 18 años,2024,16.5
+31201,"Pamplona/Iruña",Porcentaje de población menor de 18 años,2015,16.8
+31201,"Pamplona/Iruña",Porcentaje de población menor de 18 años,2016,16.9
+31201,"Pamplona/Iruña",Porcentaje de población menor de 18 años,2017,16.9
+31201,"Pamplona/Iruña",Porcentaje de población menor de 18 años,2018,16.7
+31201,"Pamplona/Iruña",Porcentaje de población menor de 18 años,2019,16.5
+31201,"Pamplona/Iruña",Porcentaje de población menor de 18 años,2020,16.3
+31201,"Pamplona/Iruña",Porcentaje de población menor de 18 años,2021,16.1
+31201,"Pamplona/Iruña",Porcentaje de población menor de 18 años,2022,15.9
+31201,"Pamplona/Iruña",Porcentaje de población menor de 18 años,2023,15.7
+31201,"Pamplona/Iruña",Porcentaje de población menor de 18 años,2024,15.3
+30016,"Cartagena",Porcentaje de población menor de 18 años,2015,20.8
+30016,"Cartagena",Porcentaje de población menor de 18 años,2016,20.8
+30016,"Cartagena",Porcentaje de población menor de 18 años,2017,20.8
+30016,"Cartagena",Porcentaje de población menor de 18 años,2018,20.5
+30016,"Cartagena",Porcentaje de población menor de 18 años,2019,20.4
+30016,"Cartagena",Porcentaje de población menor de 18 años,2020,20.1
+30016,"Cartagena",Porcentaje de población menor de 18 años,2021,19.8
+30016,"Cartagena",Porcentaje de población menor de 18 años,2022,19.6
+30016,"Cartagena",Porcentaje de población menor de 18 años,2023,19.2
+30016,"Cartagena",Porcentaje de población menor de 18 años,2024,18.9
+28079,"Madrid",Edad media de la población,2015,43.4
+28079,"Madrid",Edad media de la población,2016,43.5
+28079,"Madrid",Edad media de la población,2017,43.5
+28079,"Madrid",Edad media de la población,2018,43.6
+28079,"Madrid",Edad media de la población,2019,43.6
+28079,"Madrid",Edad media de la población,2020,43.8
+28079,"Madrid",Edad media de la población,2021,44
+28079,"Madrid",Edad media de la población,2022,43.9
+28079,"Madrid",Edad media de la población,2023,43.9
+28079,"Madrid",Edad media de la población,2024,43.9
+41091,"Sevilla",Porcentaje de población menor de 18 años,2015,18
+41091,"Sevilla",Porcentaje de población menor de 18 años,2016,18.1
+41091,"Sevilla",Porcentaje de población menor de 18 años,2017,18
+41091,"Sevilla",Porcentaje de población menor de 18 años,2018,17.9
+41091,"Sevilla",Porcentaje de población menor de 18 años,2019,17.7
+41091,"Sevilla",Porcentaje de población menor de 18 años,2020,17.5
+41091,"Sevilla",Porcentaje de población menor de 18 años,2021,17.3
+41091,"Sevilla",Porcentaje de población menor de 18 años,2022,17
+41091,"Sevilla",Porcentaje de población menor de 18 años,2023,16.6
+41091,"Sevilla",Porcentaje de población menor de 18 años,2024,16.3
+35016,"Palmas de Gran Canaria, Las",Porcentaje de población menor de 18 años,2015,16.1
+35016,"Palmas de Gran Canaria, Las",Porcentaje de población menor de 18 años,2016,15.9
+35016,"Palmas de Gran Canaria, Las",Porcentaje de población menor de 18 años,2017,15.6
+35016,"Palmas de Gran Canaria, Las",Porcentaje de población menor de 18 años,2018,15.3
+35016,"Palmas de Gran Canaria, Las",Porcentaje de población menor de 18 años,2019,14.9
+35016,"Palmas de Gran Canaria, Las",Porcentaje de población menor de 18 años,2020,14.5
+35016,"Palmas de Gran Canaria, Las",Porcentaje de población menor de 18 años,2021,14.1
+35016,"Palmas de Gran Canaria, Las",Porcentaje de población menor de 18 años,2022,13.7
+35016,"Palmas de Gran Canaria, Las",Porcentaje de población menor de 18 años,2023,13.3
+35016,"Palmas de Gran Canaria, Las",Porcentaje de población menor de 18 años,2024,13
+36057,"Vigo",Porcentaje de población menor de 18 años,2015,15.6
+36057,"Vigo",Porcentaje de población menor de 18 años,2016,15.8
+36057,"Vigo",Porcentaje de población menor de 18 años,2017,15.7
+36057,"Vigo",Porcentaje de población menor de 18 años,2018,15.6
+36057,"Vigo",Porcentaje de población menor de 18 años,2019,15.4
+36057,"Vigo",Porcentaje de población menor de 18 años,2020,15.2
+36057,"Vigo",Porcentaje de población menor de 18 años,2021,14.9
+36057,"Vigo",Porcentaje de población menor de 18 años,2022,14.6
+36057,"Vigo",Porcentaje de población menor de 18 años,2023,14.4
+36057,"Vigo",Porcentaje de población menor de 18 años,2024,14.2
+01059,"Vitoria-Gasteiz",Porcentaje de población de 65 y más años,2015,19.5
+01059,"Vitoria-Gasteiz",Porcentaje de población de 65 y más años,2016,19.9
+01059,"Vitoria-Gasteiz",Porcentaje de población de 65 y más años,2017,20.2
+01059,"Vitoria-Gasteiz",Porcentaje de población de 65 y más años,2018,20.5
+01059,"Vitoria-Gasteiz",Porcentaje de población de 65 y más años,2019,20.8
+01059,"Vitoria-Gasteiz",Porcentaje de población de 65 y más años,2020,21.1
+01059,"Vitoria-Gasteiz",Porcentaje de población de 65 y más años,2021,21.6
+01059,"Vitoria-Gasteiz",Porcentaje de población de 65 y más años,2022,21.9
+01059,"Vitoria-Gasteiz",Porcentaje de población de 65 y más años,2023,22.3
+01059,"Vitoria-Gasteiz",Porcentaje de población de 65 y más años,2024,22.5
+33024,"Gijón",Porcentaje de población de 65 y más años,2015,24.5
+33024,"Gijón",Porcentaje de población de 65 y más años,2016,25
+33024,"Gijón",Porcentaje de población de 65 y más años,2017,25.5
+33024,"Gijón",Porcentaje de población de 65 y más años,2018,25.9
+33024,"Gijón",Porcentaje de población de 65 y más años,2019,26.3
+33024,"Gijón",Porcentaje de población de 65 y más años,2020,26.7
+33024,"Gijón",Porcentaje de población de 65 y más años,2021,27.3
+33024,"Gijón",Porcentaje de población de 65 y más años,2022,27.5
+33024,"Gijón",Porcentaje de población de 65 y más años,2023,27.8
+33024,"Gijón",Porcentaje de población de 65 y más años,2024,28.2
+03014,"Alacant/Alicante",Porcentaje de población de 65 y más años,2015,18
+03014,"Alacant/Alicante",Porcentaje de población de 65 y más años,2016,18.4
+03014,"Alacant/Alicante",Porcentaje de población de 65 y más años,2017,18.6
+03014,"Alacant/Alicante",Porcentaje de población de 65 y más años,2018,18.7
+03014,"Alacant/Alicante",Porcentaje de población de 65 y más años,2019,18.9
+03014,"Alacant/Alicante",Porcentaje de población de 65 y más años,2020,19.2
+03014,"Alacant/Alicante",Porcentaje de población de 65 y más años,2021,19.5
+03014,"Alacant/Alicante",Porcentaje de población de 65 y más años,2022,19.5
+03014,"Alacant/Alicante",Porcentaje de población de 65 y más años,2023,19.6
+03014,"Alacant/Alicante",Porcentaje de población de 65 y más años,2024,19.8
+50297,"Zaragoza",Porcentaje de población menor de 18 años,2015,16.9
+50297,"Zaragoza",Porcentaje de población menor de 18 años,2016,17.2
+50297,"Zaragoza",Porcentaje de población menor de 18 años,2017,17.2
+50297,"Zaragoza",Porcentaje de población menor de 18 años,2018,17
+50297,"Zaragoza",Porcentaje de población menor de 18 años,2019,16.9
+50297,"Zaragoza",Porcentaje de población menor de 18 años,2020,16.8
+50297,"Zaragoza",Porcentaje de población menor de 18 años,2021,16.6
+50297,"Zaragoza",Porcentaje de población menor de 18 años,2022,16.4
+50297,"Zaragoza",Porcentaje de población menor de 18 años,2023,16.1
+50297,"Zaragoza",Porcentaje de población menor de 18 años,2024,16
+48020,"Bilbao",Porcentaje de población de 65 y más años,2015,23.4
+48020,"Bilbao",Porcentaje de población de 65 y más años,2016,23.5
+48020,"Bilbao",Porcentaje de población de 65 y más años,2017,23.7
+48020,"Bilbao",Porcentaje de población de 65 y más años,2018,23.8
+48020,"Bilbao",Porcentaje de población de 65 y más años,2019,23.8
+48020,"Bilbao",Porcentaje de población de 65 y más años,2020,24.1
+48020,"Bilbao",Porcentaje de población de 65 y más años,2021,24.5
+48020,"Bilbao",Porcentaje de población de 65 y más años,2022,24.7
+48020,"Bilbao",Porcentaje de población de 65 y más años,2023,25
+48020,"Bilbao",Porcentaje de población de 65 y más años,2024,25.3
+15030,"Coruña, A",Porcentaje de población de 65 y más años,2015,23.7
+15030,"Coruña, A",Porcentaje de población de 65 y más años,2016,24
+15030,"Coruña, A",Porcentaje de población de 65 y más años,2017,24.3
+15030,"Coruña, A",Porcentaje de población de 65 y más años,2018,24.6
+15030,"Coruña, A",Porcentaje de población de 65 y más años,2019,24.8
+15030,"Coruña, A",Porcentaje de población de 65 y más años,2020,25.2
+15030,"Coruña, A",Porcentaje de población de 65 y más años,2021,25.4
+15030,"Coruña, A",Porcentaje de población de 65 y más años,2022,25.4
+15030,"Coruña, A",Porcentaje de población de 65 y más años,2023,25.6
+15030,"Coruña, A",Porcentaje de población de 65 y más años,2024,25.8
+14021,"Córdoba",Porcentaje de población de 65 y más años,2015,17.8
+14021,"Córdoba",Porcentaje de población de 65 y más años,2016,18
+14021,"Córdoba",Porcentaje de población de 65 y más años,2017,18.4
+14021,"Córdoba",Porcentaje de población de 65 y más años,2018,18.8
+14021,"Córdoba",Porcentaje de población de 65 y más años,2019,19.1
+14021,"Córdoba",Porcentaje de población de 65 y más años,2020,19.7
+14021,"Córdoba",Porcentaje de población de 65 y más años,2021,20.1
+14021,"Córdoba",Porcentaje de población de 65 y más años,2022,20.4
+14021,"Córdoba",Porcentaje de población de 65 y más años,2023,20.9
+14021,"Córdoba",Porcentaje de población de 65 y más años,2024,21.5
+04013,"Almería",Porcentaje de población de 65 y más años,2015,15.3
+04013,"Almería",Porcentaje de población de 65 y más años,2016,15.6
+04013,"Almería",Porcentaje de población de 65 y más años,2017,15.9
+04013,"Almería",Porcentaje de población de 65 y más años,2018,16.2
+04013,"Almería",Porcentaje de población de 65 y más años,2019,16.4
+04013,"Almería",Porcentaje de población de 65 y más años,2020,16.8
+04013,"Almería",Porcentaje de población de 65 y más años,2021,17.1
+04013,"Almería",Porcentaje de población de 65 y más años,2022,17.5
+04013,"Almería",Porcentaje de población de 65 y más años,2023,18
+04013,"Almería",Porcentaje de población de 65 y más años,2024,18.3
+07040,"Palma",Porcentaje de población de 65 y más años,2015,15.4
+07040,"Palma",Porcentaje de población de 65 y más años,2016,15.7
+07040,"Palma",Porcentaje de población de 65 y más años,2017,15.9
+07040,"Palma",Porcentaje de población de 65 y más años,2018,16
+07040,"Palma",Porcentaje de población de 65 y más años,2019,16.1
+07040,"Palma",Porcentaje de población de 65 y más años,2020,16.5
+07040,"Palma",Porcentaje de población de 65 y más años,2021,16.9
+07040,"Palma",Porcentaje de población de 65 y más años,2022,17.1
+07040,"Palma",Porcentaje de población de 65 y más años,2023,17.3
+07040,"Palma",Porcentaje de población de 65 y más años,2024,17.4
+11020,"Jerez de la Frontera",Porcentaje de población de 65 y más años,2015,14.9
+11020,"Jerez de la Frontera",Porcentaje de población de 65 y más años,2016,15.2
+11020,"Jerez de la Frontera",Porcentaje de población de 65 y más años,2017,15.6
+11020,"Jerez de la Frontera",Porcentaje de población de 65 y más años,2018,16.1
+11020,"Jerez de la Frontera",Porcentaje de población de 65 y más años,2019,16.5
+11020,"Jerez de la Frontera",Porcentaje de población de 65 y más años,2020,16.9
+11020,"Jerez de la Frontera",Porcentaje de población de 65 y más años,2021,17.4
+11020,"Jerez de la Frontera",Porcentaje de población de 65 y más años,2022,17.9
+11020,"Jerez de la Frontera",Porcentaje de población de 65 y más años,2023,18.4
+11020,"Jerez de la Frontera",Porcentaje de población de 65 y más años,2024,19.1
+18087,"Granada",Porcentaje de población de 65 y más años,2015,20.2
+18087,"Granada",Porcentaje de población de 65 y más años,2016,20.7
+18087,"Granada",Porcentaje de población de 65 y más años,2017,21
+18087,"Granada",Porcentaje de población de 65 y más años,2018,21.3
+18087,"Granada",Porcentaje de población de 65 y más años,2019,21.6
+18087,"Granada",Porcentaje de población de 65 y más años,2020,21.9
+18087,"Granada",Porcentaje de población de 65 y más años,2021,22.6
+18087,"Granada",Porcentaje de población de 65 y más años,2022,22.9
+18087,"Granada",Porcentaje de población de 65 y más años,2023,23.4
+18087,"Granada",Porcentaje de población de 65 y más años,2024,23.8
+08015,"Badalona",Porcentaje de población de 65 y más años,2015,17.9
+08015,"Badalona",Porcentaje de población de 65 y más años,2016,18.3
+08015,"Badalona",Porcentaje de población de 65 y más años,2017,18.5
+08015,"Badalona",Porcentaje de población de 65 y más años,2018,18.8
+08015,"Badalona",Porcentaje de población de 65 y más años,2019,18.9
+08015,"Badalona",Porcentaje de población de 65 y más años,2020,19.2
+08015,"Badalona",Porcentaje de población de 65 y más años,2021,19.4
+08015,"Badalona",Porcentaje de población de 65 y más años,2022,19.6
+08015,"Badalona",Porcentaje de población de 65 y más años,2023,19.9
+08015,"Badalona",Porcentaje de población de 65 y más años,2024,20
+29067,"Málaga",Porcentaje de población de 65 y más años,2015,16.8
+29067,"Málaga",Porcentaje de población de 65 y más años,2016,17
+29067,"Málaga",Porcentaje de población de 65 y más años,2017,17.4
+29067,"Málaga",Porcentaje de población de 65 y más años,2018,17.6
+29067,"Málaga",Porcentaje de población de 65 y más años,2019,17.9
+29067,"Málaga",Porcentaje de población de 65 y más años,2020,18.3
+29067,"Málaga",Porcentaje de población de 65 y más años,2021,18.6
+29067,"Málaga",Porcentaje de población de 65 y más años,2022,18.8
+29067,"Málaga",Porcentaje de población de 65 y más años,2023,19.2
+29067,"Málaga",Porcentaje de población de 65 y más años,2024,19.6
+30016,"Cartagena",Porcentaje de población de 65 y más años,2015,16.4
+30016,"Cartagena",Porcentaje de población de 65 y más años,2016,16.5
+30016,"Cartagena",Porcentaje de población de 65 y más años,2017,16.8
+30016,"Cartagena",Porcentaje de población de 65 y más años,2018,17
+30016,"Cartagena",Porcentaje de población de 65 y más años,2019,17.2
+30016,"Cartagena",Porcentaje de población de 65 y más años,2020,17.5
+30016,"Cartagena",Porcentaje de población de 65 y más años,2021,17.8
+30016,"Cartagena",Porcentaje de población de 65 y más años,2022,18.1
+30016,"Cartagena",Porcentaje de población de 65 y más años,2023,18.4
+30016,"Cartagena",Porcentaje de población de 65 y más años,2024,18.8
+31201,"Pamplona/Iruña",Porcentaje de población de 65 y más años,2015,21.4
+31201,"Pamplona/Iruña",Porcentaje de población de 65 y más años,2016,21.6
+31201,"Pamplona/Iruña",Porcentaje de población de 65 y más años,2017,21.8
+31201,"Pamplona/Iruña",Porcentaje de población de 65 y más años,2018,21.9
+31201,"Pamplona/Iruña",Porcentaje de población de 65 y más años,2019,22
+31201,"Pamplona/Iruña",Porcentaje de población de 65 y más años,2020,22.2
+31201,"Pamplona/Iruña",Porcentaje de población de 65 y más años,2021,22.4
+31201,"Pamplona/Iruña",Porcentaje de población de 65 y más años,2022,22.5
+31201,"Pamplona/Iruña",Porcentaje de población de 65 y más años,2023,22.7
+31201,"Pamplona/Iruña",Porcentaje de población de 65 y más años,2024,23
+28079,"Madrid",Porcentaje de población menor de 18 años,2015,16.1
+28079,"Madrid",Porcentaje de población menor de 18 años,2016,16.2
+28079,"Madrid",Porcentaje de población menor de 18 años,2017,16.1
+28079,"Madrid",Porcentaje de población menor de 18 años,2018,16
+28079,"Madrid",Porcentaje de población menor de 18 años,2019,15.7
+28079,"Madrid",Porcentaje de población menor de 18 años,2020,15.5
+28079,"Madrid",Porcentaje de población menor de 18 años,2021,15.3
+28079,"Madrid",Porcentaje de población menor de 18 años,2022,15.1
+28079,"Madrid",Porcentaje de población menor de 18 años,2023,14.8
+28079,"Madrid",Porcentaje de población menor de 18 años,2024,14.6
+41091,"Sevilla",Porcentaje de población de 65 y más años,2015,18.5
+41091,"Sevilla",Porcentaje de población de 65 y más años,2016,18.7
+41091,"Sevilla",Porcentaje de población de 65 y más años,2017,19
+41091,"Sevilla",Porcentaje de población de 65 y más años,2018,19.3
+41091,"Sevilla",Porcentaje de población de 65 y más años,2019,19.5
+41091,"Sevilla",Porcentaje de población de 65 y más años,2020,19.8
+41091,"Sevilla",Porcentaje de población de 65 y más años,2021,20
+41091,"Sevilla",Porcentaje de población de 65 y más años,2022,20.3
+41091,"Sevilla",Porcentaje de población de 65 y más años,2023,20.6
+41091,"Sevilla",Porcentaje de población de 65 y más años,2024,20.9
+35016,"Palmas de Gran Canaria, Las",Porcentaje de población de 65 y más años,2015,17.1
+35016,"Palmas de Gran Canaria, Las",Porcentaje de población de 65 y más años,2016,17.6
+35016,"Palmas de Gran Canaria, Las",Porcentaje de población de 65 y más años,2017,18
+35016,"Palmas de Gran Canaria, Las",Porcentaje de población de 65 y más años,2018,18.3
+35016,"Palmas de Gran Canaria, Las",Porcentaje de población de 65 y más años,2019,18.7
+35016,"Palmas de Gran Canaria, Las",Porcentaje de población de 65 y más años,2020,19.2
+35016,"Palmas de Gran Canaria, Las",Porcentaje de población de 65 y más años,2021,19.6
+35016,"Palmas de Gran Canaria, Las",Porcentaje de población de 65 y más años,2022,20
+35016,"Palmas de Gran Canaria, Las",Porcentaje de población de 65 y más años,2023,20.4
+35016,"Palmas de Gran Canaria, Las",Porcentaje de población de 65 y más años,2024,20.9
+36057,"Vigo",Porcentaje de población de 65 y más años,2015,21.1
+36057,"Vigo",Porcentaje de población de 65 y más años,2016,21.5
+36057,"Vigo",Porcentaje de población de 65 y más años,2017,21.9
+36057,"Vigo",Porcentaje de población de 65 y más años,2018,22.3
+36057,"Vigo",Porcentaje de población de 65 y más años,2019,22.6
+36057,"Vigo",Porcentaje de población de 65 y más años,2020,23.1
+36057,"Vigo",Porcentaje de población de 65 y más años,2021,23.6
+36057,"Vigo",Porcentaje de población de 65 y más años,2022,23.9
+36057,"Vigo",Porcentaje de población de 65 y más años,2023,24.3
+36057,"Vigo",Porcentaje de población de 65 y más años,2024,24.7
+01059,"Vitoria-Gasteiz",Tamaño medio del hogar,2015,2.34
+01059,"Vitoria-Gasteiz",Tamaño medio del hogar,2016,2.34
+01059,"Vitoria-Gasteiz",Tamaño medio del hogar,2017,2.34
+01059,"Vitoria-Gasteiz",Tamaño medio del hogar,2018,2.36
+01059,"Vitoria-Gasteiz",Tamaño medio del hogar,2019,2.36
+01059,"Vitoria-Gasteiz",Tamaño medio del hogar,2020,2.35
+01059,"Vitoria-Gasteiz",Tamaño medio del hogar,2021,2.34
+01059,"Vitoria-Gasteiz",Tamaño medio del hogar,2022,2.34
+01059,"Vitoria-Gasteiz",Tamaño medio del hogar,2023,2.34
+01059,"Vitoria-Gasteiz",Tamaño medio del hogar,2024,2.34
+33024,"Gijón",Tamaño medio del hogar,2015,2.28
+33024,"Gijón",Tamaño medio del hogar,2016,2.27
+33024,"Gijón",Tamaño medio del hogar,2017,2.26
+33024,"Gijón",Tamaño medio del hogar,2018,2.25
+33024,"Gijón",Tamaño medio del hogar,2019,2.24
+33024,"Gijón",Tamaño medio del hogar,2020,2.23
+33024,"Gijón",Tamaño medio del hogar,2021,2.21
+33024,"Gijón",Tamaño medio del hogar,2022,2.21
+33024,"Gijón",Tamaño medio del hogar,2023,2.2
+33024,"Gijón",Tamaño medio del hogar,2024,2.2
+03014,"Alacant/Alicante",Tamaño medio del hogar,2015,2.52
+03014,"Alacant/Alicante",Tamaño medio del hogar,2016,2.53
+03014,"Alacant/Alicante",Tamaño medio del hogar,2017,2.53
+03014,"Alacant/Alicante",Tamaño medio del hogar,2018,2.52
+03014,"Alacant/Alicante",Tamaño medio del hogar,2019,2.53
+03014,"Alacant/Alicante",Tamaño medio del hogar,2020,2.51
+03014,"Alacant/Alicante",Tamaño medio del hogar,2021,2.49
+03014,"Alacant/Alicante",Tamaño medio del hogar,2022,2.51
+03014,"Alacant/Alicante",Tamaño medio del hogar,2023,2.52
+03014,"Alacant/Alicante",Tamaño medio del hogar,2024,2.54
+50297,"Zaragoza",Porcentaje de población de 65 y más años,2015,20.2
+50297,"Zaragoza",Porcentaje de población de 65 y más años,2016,20.6
+50297,"Zaragoza",Porcentaje de población de 65 y más años,2017,20.9
+50297,"Zaragoza",Porcentaje de población de 65 y más años,2018,21.2
+50297,"Zaragoza",Porcentaje de población de 65 y más años,2019,21.3
+50297,"Zaragoza",Porcentaje de población de 65 y más años,2020,21.5
+50297,"Zaragoza",Porcentaje de población de 65 y más años,2021,21.9
+50297,"Zaragoza",Porcentaje de población de 65 y más años,2022,22
+50297,"Zaragoza",Porcentaje de población de 65 y más años,2023,22.2
+50297,"Zaragoza",Porcentaje de población de 65 y más años,2024,22.5
+48020,"Bilbao",Tamaño medio del hogar,2015,2.38
+48020,"Bilbao",Tamaño medio del hogar,2016,2.36
+48020,"Bilbao",Tamaño medio del hogar,2017,2.34
+48020,"Bilbao",Tamaño medio del hogar,2018,2.33
+48020,"Bilbao",Tamaño medio del hogar,2019,2.34
+48020,"Bilbao",Tamaño medio del hogar,2020,2.32
+48020,"Bilbao",Tamaño medio del hogar,2021,2.29
+48020,"Bilbao",Tamaño medio del hogar,2022,2.29
+48020,"Bilbao",Tamaño medio del hogar,2023,2.29
+48020,"Bilbao",Tamaño medio del hogar,2024,2.3
+15030,"Coruña, A",Tamaño medio del hogar,2015,2.39
+15030,"Coruña, A",Tamaño medio del hogar,2016,2.38
+15030,"Coruña, A",Tamaño medio del hogar,2017,2.38
+15030,"Coruña, A",Tamaño medio del hogar,2018,2.36
+15030,"Coruña, A",Tamaño medio del hogar,2019,2.36
+15030,"Coruña, A",Tamaño medio del hogar,2020,2.34
+15030,"Coruña, A",Tamaño medio del hogar,2021,2.32
+15030,"Coruña, A",Tamaño medio del hogar,2022,2.31
+15030,"Coruña, A",Tamaño medio del hogar,2023,2.3
+15030,"Coruña, A",Tamaño medio del hogar,2024,2.3
+14021,"Córdoba",Tamaño medio del hogar,2015,2.7
+14021,"Córdoba",Tamaño medio del hogar,2016,2.69
+14021,"Córdoba",Tamaño medio del hogar,2017,2.67
+14021,"Córdoba",Tamaño medio del hogar,2018,2.64
+14021,"Córdoba",Tamaño medio del hogar,2019,2.62
+14021,"Córdoba",Tamaño medio del hogar,2020,2.61
+14021,"Córdoba",Tamaño medio del hogar,2021,2.58
+14021,"Córdoba",Tamaño medio del hogar,2022,2.55
+14021,"Córdoba",Tamaño medio del hogar,2023,2.52
+14021,"Córdoba",Tamaño medio del hogar,2024,2.5
+04013,"Almería",Tamaño medio del hogar,2015,2.68
+04013,"Almería",Tamaño medio del hogar,2016,2.68
+04013,"Almería",Tamaño medio del hogar,2017,2.67
+04013,"Almería",Tamaño medio del hogar,2018,2.66
+04013,"Almería",Tamaño medio del hogar,2019,2.67
+04013,"Almería",Tamaño medio del hogar,2020,2.65
+04013,"Almería",Tamaño medio del hogar,2021,2.62
+04013,"Almería",Tamaño medio del hogar,2022,2.6
+04013,"Almería",Tamaño medio del hogar,2023,2.59
+04013,"Almería",Tamaño medio del hogar,2024,2.58
+07040,"Palma",Tamaño medio del hogar,2015,2.75
+07040,"Palma",Tamaño medio del hogar,2016,2.76
+07040,"Palma",Tamaño medio del hogar,2017,2.76
+07040,"Palma",Tamaño medio del hogar,2018,2.76
+07040,"Palma",Tamaño medio del hogar,2019,2.77
+07040,"Palma",Tamaño medio del hogar,2020,2.75
+07040,"Palma",Tamaño medio del hogar,2021,2.72
+07040,"Palma",Tamaño medio del hogar,2022,2.75
+07040,"Palma",Tamaño medio del hogar,2023,2.76
+07040,"Palma",Tamaño medio del hogar,2024,2.77
+38038,"Santa Cruz de Tenerife",Edad media de la población,2015,42.7
+38038,"Santa Cruz de Tenerife",Edad media de la población,2016,43
+38038,"Santa Cruz de Tenerife",Edad media de la población,2017,43.2
+38038,"Santa Cruz de Tenerife",Edad media de la población,2018,43.5
+38038,"Santa Cruz de Tenerife",Edad media de la población,2019,43.8
+38038,"Santa Cruz de Tenerife",Edad media de la población,2020,44.2
+38038,"Santa Cruz de Tenerife",Edad media de la población,2021,44.5
+38038,"Santa Cruz de Tenerife",Edad media de la población,2022,44.7
+38038,"Santa Cruz de Tenerife",Edad media de la población,2023,45
+38038,"Santa Cruz de Tenerife",Edad media de la población,2024,45.3
+11020,"Jerez de la Frontera",Tamaño medio del hogar,2015,2.75
+11020,"Jerez de la Frontera",Tamaño medio del hogar,2016,2.74
+11020,"Jerez de la Frontera",Tamaño medio del hogar,2017,2.72
+11020,"Jerez de la Frontera",Tamaño medio del hogar,2018,2.71
+11020,"Jerez de la Frontera",Tamaño medio del hogar,2019,2.7
+11020,"Jerez de la Frontera",Tamaño medio del hogar,2020,2.67
+11020,"Jerez de la Frontera",Tamaño medio del hogar,2021,2.65
+11020,"Jerez de la Frontera",Tamaño medio del hogar,2022,2.63
+11020,"Jerez de la Frontera",Tamaño medio del hogar,2023,2.61
+11020,"Jerez de la Frontera",Tamaño medio del hogar,2024,2.59
+08015,"Badalona",Tamaño medio del hogar,2015,2.64
+08015,"Badalona",Tamaño medio del hogar,2016,2.65
+08015,"Badalona",Tamaño medio del hogar,2017,2.65
+08015,"Badalona",Tamaño medio del hogar,2018,2.68
+08015,"Badalona",Tamaño medio del hogar,2019,2.69
+08015,"Badalona",Tamaño medio del hogar,2020,2.67
+08015,"Badalona",Tamaño medio del hogar,2021,2.65
+08015,"Badalona",Tamaño medio del hogar,2022,2.62
+08015,"Badalona",Tamaño medio del hogar,2023,2.64
+08015,"Badalona",Tamaño medio del hogar,2024,2.66
+18087,"Granada",Tamaño medio del hogar,2015,2.41
+18087,"Granada",Tamaño medio del hogar,2016,2.4
+18087,"Granada",Tamaño medio del hogar,2017,2.38
+18087,"Granada",Tamaño medio del hogar,2018,2.36
+18087,"Granada",Tamaño medio del hogar,2019,2.35
+18087,"Granada",Tamaño medio del hogar,2020,2.34
+18087,"Granada",Tamaño medio del hogar,2021,2.3
+18087,"Granada",Tamaño medio del hogar,2022,2.28
+18087,"Granada",Tamaño medio del hogar,2023,2.27
+18087,"Granada",Tamaño medio del hogar,2024,2.26
+29067,"Málaga",Tamaño medio del hogar,2015,2.69
+29067,"Málaga",Tamaño medio del hogar,2016,2.69
+29067,"Málaga",Tamaño medio del hogar,2017,2.68
+29067,"Málaga",Tamaño medio del hogar,2018,2.67
+29067,"Málaga",Tamaño medio del hogar,2019,2.67
+29067,"Málaga",Tamaño medio del hogar,2020,2.65
+29067,"Málaga",Tamaño medio del hogar,2021,2.62
+29067,"Málaga",Tamaño medio del hogar,2022,2.61
+29067,"Málaga",Tamaño medio del hogar,2023,2.6
+29067,"Málaga",Tamaño medio del hogar,2024,2.6
+30016,"Cartagena",Tamaño medio del hogar,2015,2.84
+30016,"Cartagena",Tamaño medio del hogar,2016,2.83
+30016,"Cartagena",Tamaño medio del hogar,2017,2.82
+30016,"Cartagena",Tamaño medio del hogar,2018,2.81
+30016,"Cartagena",Tamaño medio del hogar,2019,2.8
+30016,"Cartagena",Tamaño medio del hogar,2020,2.79
+30016,"Cartagena",Tamaño medio del hogar,2021,2.77
+30016,"Cartagena",Tamaño medio del hogar,2022,2.75
+30016,"Cartagena",Tamaño medio del hogar,2023,2.73
+30016,"Cartagena",Tamaño medio del hogar,2024,2.72
+31201,"Pamplona/Iruña",Tamaño medio del hogar,2015,2.52
+31201,"Pamplona/Iruña",Tamaño medio del hogar,2016,2.52
+31201,"Pamplona/Iruña",Tamaño medio del hogar,2017,2.5
+31201,"Pamplona/Iruña",Tamaño medio del hogar,2018,2.5
+31201,"Pamplona/Iruña",Tamaño medio del hogar,2019,2.5
+31201,"Pamplona/Iruña",Tamaño medio del hogar,2020,2.48
+31201,"Pamplona/Iruña",Tamaño medio del hogar,2021,2.45
+31201,"Pamplona/Iruña",Tamaño medio del hogar,2022,2.46
+31201,"Pamplona/Iruña",Tamaño medio del hogar,2023,2.46
+31201,"Pamplona/Iruña",Tamaño medio del hogar,2024,2.45
+28079,"Madrid",Porcentaje de población de 65 y más años,2015,20.4
+28079,"Madrid",Porcentaje de población de 65 y más años,2016,20.4
+28079,"Madrid",Porcentaje de población de 65 y más años,2017,20.3
+28079,"Madrid",Porcentaje de población de 65 y más años,2018,20.2
+28079,"Madrid",Porcentaje de población de 65 y más años,2019,20
+28079,"Madrid",Porcentaje de población de 65 y más años,2020,20.1
+28079,"Madrid",Porcentaje de población de 65 y más años,2021,20.3
+28079,"Madrid",Porcentaje de población de 65 y más años,2022,20.2
+28079,"Madrid",Porcentaje de población de 65 y más años,2023,20.2
+28079,"Madrid",Porcentaje de población de 65 y más años,2024,20.3
+41091,"Sevilla",Tamaño medio del hogar,2015,2.63
+41091,"Sevilla",Tamaño medio del hogar,2016,2.62
+41091,"Sevilla",Tamaño medio del hogar,2017,2.61
+41091,"Sevilla",Tamaño medio del hogar,2018,2.59
+41091,"Sevilla",Tamaño medio del hogar,2019,2.59
+41091,"Sevilla",Tamaño medio del hogar,2020,2.56
+41091,"Sevilla",Tamaño medio del hogar,2021,2.54
+41091,"Sevilla",Tamaño medio del hogar,2022,2.52
+41091,"Sevilla",Tamaño medio del hogar,2023,2.51
+41091,"Sevilla",Tamaño medio del hogar,2024,2.5
+36057,"Vigo",Tamaño medio del hogar,2015,2.63
+36057,"Vigo",Tamaño medio del hogar,2016,2.62
+36057,"Vigo",Tamaño medio del hogar,2017,2.6
+36057,"Vigo",Tamaño medio del hogar,2018,2.59
+36057,"Vigo",Tamaño medio del hogar,2019,2.58
+36057,"Vigo",Tamaño medio del hogar,2020,2.56
+36057,"Vigo",Tamaño medio del hogar,2021,2.53
+36057,"Vigo",Tamaño medio del hogar,2022,2.52
+36057,"Vigo",Tamaño medio del hogar,2023,2.5
+36057,"Vigo",Tamaño medio del hogar,2024,2.48
+35016,"Palmas de Gran Canaria, Las",Tamaño medio del hogar,2015,2.71
+35016,"Palmas de Gran Canaria, Las",Tamaño medio del hogar,2016,2.7
+35016,"Palmas de Gran Canaria, Las",Tamaño medio del hogar,2017,2.69
+35016,"Palmas de Gran Canaria, Las",Tamaño medio del hogar,2018,2.67
+35016,"Palmas de Gran Canaria, Las",Tamaño medio del hogar,2019,2.66
+35016,"Palmas de Gran Canaria, Las",Tamaño medio del hogar,2020,2.63
+35016,"Palmas de Gran Canaria, Las",Tamaño medio del hogar,2021,2.6
+35016,"Palmas de Gran Canaria, Las",Tamaño medio del hogar,2022,2.59
+35016,"Palmas de Gran Canaria, Las",Tamaño medio del hogar,2023,2.57
+35016,"Palmas de Gran Canaria, Las",Tamaño medio del hogar,2024,2.56
+03065,"Elx/Elche",Edad media de la población,2015,40.3
+03065,"Elx/Elche",Edad media de la población,2016,40.7
+03065,"Elx/Elche",Edad media de la población,2017,40.9
+03065,"Elx/Elche",Edad media de la población,2018,41.2
+03065,"Elx/Elche",Edad media de la población,2019,41.5
+03065,"Elx/Elche",Edad media de la población,2020,41.8
+03065,"Elx/Elche",Edad media de la población,2021,42.1
+03065,"Elx/Elche",Edad media de la población,2022,42.3
+03065,"Elx/Elche",Edad media de la población,2023,42.4
+03065,"Elx/Elche",Edad media de la población,2024,42.6
+50297,"Zaragoza",Tamaño medio del hogar,2015,2.46
+50297,"Zaragoza",Tamaño medio del hogar,2016,2.46
+50297,"Zaragoza",Tamaño medio del hogar,2017,2.45
+50297,"Zaragoza",Tamaño medio del hogar,2018,2.43
+50297,"Zaragoza",Tamaño medio del hogar,2019,2.44
+50297,"Zaragoza",Tamaño medio del hogar,2020,2.43
+50297,"Zaragoza",Tamaño medio del hogar,2021,2.4
+50297,"Zaragoza",Tamaño medio del hogar,2022,2.41
+50297,"Zaragoza",Tamaño medio del hogar,2023,2.4
+50297,"Zaragoza",Tamaño medio del hogar,2024,2.41
+08019,"Barcelona",Edad media de la población,2015,44
+08019,"Barcelona",Edad media de la población,2016,44.1
+08019,"Barcelona",Edad media de la población,2017,44.1
+08019,"Barcelona",Edad media de la población,2018,44.1
+08019,"Barcelona",Edad media de la población,2019,44.1
+08019,"Barcelona",Edad media de la población,2020,44.3
+08019,"Barcelona",Edad media de la población,2021,44.4
+08019,"Barcelona",Edad media de la población,2022,44.3
+08019,"Barcelona",Edad media de la población,2023,44.3
+08019,"Barcelona",Edad media de la población,2024,44.3
+38038,"Santa Cruz de Tenerife",Porcentaje de población menor de 18 años,2015,16
+38038,"Santa Cruz de Tenerife",Porcentaje de población menor de 18 años,2016,15.9
+38038,"Santa Cruz de Tenerife",Porcentaje de población menor de 18 años,2017,15.7
+38038,"Santa Cruz de Tenerife",Porcentaje de población menor de 18 años,2018,15.5
+38038,"Santa Cruz de Tenerife",Porcentaje de población menor de 18 años,2019,15.2
+38038,"Santa Cruz de Tenerife",Porcentaje de población menor de 18 años,2020,14.8
+38038,"Santa Cruz de Tenerife",Porcentaje de población menor de 18 años,2021,14.4
+38038,"Santa Cruz de Tenerife",Porcentaje de población menor de 18 años,2022,14.1
+38038,"Santa Cruz de Tenerife",Porcentaje de población menor de 18 años,2023,13.7
+38038,"Santa Cruz de Tenerife",Porcentaje de población menor de 18 años,2024,13.3
+47186,"Valladolid",Edad media de la población,2015,45.9
+47186,"Valladolid",Edad media de la población,2016,46.3
+47186,"Valladolid",Edad media de la población,2017,46.6
+47186,"Valladolid",Edad media de la población,2018,46.9
+47186,"Valladolid",Edad media de la población,2019,47.1
+47186,"Valladolid",Edad media de la población,2020,47.3
+47186,"Valladolid",Edad media de la población,2021,47.7
+47186,"Valladolid",Edad media de la población,2022,47.8
+47186,"Valladolid",Edad media de la población,2023,47.9
+47186,"Valladolid",Edad media de la población,2024,48
+30030,"Murcia",Edad media de la población,2015,39.5
+30030,"Murcia",Edad media de la población,2016,39.7
+30030,"Murcia",Edad media de la población,2017,40
+30030,"Murcia",Edad media de la población,2018,40.2
+30030,"Murcia",Edad media de la población,2019,40.4
+30030,"Murcia",Edad media de la población,2020,40.7
+30030,"Murcia",Edad media de la población,2021,40.9
+30030,"Murcia",Edad media de la población,2022,41.1
+30030,"Murcia",Edad media de la población,2023,41.3
+30030,"Murcia",Edad media de la población,2024,41.6
+28079,"Madrid",Tamaño medio del hogar,2015,2.5
+28079,"Madrid",Tamaño medio del hogar,2016,2.49
+28079,"Madrid",Tamaño medio del hogar,2017,2.49
+28079,"Madrid",Tamaño medio del hogar,2018,2.5
+28079,"Madrid",Tamaño medio del hogar,2019,2.52
+28079,"Madrid",Tamaño medio del hogar,2020,2.49
+28079,"Madrid",Tamaño medio del hogar,2021,2.47
+28079,"Madrid",Tamaño medio del hogar,2022,2.47
+28079,"Madrid",Tamaño medio del hogar,2023,2.5
+28079,"Madrid",Tamaño medio del hogar,2024,2.51
+03065,"Elx/Elche",Porcentaje de población menor de 18 años,2015,19.2
+03065,"Elx/Elche",Porcentaje de población menor de 18 años,2016,19.3
+03065,"Elx/Elche",Porcentaje de población menor de 18 años,2017,19.2
+03065,"Elx/Elche",Porcentaje de población menor de 18 años,2018,19.1
+03065,"Elx/Elche",Porcentaje de población menor de 18 años,2019,18.8
+03065,"Elx/Elche",Porcentaje de población menor de 18 años,2020,18.6
+03065,"Elx/Elche",Porcentaje de población menor de 18 años,2021,18.4
+03065,"Elx/Elche",Porcentaje de población menor de 18 años,2022,18.3
+03065,"Elx/Elche",Porcentaje de población menor de 18 años,2023,18
+03065,"Elx/Elche",Porcentaje de población menor de 18 años,2024,17.7
+38038,"Santa Cruz de Tenerife",Porcentaje de población de 65 y más años,2015,18.1
+38038,"Santa Cruz de Tenerife",Porcentaje de población de 65 y más años,2016,18.4
+38038,"Santa Cruz de Tenerife",Porcentaje de población de 65 y más años,2017,18.6
+38038,"Santa Cruz de Tenerife",Porcentaje de población de 65 y más años,2018,18.9
+38038,"Santa Cruz de Tenerife",Porcentaje de población de 65 y más años,2019,19.2
+38038,"Santa Cruz de Tenerife",Porcentaje de población de 65 y más años,2020,19.7
+38038,"Santa Cruz de Tenerife",Porcentaje de población de 65 y más años,2021,20.1
+38038,"Santa Cruz de Tenerife",Porcentaje de población de 65 y más años,2022,20.3
+38038,"Santa Cruz de Tenerife",Porcentaje de población de 65 y más años,2023,20.7
+38038,"Santa Cruz de Tenerife",Porcentaje de población de 65 y más años,2024,21
+08019,"Barcelona",Porcentaje de población menor de 18 años,2015,15
+08019,"Barcelona",Porcentaje de población menor de 18 años,2016,15.2
+08019,"Barcelona",Porcentaje de población menor de 18 años,2017,15.1
+08019,"Barcelona",Porcentaje de población menor de 18 años,2018,15
+08019,"Barcelona",Porcentaje de población menor de 18 años,2019,14.9
+08019,"Barcelona",Porcentaje de población menor de 18 años,2020,14.6
+08019,"Barcelona",Porcentaje de población menor de 18 años,2021,14.5
+08019,"Barcelona",Porcentaje de población menor de 18 años,2022,14.4
+08019,"Barcelona",Porcentaje de población menor de 18 años,2023,14.1
+08019,"Barcelona",Porcentaje de población menor de 18 años,2024,13.8
+47186,"Valladolid",Porcentaje de población menor de 18 años,2015,14.9
+47186,"Valladolid",Porcentaje de población menor de 18 años,2016,14.9
+47186,"Valladolid",Porcentaje de población menor de 18 años,2017,14.9
+47186,"Valladolid",Porcentaje de población menor de 18 años,2018,14.7
+47186,"Valladolid",Porcentaje de población menor de 18 años,2019,14.6
+47186,"Valladolid",Porcentaje de población menor de 18 años,2020,14.5
+47186,"Valladolid",Porcentaje de población menor de 18 años,2021,14.3
+47186,"Valladolid",Porcentaje de población menor de 18 años,2022,14.2
+47186,"Valladolid",Porcentaje de población menor de 18 años,2023,14.1
+47186,"Valladolid",Porcentaje de población menor de 18 años,2024,13.9
+30030,"Murcia",Porcentaje de población menor de 18 años,2015,20.5
+30030,"Murcia",Porcentaje de población menor de 18 años,2016,20.5
+30030,"Murcia",Porcentaje de población menor de 18 años,2017,20.4
+30030,"Murcia",Porcentaje de población menor de 18 años,2018,20.2
+30030,"Murcia",Porcentaje de población menor de 18 años,2019,19.9
+30030,"Murcia",Porcentaje de población menor de 18 años,2020,19.6
+30030,"Murcia",Porcentaje de población menor de 18 años,2021,19.4
+30030,"Murcia",Porcentaje de población menor de 18 años,2022,19.2
+30030,"Murcia",Porcentaje de población menor de 18 años,2023,18.8
+30030,"Murcia",Porcentaje de población menor de 18 años,2024,18.4
+28092,"Móstoles",Edad media de la población,2015,41.5
+28092,"Móstoles",Edad media de la población,2016,41.8
+28092,"Móstoles",Edad media de la población,2017,42.2
+28092,"Móstoles",Edad media de la población,2018,42.5
+28092,"Móstoles",Edad media de la población,2019,42.9
+28092,"Móstoles",Edad media de la población,2020,43.2
+28092,"Móstoles",Edad media de la población,2021,43.6
+28092,"Móstoles",Edad media de la población,2022,43.9
+28092,"Móstoles",Edad media de la población,2023,44.2
+28092,"Móstoles",Edad media de la población,2024,44.5
+03065,"Elx/Elche",Porcentaje de población de 65 y más años,2015,15.6
+03065,"Elx/Elche",Porcentaje de población de 65 y más años,2016,16
+03065,"Elx/Elche",Porcentaje de población de 65 y más años,2017,16.4
+03065,"Elx/Elche",Porcentaje de población de 65 y más años,2018,16.7
+03065,"Elx/Elche",Porcentaje de población de 65 y más años,2019,16.9
+03065,"Elx/Elche",Porcentaje de población de 65 y más años,2020,17.4
+03065,"Elx/Elche",Porcentaje de población de 65 y más años,2021,17.8
+03065,"Elx/Elche",Porcentaje de población de 65 y más años,2022,18.1
+03065,"Elx/Elche",Porcentaje de población de 65 y más años,2023,18.5
+03065,"Elx/Elche",Porcentaje de población de 65 y más años,2024,18.8
+38038,"Santa Cruz de Tenerife",Tamaño medio del hogar,2015,2.51
+38038,"Santa Cruz de Tenerife",Tamaño medio del hogar,2016,2.53
+38038,"Santa Cruz de Tenerife",Tamaño medio del hogar,2017,2.52
+38038,"Santa Cruz de Tenerife",Tamaño medio del hogar,2018,2.53
+38038,"Santa Cruz de Tenerife",Tamaño medio del hogar,2019,2.56
+38038,"Santa Cruz de Tenerife",Tamaño medio del hogar,2020,2.55
+38038,"Santa Cruz de Tenerife",Tamaño medio del hogar,2021,2.54
+38038,"Santa Cruz de Tenerife",Tamaño medio del hogar,2022,2.53
+38038,"Santa Cruz de Tenerife",Tamaño medio del hogar,2023,2.54
+38038,"Santa Cruz de Tenerife",Tamaño medio del hogar,2024,2.54
+08019,"Barcelona",Porcentaje de población de 65 y más años,2015,21.6
+08019,"Barcelona",Porcentaje de población de 65 y más años,2016,21.7
+08019,"Barcelona",Porcentaje de población de 65 y más años,2017,21.6
+08019,"Barcelona",Porcentaje de población de 65 y más años,2018,21.5
+08019,"Barcelona",Porcentaje de población de 65 y más años,2019,21.5
+08019,"Barcelona",Porcentaje de población de 65 y más años,2020,21.5
+08019,"Barcelona",Porcentaje de población de 65 y más años,2021,21.7
+08019,"Barcelona",Porcentaje de población de 65 y más años,2022,21.5
+08019,"Barcelona",Porcentaje de población de 65 y más años,2023,21.5
+08019,"Barcelona",Porcentaje de población de 65 y más años,2024,21.5
+47186,"Valladolid",Porcentaje de población de 65 y más años,2015,24.3
+47186,"Valladolid",Porcentaje de población de 65 y más años,2016,24.9
+47186,"Valladolid",Porcentaje de población de 65 y más años,2017,25.4
+47186,"Valladolid",Porcentaje de población de 65 y más años,2018,25.9
+47186,"Valladolid",Porcentaje de población de 65 y más años,2019,26.3
+47186,"Valladolid",Porcentaje de población de 65 y más años,2020,26.6
+47186,"Valladolid",Porcentaje de población de 65 y más años,2021,27.2
+47186,"Valladolid",Porcentaje de población de 65 y más años,2022,27.5
+47186,"Valladolid",Porcentaje de población de 65 y más años,2023,27.8
+47186,"Valladolid",Porcentaje de población de 65 y más años,2024,28.2
+30030,"Murcia",Porcentaje de población de 65 y más años,2015,15.1
+30030,"Murcia",Porcentaje de población de 65 y más años,2016,15.3
+30030,"Murcia",Porcentaje de población de 65 y más años,2017,15.4
+30030,"Murcia",Porcentaje de población de 65 y más años,2018,15.6
+30030,"Murcia",Porcentaje de población de 65 y más años,2019,15.8
+30030,"Murcia",Porcentaje de población de 65 y más años,2020,16
+30030,"Murcia",Porcentaje de población de 65 y más años,2021,16.2
+30030,"Murcia",Porcentaje de población de 65 y más años,2022,16.4
+30030,"Murcia",Porcentaje de población de 65 y más años,2023,16.7
+30030,"Murcia",Porcentaje de población de 65 y más años,2024,17.1
+28092,"Móstoles",Porcentaje de población menor de 18 años,2015,16.8
+28092,"Móstoles",Porcentaje de población menor de 18 años,2016,17
+28092,"Móstoles",Porcentaje de población menor de 18 años,2017,17.1
+28092,"Móstoles",Porcentaje de población menor de 18 años,2018,17.1
+28092,"Móstoles",Porcentaje de población menor de 18 años,2019,17
+28092,"Móstoles",Porcentaje de población menor de 18 años,2020,16.9
+28092,"Móstoles",Porcentaje de población menor de 18 años,2021,16.8
+28092,"Móstoles",Porcentaje de población menor de 18 años,2022,16.6
+28092,"Móstoles",Porcentaje de población menor de 18 años,2023,16.3
+28092,"Móstoles",Porcentaje de población menor de 18 años,2024,15.9
+03065,"Elx/Elche",Tamaño medio del hogar,2015,2.73
+03065,"Elx/Elche",Tamaño medio del hogar,2016,2.72
+03065,"Elx/Elche",Tamaño medio del hogar,2017,2.72
+03065,"Elx/Elche",Tamaño medio del hogar,2018,2.71
+03065,"Elx/Elche",Tamaño medio del hogar,2019,2.71
+03065,"Elx/Elche",Tamaño medio del hogar,2020,2.69
+03065,"Elx/Elche",Tamaño medio del hogar,2021,2.66
+03065,"Elx/Elche",Tamaño medio del hogar,2022,2.65
+03065,"Elx/Elche",Tamaño medio del hogar,2023,2.65
+03065,"Elx/Elche",Tamaño medio del hogar,2024,2.65
+08019,"Barcelona",Tamaño medio del hogar,2015,2.41
+08019,"Barcelona",Tamaño medio del hogar,2016,2.39
+08019,"Barcelona",Tamaño medio del hogar,2017,2.36
+08019,"Barcelona",Tamaño medio del hogar,2018,2.38
+08019,"Barcelona",Tamaño medio del hogar,2019,2.39
+08019,"Barcelona",Tamaño medio del hogar,2020,2.38
+08019,"Barcelona",Tamaño medio del hogar,2021,2.36
+08019,"Barcelona",Tamaño medio del hogar,2022,2.36
+08019,"Barcelona",Tamaño medio del hogar,2023,2.38
+08019,"Barcelona",Tamaño medio del hogar,2024,2.41
+47186,"Valladolid",Tamaño medio del hogar,2015,2.4
+47186,"Valladolid",Tamaño medio del hogar,2016,2.38
+47186,"Valladolid",Tamaño medio del hogar,2017,2.36
+47186,"Valladolid",Tamaño medio del hogar,2018,2.35
+47186,"Valladolid",Tamaño medio del hogar,2019,2.34
+47186,"Valladolid",Tamaño medio del hogar,2020,2.33
+47186,"Valladolid",Tamaño medio del hogar,2021,2.3
+47186,"Valladolid",Tamaño medio del hogar,2022,2.29
+47186,"Valladolid",Tamaño medio del hogar,2023,2.28
+47186,"Valladolid",Tamaño medio del hogar,2024,2.27
+30030,"Murcia",Tamaño medio del hogar,2015,2.85
+30030,"Murcia",Tamaño medio del hogar,2016,2.84
+30030,"Murcia",Tamaño medio del hogar,2017,2.83
+30030,"Murcia",Tamaño medio del hogar,2018,2.82
+30030,"Murcia",Tamaño medio del hogar,2019,2.82
+30030,"Murcia",Tamaño medio del hogar,2020,2.81
+30030,"Murcia",Tamaño medio del hogar,2021,2.79
+30030,"Murcia",Tamaño medio del hogar,2022,2.77
+30030,"Murcia",Tamaño medio del hogar,2023,2.75
+30030,"Murcia",Tamaño medio del hogar,2024,2.74
+28092,"Móstoles",Porcentaje de población de 65 y más años,2015,17
+28092,"Móstoles",Porcentaje de población de 65 y más años,2016,17.9
+28092,"Móstoles",Porcentaje de población de 65 y más años,2017,19
+28092,"Móstoles",Porcentaje de población de 65 y más años,2018,19.9
+28092,"Móstoles",Porcentaje de población de 65 y más años,2019,20.7
+28092,"Móstoles",Porcentaje de población de 65 y más años,2020,21.4
+28092,"Móstoles",Porcentaje de población de 65 y más años,2021,22
+28092,"Móstoles",Porcentaje de población de 65 y más años,2022,22.5
+28092,"Móstoles",Porcentaje de población de 65 y más años,2023,23
+28092,"Móstoles",Porcentaje de población de 65 y más años,2024,23.4
+08101,"Hospitalet de Llobregat, L'",Edad media de la población,2015,42.7
+08101,"Hospitalet de Llobregat, L'",Edad media de la población,2016,42.7
+08101,"Hospitalet de Llobregat, L'",Edad media de la población,2017,42.7
+08101,"Hospitalet de Llobregat, L'",Edad media de la población,2018,42.7
+08101,"Hospitalet de Llobregat, L'",Edad media de la población,2019,42.7
+08101,"Hospitalet de Llobregat, L'",Edad media de la población,2020,43
+08101,"Hospitalet de Llobregat, L'",Edad media de la población,2021,43.1
+08101,"Hospitalet de Llobregat, L'",Edad media de la población,2022,42.9
+08101,"Hospitalet de Llobregat, L'",Edad media de la población,2023,42.8
+08101,"Hospitalet de Llobregat, L'",Edad media de la población,2024,42.7
+28092,"Móstoles",Tamaño medio del hogar,2015,2.79
+28092,"Móstoles",Tamaño medio del hogar,2016,2.78
+28092,"Móstoles",Tamaño medio del hogar,2017,2.78
+28092,"Móstoles",Tamaño medio del hogar,2018,2.78
+28092,"Móstoles",Tamaño medio del hogar,2019,2.78
+28092,"Móstoles",Tamaño medio del hogar,2020,2.75
+28092,"Móstoles",Tamaño medio del hogar,2021,2.73
+28092,"Móstoles",Tamaño medio del hogar,2022,2.72
+28092,"Móstoles",Tamaño medio del hogar,2023,2.72
+28092,"Móstoles",Tamaño medio del hogar,2024,2.72
+08101,"Hospitalet de Llobregat, L'",Porcentaje de población menor de 18 años,2015,16.7
+08101,"Hospitalet de Llobregat, L'",Porcentaje de población menor de 18 años,2016,16.8
+08101,"Hospitalet de Llobregat, L'",Porcentaje de población menor de 18 años,2017,16.8
+08101,"Hospitalet de Llobregat, L'",Porcentaje de población menor de 18 años,2018,16.7
+08101,"Hospitalet de Llobregat, L'",Porcentaje de población menor de 18 años,2019,16.7
+08101,"Hospitalet de Llobregat, L'",Porcentaje de población menor de 18 años,2020,16.6
+08101,"Hospitalet de Llobregat, L'",Porcentaje de población menor de 18 años,2021,16.5
+08101,"Hospitalet de Llobregat, L'",Porcentaje de población menor de 18 años,2022,16.3
+08101,"Hospitalet de Llobregat, L'",Porcentaje de población menor de 18 años,2023,16
+08101,"Hospitalet de Llobregat, L'",Porcentaje de población menor de 18 años,2024,15.9
+08101,"Hospitalet de Llobregat, L'",Porcentaje de población de 65 y más años,2015,20.5
+08101,"Hospitalet de Llobregat, L'",Porcentaje de población de 65 y más años,2016,20.4
+08101,"Hospitalet de Llobregat, L'",Porcentaje de población de 65 y más años,2017,20.3
+08101,"Hospitalet de Llobregat, L'",Porcentaje de población de 65 y más años,2018,20.2
+08101,"Hospitalet de Llobregat, L'",Porcentaje de población de 65 y más años,2019,20
+08101,"Hospitalet de Llobregat, L'",Porcentaje de población de 65 y más años,2020,20.1
+08101,"Hospitalet de Llobregat, L'",Porcentaje de población de 65 y más años,2021,20.1
+08101,"Hospitalet de Llobregat, L'",Porcentaje de población de 65 y más años,2022,19.5
+08101,"Hospitalet de Llobregat, L'",Porcentaje de población de 65 y más años,2023,19.2
+08101,"Hospitalet de Llobregat, L'",Porcentaje de población de 65 y más años,2024,18.9
+08101,"Hospitalet de Llobregat, L'",Tamaño medio del hogar,2015,2.63
+08101,"Hospitalet de Llobregat, L'",Tamaño medio del hogar,2016,2.64
+08101,"Hospitalet de Llobregat, L'",Tamaño medio del hogar,2017,2.64
+08101,"Hospitalet de Llobregat, L'",Tamaño medio del hogar,2018,2.66
+08101,"Hospitalet de Llobregat, L'",Tamaño medio del hogar,2019,2.68
+08101,"Hospitalet de Llobregat, L'",Tamaño medio del hogar,2020,2.66
+08101,"Hospitalet de Llobregat, L'",Tamaño medio del hogar,2021,2.64
+08101,"Hospitalet de Llobregat, L'",Tamaño medio del hogar,2022,2.7
+08101,"Hospitalet de Llobregat, L'",Tamaño medio del hogar,2023,2.71
+08101,"Hospitalet de Llobregat, L'",Tamaño medio del hogar,2024,2.77
+08187,"Sabadell",Edad media de la población,2015,41.4
+08187,"Sabadell",Edad media de la población,2016,41.6
+08187,"Sabadell",Edad media de la población,2017,41.7
+08187,"Sabadell",Edad media de la población,2018,41.8
+08187,"Sabadell",Edad media de la población,2019,41.9
+08187,"Sabadell",Edad media de la población,2020,42.1
+08187,"Sabadell",Edad media de la población,2021,42.3
+08187,"Sabadell",Edad media de la población,2022,42.5
+08187,"Sabadell",Edad media de la población,2023,42.6
+08187,"Sabadell",Edad media de la población,2024,42.7
+08187,"Sabadell",Porcentaje de población menor de 18 años,2015,19.2
+08187,"Sabadell",Porcentaje de población menor de 18 años,2016,19.2
+08187,"Sabadell",Porcentaje de población menor de 18 años,2017,19.3
+08187,"Sabadell",Porcentaje de población menor de 18 años,2018,19.2
+08187,"Sabadell",Porcentaje de población menor de 18 años,2019,19
+08187,"Sabadell",Porcentaje de población menor de 18 años,2020,18.8
+08187,"Sabadell",Porcentaje de población menor de 18 años,2021,18.7
+08187,"Sabadell",Porcentaje de población menor de 18 años,2022,18.4
+08187,"Sabadell",Porcentaje de población menor de 18 años,2023,18.1
+08187,"Sabadell",Porcentaje de población menor de 18 años,2024,17.7
+08187,"Sabadell",Porcentaje de población de 65 y más años,2015,18.2
+08187,"Sabadell",Porcentaje de población de 65 y más años,2016,18.4
+08187,"Sabadell",Porcentaje de población de 65 y más años,2017,18.5
+08187,"Sabadell",Porcentaje de población de 65 y más años,2018,18.5
+08187,"Sabadell",Porcentaje de población de 65 y más años,2019,18.5
+08187,"Sabadell",Porcentaje de población de 65 y más años,2020,18.6
+08187,"Sabadell",Porcentaje de población de 65 y más años,2021,18.8
+08187,"Sabadell",Porcentaje de población de 65 y más años,2022,19
+08187,"Sabadell",Porcentaje de población de 65 y más años,2023,19.1
+08187,"Sabadell",Porcentaje de población de 65 y más años,2024,19.2
+08187,"Sabadell",Tamaño medio del hogar,2015,2.57
+08187,"Sabadell",Tamaño medio del hogar,2016,2.58
+08187,"Sabadell",Tamaño medio del hogar,2017,2.58
+08187,"Sabadell",Tamaño medio del hogar,2018,2.58
+08187,"Sabadell",Tamaño medio del hogar,2019,2.6
+08187,"Sabadell",Tamaño medio del hogar,2020,2.6
+08187,"Sabadell",Tamaño medio del hogar,2021,2.56
+08187,"Sabadell",Tamaño medio del hogar,2022,2.56
+08187,"Sabadell",Tamaño medio del hogar,2023,2.57
+08187,"Sabadell",Tamaño medio del hogar,2024,2.57
+08279,"Terrassa",Edad media de la población,2015,40.3
+08279,"Terrassa",Edad media de la población,2016,40.5
+08279,"Terrassa",Edad media de la población,2017,40.7
+08279,"Terrassa",Edad media de la población,2018,40.8
+08279,"Terrassa",Edad media de la población,2019,41.1
+08279,"Terrassa",Edad media de la población,2020,41.3
+08279,"Terrassa",Edad media de la población,2021,41.6
+08279,"Terrassa",Edad media de la población,2022,41.8
+08279,"Terrassa",Edad media de la población,2023,41.9
+08279,"Terrassa",Edad media de la población,2024,42.1
+08279,"Terrassa",Porcentaje de población menor de 18 años,2015,20.3
+08279,"Terrassa",Porcentaje de población menor de 18 años,2016,20.3
+08279,"Terrassa",Porcentaje de población menor de 18 años,2017,20.3
+08279,"Terrassa",Porcentaje de población menor de 18 años,2018,20.1
+08279,"Terrassa",Porcentaje de población menor de 18 años,2019,19.9
+08279,"Terrassa",Porcentaje de población menor de 18 años,2020,19.6
+08279,"Terrassa",Porcentaje de población menor de 18 años,2021,19.4
+08279,"Terrassa",Porcentaje de población menor de 18 años,2022,19
+08279,"Terrassa",Porcentaje de población menor de 18 años,2023,18.7
+08279,"Terrassa",Porcentaje de población menor de 18 años,2024,18.1
+46250,"València",Edad media de la población,2015,43.4
+46250,"València",Edad media de la población,2016,43.6
+46250,"València",Edad media de la población,2017,43.7
+46250,"València",Edad media de la población,2018,43.8
+46250,"València",Edad media de la población,2019,44
+46250,"València",Edad media de la población,2020,44.4
+46250,"València",Edad media de la población,2021,44.5
+46250,"València",Edad media de la población,2022,44.4
+46250,"València",Edad media de la población,2023,44.3
+46250,"València",Edad media de la población,2024,44.4
+08279,"Terrassa",Porcentaje de población de 65 y más años,2015,16.4
+08279,"Terrassa",Porcentaje de población de 65 y más años,2016,16.5
+08279,"Terrassa",Porcentaje de población de 65 y más años,2017,16.7
+08279,"Terrassa",Porcentaje de población de 65 y más años,2018,16.8
+08279,"Terrassa",Porcentaje de población de 65 y más años,2019,16.9
+08279,"Terrassa",Porcentaje de población de 65 y más años,2020,17.2
+08279,"Terrassa",Porcentaje de población de 65 y más años,2021,17.4
+08279,"Terrassa",Porcentaje de población de 65 y más años,2022,17.6
+08279,"Terrassa",Porcentaje de población de 65 y más años,2023,17.7
+08279,"Terrassa",Porcentaje de población de 65 y más años,2024,18
+46250,"València",Porcentaje de población menor de 18 años,2015,16.5
+46250,"València",Porcentaje de población menor de 18 años,2016,16.6
+46250,"València",Porcentaje de población menor de 18 años,2017,16.4
+46250,"València",Porcentaje de población menor de 18 años,2018,16.3
+46250,"València",Porcentaje de población menor de 18 años,2019,16.1
+46250,"València",Porcentaje de población menor de 18 años,2020,15.8
+46250,"València",Porcentaje de población menor de 18 años,2021,15.7
+46250,"València",Porcentaje de población menor de 18 años,2022,15.5
+46250,"València",Porcentaje de población menor de 18 años,2023,15.2
+46250,"València",Porcentaje de población menor de 18 años,2024,14.9
+08279,"Terrassa",Tamaño medio del hogar,2015,2.62
+08279,"Terrassa",Tamaño medio del hogar,2016,2.62
+08279,"Terrassa",Tamaño medio del hogar,2017,2.61
+08279,"Terrassa",Tamaño medio del hogar,2018,2.62
+08279,"Terrassa",Tamaño medio del hogar,2019,2.63
+08279,"Terrassa",Tamaño medio del hogar,2020,2.62
+08279,"Terrassa",Tamaño medio del hogar,2021,2.6
+08279,"Terrassa",Tamaño medio del hogar,2022,2.59
+08279,"Terrassa",Tamaño medio del hogar,2023,2.58
+08279,"Terrassa",Tamaño medio del hogar,2024,2.59
+46250,"València",Porcentaje de población de 65 y más años,2015,20.3
+46250,"València",Porcentaje de población de 65 y más años,2016,20.6
+46250,"València",Porcentaje de población de 65 y más años,2017,20.8
+46250,"València",Porcentaje de población de 65 y más años,2018,20.9
+46250,"València",Porcentaje de población de 65 y más años,2019,21
+46250,"València",Porcentaje de población de 65 y más años,2020,21.5
+46250,"València",Porcentaje de población de 65 y más años,2021,21.6
+46250,"València",Porcentaje de población de 65 y más años,2022,21.5
+46250,"València",Porcentaje de población de 65 y más años,2023,21.5
+46250,"València",Porcentaje de población de 65 y más años,2024,21.5
+46250,"València",Tamaño medio del hogar,2015,2.49
+46250,"València",Tamaño medio del hogar,2016,2.49
+46250,"València",Tamaño medio del hogar,2017,2.49
+46250,"València",Tamaño medio del hogar,2018,2.49
+46250,"València",Tamaño medio del hogar,2019,2.49
+46250,"València",Tamaño medio del hogar,2020,2.45
+46250,"València",Tamaño medio del hogar,2021,2.45
+46250,"València",Tamaño medio del hogar,2022,2.45
+46250,"València",Tamaño medio del hogar,2023,2.46
+46250,"València",Tamaño medio del hogar,2024,2.47
