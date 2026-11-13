@@ -8,7 +8,7 @@ RUTA_ARPSI = CARPETA_ENTRADA + "inundaciones_arpsi_municipios.csv"
 RUTA_EVENTOS = CARPETA_ENTRADA + "inundaciones_eventos_municipios_2016_2025.csv"
 RUTA_SALIDA = "data/processed/riesgos_municipios.csv"
 
-ANIO_DESDE, ANIO_HASTA = 2016, 2025
+ANIO_DESDE, ANIO_HASTA = 2021, 2025
 
 # Municipios fuera del anejo de la NCSE-02: aceleración < 0,04 g -> se asume 0,03 g
 ACELERACION_POR_DEFECTO = 0.03
