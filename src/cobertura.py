@@ -9,6 +9,7 @@ RUTA_SALIDA_ANUAL = "data/processed/cobertura_anual.csv"
 RUTA_SALIDA_MUNICIPIOS = "data/processed/cobertura_municipios.csv"
 
 NUM_MUNICIPIOS = 29
+SOLO_ULTIMO_ANIO = True  # solo el último año de los datos (junio más reciente)
 TOLERANCIA = 1e-6        # valores como 1.0000000007 son redondeo de la fuente -> 1
 
 # Nombres de la fuente (sin el "(junio AAAA)") -> nombres cortos
@@ -143,6 +144,8 @@ if __name__ == "__main__":
     bruto = cargar_datos(RUTA_ENTRADA)
     info = nombres_municipios(bruto)
     largo = limpiar(a_formato_largo(bruto))
+    if SOLO_ULTIMO_ANIO:
+        largo = largo[largo["anio"] == largo["anio"].max()].reset_index(drop=True)
     resultado = calcular(largo, info)
 
     anual = (largo.merge(info[["codigo_ine", "municipio"]], on="codigo_ine", how="left")

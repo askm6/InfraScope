@@ -1,18 +1,3 @@
-"""Limpieza de los datos de AEMET y cálculo de indicadores climáticos por municipio.
-
-Lee los JSON descargados por aemet_descarga.py, se queda con los resúmenes
-anuales (fecha "AAAA-13") y calcula, por municipio (media 2016-2025):
-
-  tm_media      temperatura media anual (ºC)            <- tm_mes
-  ta_max_hist   temperatura máxima absoluta (ºC)        <- ta_max (máximo del periodo)
-  hr_media      humedad relativa media (%)              <- hr
-  dias_calor_30 días al año con máxima >= 30 ºC         <- nt_30
-  w_med         velocidad media del viento              <- w_med
-
-Genera data/processed/clima.csv.
-
-Uso:  python src/aemet_limpieza.py
-"""
 
 import re
 import sys
@@ -25,12 +10,19 @@ DIR_AEMET = RAIZ / "data" / "raw" / "aemet"
 RUTA_ASIGNACION = DIR_AEMET / "municipio_estacion.csv"
 RUTA_MENSUAL = DIR_AEMET / "aemet_mensual.csv"
 RUTA_SALIDA = RAIZ / "data" / "processed" / "clima.csv"
+RUTA_EXTREMOS = RAIZ / "data" / "processed" / "clima_extremos.csv"
 
 COL_CODIGO = "codigo_ine"
 COL_NOMBRE = "municipio"
 
-DIST_MAX_KM = 25      # estaciones más lejanas se marcan como dudosas
-MIN_ANIOS = 7         # menos años de datos se marca como dudoso
+DIST_MAX_KM = 25      
+MIN_ANIOS = 1        
+
+# clima.csv: solo el resumen anual del último año de los datos (fecha "AAAA-13")
+# clima_extremos.csv: años con |z-score| >= UMBRAL_Z respecto a la referencia
+ANIO_REF_DESDE, ANIO_REF_HASTA = 2016, 2025
+VARIABLES_EXTREMOS = ["tm_mes", "ta_max", "ta_min", "nt_30"]
+UMBRAL_Z = 1.5
 
 _NUMERO = re.compile(r"-?\d+(?:\.\d+)?")
 
@@ -49,9 +41,29 @@ def leer_anuales(mensual, codigo):
         return pd.DataFrame()
     df = df[df["fecha"].astype(str).str.endswith("-13")].copy()
     df["anio"] = df["fecha"].str[:4].astype(int)
-    for col in ["tm_mes", "ta_max", "hr", "nt_30", "w_med"]:
+    for col in ["tm_mes", "ta_max", "ta_min", "hr", "nt_30", "w_med"]:
         df[col] = df[col].map(a_numero) if col in df else float("nan")
     return df.drop_duplicates("anio")
+
+
+def calcular_extremos(anuales):
+    """Años con subida o bajada extrema (|z| >= UMBRAL_Z) de cada variable por municipio."""
+    ref = anuales[anuales["anio"].between(ANIO_REF_DESDE, ANIO_REF_HASTA)]
+    largo = ref.melt(id_vars=[COL_CODIGO, COL_NOMBRE, "anio"], value_vars=VARIABLES_EXTREMOS,
+                     var_name="variable", value_name="valor").dropna(subset=["valor"])
+    grupo = largo.groupby([COL_CODIGO, "variable"])["valor"]
+    largo["media_municipio"] = grupo.transform("mean")
+    desviacion = grupo.transform("std")
+    largo["anomalia"] = largo["valor"] - largo["media_municipio"]
+    largo["z_score"] = largo["anomalia"] / desviacion.where(desviacion > 0)
+    extremos = largo[largo["z_score"].abs() >= UMBRAL_Z].copy()
+    extremos["tipo"] = extremos["z_score"].map(lambda z: "subida" if z > 0 else "bajada")
+    for col in ["media_municipio", "anomalia"]:
+        extremos[col] = extremos[col].round(2)
+    extremos["z_score"] = extremos["z_score"].round(2)
+    columnas = [COL_CODIGO, COL_NOMBRE, "anio", "variable", "valor",
+                "media_municipio", "anomalia", "z_score", "tipo"]
+    return extremos[columnas].sort_values([COL_CODIGO, "anio", "variable"]).reset_index(drop=True)
 
 
 def main():
@@ -61,14 +73,25 @@ def main():
     mensual = pd.read_csv(RUTA_MENSUAL, dtype=str, encoding="utf-8-sig")
 
     filas = []
+    todos = []
     for _, a in asignacion.iterrows():
         anual = leer_anuales(mensual, a[COL_CODIGO])
         if anual.empty:
             print(f"AVISO: {a[COL_NOMBRE]} sin resúmenes anuales")
             continue
+        todos.append(anual.assign(**{COL_NOMBRE: a[COL_NOMBRE]}))
+    anio_clima = max(int(t["anio"].max()) for t in todos)
+
+    for _, a in asignacion.iterrows():
+        anual = leer_anuales(mensual, a[COL_CODIGO])
+        anual = anual[anual["anio"] == anio_clima] if not anual.empty else anual
+        if anual.empty:
+            print(f"AVISO: {a[COL_NOMBRE]} sin resumen anual de {anio_clima}")
+            continue
         filas.append({
             COL_CODIGO: a[COL_CODIGO],
             COL_NOMBRE: a[COL_NOMBRE],
+            "anio": anio_clima,
             "indicativo": a["indicativo"],
             "estacion": a["estacion"],
             "distancia_km": a["distancia_km"],
@@ -85,7 +108,12 @@ def main():
     clima["dato_dudoso"] = (clima["distancia_km"] > DIST_MAX_KM) | (clima["n_anios"] < MIN_ANIOS)
     RUTA_SALIDA.parent.mkdir(parents=True, exist_ok=True)
     clima.to_csv(RUTA_SALIDA, index=False, encoding="utf-8-sig")
-    print(f"Guardado {RUTA_SALIDA.relative_to(RAIZ)} ({len(clima)} municipios)\n")
+    print(f"Guardado {RUTA_SALIDA.relative_to(RAIZ)} ({len(clima)} municipios, año {anio_clima})")
+
+    extremos = calcular_extremos(pd.concat(todos, ignore_index=True))
+    extremos.to_csv(RUTA_EXTREMOS, index=False, encoding="utf-8-sig")
+    print(f"Guardado {RUTA_EXTREMOS.relative_to(RAIZ)} ({len(extremos)} años extremos, "
+          f"referencia {ANIO_REF_DESDE}-{ANIO_REF_HASTA}, |z| >= {UMBRAL_Z})\n")
 
     # ---- comprobaciones rápidas
     columnas = [COL_NOMBRE, "estacion", "distancia_km", "n_anios",

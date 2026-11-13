@@ -12,7 +12,7 @@ RUTA_MUNICIPIOS = "data/processed/municipios.csv"     # lista maestra: código y
 RUTA_SALIDA_ANUAL = "data/processed/socioeconomico_anual.csv"
 RUTA_SALIDA_MUNICIPIOS = "data/processed/socioeconomico_municipios.csv"
 
-ANIO_INICIO = 2016
+ANIO_INICIO = 2023
 ANIO_FIN = 2025
 NUM_MUNICIPIOS = 29
 

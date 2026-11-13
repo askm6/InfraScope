@@ -4,8 +4,9 @@ import pandas as pd
 RUTA_ENTRADA = "data/raw/agua/embalses_semanal_2016_2026.csv"
 RUTA_SALIDA_EMBALSES = "data/processed/embalses_semanal_limpio.csv"
 RUTA_SALIDA_CUENCAS = "data/processed/cuencas_semanal.csv"
+RUTA_SALIDA_PICOS = "data/processed/cuencas_picos_llenado.csv"   # con TODOS los años
 MINIMO_CAPACIDAD_HM3 = 100          # embalses "grandes" (hm³ = 1.000 millones de litros)
-ANIO_DESDE = None                   # p.ej. 2020 para quedarse solo con los últimos años
+SEMANAS = 4                         # últimas semanas, contadas desde la última fecha de los datos
 
 
 def cargar_datos(ruta):
@@ -24,14 +25,16 @@ def cargar_datos(ruta):
     return df
 
 
-def limpiar(df, anio_desde=None):
+def limpiar(df, semanas=None):
     """Quita filas inválidas, duplicados y corrige reservas imposibles."""
     df = df.dropna(subset=["fecha", "embalse", "capacidad_hm3", "reserva_hm3"]).copy()
     df["cuenca"] = df["cuenca"].str.strip()
     df["embalse"] = df["embalse"].str.strip()
 
-    if anio_desde:
-        df = df[df["fecha"].dt.year >= anio_desde]
+    if semanas:
+        # Las últimas N fechas semanales, contando desde la más reciente de los datos
+        ultimas = sorted(df["fecha"].unique())[-semanas:]
+        df = df[df["fecha"].isin(ultimas)]
 
     # Valores imposibles: capacidad <= 0 o reserva negativa
     df = df[(df["capacidad_hm3"] > 0) & (df["reserva_hm3"] >= 0)]
@@ -66,14 +69,37 @@ def resumen_cuencas(df):
     return cuencas.sort_values(["cuenca", "fecha"]).reset_index(drop=True)
 
 
+def picos_llenado(cuencas):
+    """Por cuenca y año, la semana con el % de llenado más alto y la más baja."""
+    df = cuencas.copy()
+    df["anio"] = df["fecha"].dt.year          # año natural (no ISO) de la semana
+    grupo = df.groupby(["cuenca", "anio"])
+    resumen = grupo.agg(media_anual_pct=("llenado_pct", "mean"),
+                        semanas_con_dato=("fecha", "nunique")).reset_index()
+
+    picos = pd.concat([df.loc[grupo["llenado_pct"].idxmax()].assign(tipo="alto"),
+                       df.loc[grupo["llenado_pct"].idxmin()].assign(tipo="bajo")])
+    picos = picos.merge(resumen, on=["cuenca", "anio"], how="left")
+    picos["media_anual_pct"] = picos["media_anual_pct"].round(1)
+    picos["diferencia_vs_media"] = (picos["llenado_pct"] - picos["media_anual_pct"]).round(1)
+    picos["fecha"] = picos["fecha"].dt.strftime("%Y-%m-%d")
+    columnas = ["cuenca", "anio", "tipo", "fecha", "llenado_pct", "reserva_hm3",
+                "capacidad_hm3", "media_anual_pct", "diferencia_vs_media", "semanas_con_dato"]
+    return picos[columnas].sort_values(["cuenca", "anio", "tipo"]).reset_index(drop=True)
+
+
 if __name__ == "__main__":
     bruto = cargar_datos(RUTA_ENTRADA)
-    resultado = calcular(limpiar(bruto, ANIO_DESDE))
+    resultado = calcular(limpiar(bruto, SEMANAS))
     seleccion = resultado[resultado["capacidad_hm3"] >= MINIMO_CAPACIDAD_HM3]
     cuencas = resumen_cuencas(resultado)          # las cuencas con TODOS los embalses
 
     seleccion.to_csv(RUTA_SALIDA_EMBALSES, index=False, encoding="utf-8-sig")
     cuencas.to_csv(RUTA_SALIDA_CUENCAS, index=False, encoding="utf-8-sig")
+
+    # Picos: aquí sí con toda la serie histórica, no solo las últimas semanas
+    picos = picos_llenado(resumen_cuencas(calcular(limpiar(bruto))))
+    picos.to_csv(RUTA_SALIDA_PICOS, index=False, encoding="utf-8-sig")
 
     ultima = resultado["fecha"].max()
     print(f"Periodo: {resultado['fecha'].min():%Y-%m-%d} -> {ultima:%Y-%m-%d}")
@@ -85,4 +111,7 @@ if __name__ == "__main__":
           .sort_values("llenado_pct")[["cuenca", "num_embalses", "capacidad_hm3",
                                        "reserva_hm3", "llenado_pct"]]
           .to_string(index=False))
-    print(f"\nResultado guardado en {RUTA_SALIDA_EMBALSES} y {RUTA_SALIDA_CUENCAS}")
+    print(f"\nPicos de llenado: {len(picos)} filas | {picos['cuenca'].nunique()} cuencas | "
+          f"años {picos['anio'].min()}-{picos['anio'].max()}")
+    print(f"\nResultado guardado en {RUTA_SALIDA_EMBALSES}, {RUTA_SALIDA_CUENCAS} "
+          f"y {RUTA_SALIDA_PICOS}")

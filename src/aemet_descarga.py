@@ -1,22 +1,3 @@
-"""Descarga de datos climáticos de AEMET OpenData por municipio.
-
-1. Descarga el inventario de estaciones climatológicas.
-2. Asigna a cada municipio la estación más cercana (Haversine) que tenga datos.
-3. Descarga los valores climatológicos mensuales/anuales 2016-2025
-   en tramos de 3 años (máximo que permite la API).
-
-Resultados (CSV, separador coma, UTF-8 con BOM, igual que el resto del proyecto):
-  data/raw/aemet/estaciones.csv          inventario de estaciones
-  data/raw/aemet/municipio_estacion.csv  estación asignada a cada municipio
-  data/raw/aemet/aemet_mensual.csv       valores mensuales/anuales por municipio
-
-Las respuestas de la API se guardan además como JSON (caché) en
-data/raw/aemet/: si ya existen no se vuelven a descargar, así que el script se
-puede relanzar si se corta a medias.
-
-Uso:  python src/aemet_descarga.py
-Requiere AEMET_API_KEY en el archivo .env de la raíz del proyecto.
-"""
 
 import json
 import math

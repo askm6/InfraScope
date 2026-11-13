@@ -4,11 +4,14 @@ import pandas as pd
 CARPETA_ENTRADA = "data/raw/energia/"
 RUTA_DEMANDA_CCAA = CARPETA_ENTRADA + "ree_demanda_ccaa_anual.csv"
 RUTA_RENOVABLES_CCAA = CARPETA_ENTRADA + "ree_generacion_renovable_ccaa_anual.csv"
-RUTA_DEMANDA_NACIONAL = CARPETA_ENTRADA + "ree_demanda_nacional_mensual.csv"
-RUTA_CO2_NACIONAL = CARPETA_ENTRADA + "ree_emisiones_co2_mensual.csv"
+RUTA_PRECIOS = CARPETA_ENTRADA + "ree_precios_horarios.csv"   # de src/ree_precios_descarga.py
 
 RUTA_SALIDA_CCAA = "data/processed/energia_ccaa_anual.csv"
-RUTA_SALIDA_NACIONAL = "data/processed/energia_nacional_mensual.csv"
+RUTA_SALIDA_PICOS_PRECIO = "data/processed/energia_picos_precio.csv"
+
+# Datos por comunidad: solo el último año de los datos
+SERIE_PRECIO = "Precio mercado spot"   # la única serie de REE con todos los años (PVPC: desde 2021)
+                                       # los picos de precio usan TODOS los años disponibles
 
 # REE escribe las comunidades sin tildes; las pasamos a los nombres del INE
 # (los mismos que usa poblacion_provincias.csv) para poder cruzar los datos.
@@ -91,40 +94,55 @@ def unir_ccaa(demanda, renovables):
     return df[columnas].sort_values(["ccaa", "anio"]).reset_index(drop=True)
 
 
-def limpiar_mensual(ruta, columna):
-    """Serie nacional mensual (fecha AAAA-MM + un valor)."""
+def picos_precio(ruta):
+    """Por año, el día con el precio medio más alto y el más bajo del mercado eléctrico."""
     df = pd.read_csv(ruta, encoding="utf-8")
-    df["fecha"] = pd.to_datetime(df["fecha"], format="%Y-%m", errors="coerce")
-    df[columna] = pd.to_numeric(df[columna], errors="coerce")
-    df = df.dropna(subset=["fecha", columna])
-    df = df[df[columna] > 0]
-    return df.drop_duplicates(subset=["fecha"])[["fecha", columna]]
+    df = df[df["serie"] == SERIE_PRECIO].copy()
+    df["precio_eur_mwh"] = pd.to_numeric(df["precio_eur_mwh"], errors="coerce")
+    # Hora local española; hasta 2024 hay un dato por hora y desde 2025 uno cada 15 min
+    df["momento"] = pd.to_datetime(df["datetime"], utc=True, errors="coerce").dt.tz_convert("Europe/Madrid")
+    df = df.dropna(subset=["momento", "precio_eur_mwh"])
+    df = df.drop_duplicates(subset=["momento"])
+    df["fecha"] = df["momento"].dt.date
 
+    diario = df.groupby("fecha", as_index=False).agg(precio_eur_mwh=("precio_eur_mwh", "mean"))
+    diario["fecha"] = pd.to_datetime(diario["fecha"])
+    diario["anio"] = diario["fecha"].dt.year
+    resumen = diario.groupby("anio").agg(media_anual_eur_mwh=("precio_eur_mwh", "mean"),
+                                         dias_con_dato=("fecha", "nunique"))
 
-def unir_nacional(demanda, co2):
-    """Demanda y emisiones de CO₂ del sistema eléctrico, mes a mes."""
-    df = demanda.merge(co2, on="fecha", how="outer").sort_values("fecha")
-    df["anio"] = df["fecha"].dt.year
-    df["mes"] = df["fecha"].dt.month
-    df["fecha"] = df["fecha"].dt.strftime("%Y-%m")
-    return df[["fecha", "anio", "mes", "demanda_mwh", "emisiones_tco2"]].reset_index(drop=True)
+    filas = []
+    for tipo, indices in [("alto", diario.groupby("anio")["precio_eur_mwh"].idxmax()),
+                          ("bajo", diario.groupby("anio")["precio_eur_mwh"].idxmin())]:
+        picos = diario.loc[indices].assign(tipo=tipo)
+        filas.append(picos)
+    picos = pd.concat(filas).merge(resumen, on="anio", how="left")
+    picos["diferencia_vs_media"] = picos["precio_eur_mwh"] - picos["media_anual_eur_mwh"]
+    for col in ["precio_eur_mwh", "media_anual_eur_mwh", "diferencia_vs_media"]:
+        picos[col] = picos[col].round(2)
+    picos["fecha"] = picos["fecha"].dt.strftime("%Y-%m-%d")
+    picos["serie"] = SERIE_PRECIO
+    columnas = ["anio", "tipo", "fecha", "precio_eur_mwh", "media_anual_eur_mwh",
+                "diferencia_vs_media", "dias_con_dato", "serie"]
+    return picos[columnas].sort_values(["anio", "tipo"]).reset_index(drop=True)
 
 
 if __name__ == "__main__":
     ccaa = unir_ccaa(limpiar_demanda_ccaa(RUTA_DEMANDA_CCAA),
                      limpiar_renovables_ccaa(RUTA_RENOVABLES_CCAA))
-    nacional = unir_nacional(limpiar_mensual(RUTA_DEMANDA_NACIONAL, "demanda_mwh"),
-                             limpiar_mensual(RUTA_CO2_NACIONAL, "emisiones_tco2"))
+
+    # Solo datos recientes: último año por comunidad
+    ccaa = ccaa[ccaa["anio"] == ccaa["anio"].max()].reset_index(drop=True)
 
     ccaa.to_csv(RUTA_SALIDA_CCAA, index=False, encoding="utf-8-sig")
-    nacional.to_csv(RUTA_SALIDA_NACIONAL, index=False, encoding="utf-8-sig")
+
+    picos = picos_precio(RUTA_PRECIOS)
+    picos.to_csv(RUTA_SALIDA_PICOS_PRECIO, index=False, encoding="utf-8-sig")
 
     ultimo = ccaa["anio"].max()
     print(f"Comunidades: {ccaa['ccaa'].nunique()} | años {ccaa['anio'].min()}-{ultimo} "
           f"| filas: {len(ccaa)}")
-    print(f"Meses nacionales: {len(nacional)} ({nacional['fecha'].iloc[0]} -> "
-          f"{nacional['fecha'].iloc[-1]})")
-    huecos = ccaa.isna().sum().sum() + nacional.isna().sum().sum()
+    huecos = ccaa.isna().sum().sum()
     if huecos:
         print(f"Aviso: {huecos} valores vacíos tras unir las tablas")
 
@@ -135,7 +153,7 @@ if __name__ == "__main__":
             "autoabastecimiento_pct"]]
           .to_string(index=False))
 
-    anual = nacional.groupby("anio")[["demanda_mwh", "emisiones_tco2"]].sum()
-    print("\nTotales nacionales por año (MWh y t CO₂):")
-    print(anual.round(0).to_string())
-    print(f"\nResultado guardado en {RUTA_SALIDA_CCAA} y {RUTA_SALIDA_NACIONAL}")
+    print(f"\nPicos de precio diario ({SERIE_PRECIO}, €/MWh) por año:")
+    print(picos.pivot(index="anio", columns="tipo", values=["fecha", "precio_eur_mwh"])
+               .to_string())
+    print(f"\nResultado guardado en {RUTA_SALIDA_CCAA} y {RUTA_SALIDA_PICOS_PRECIO}")
