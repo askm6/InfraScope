@@ -1,0 +1,1037 @@
+﻿osm_id,nombre,operador,voltaje_v,voltaje_max_kv,tipo,latitud,longitud
+way/23882397,Subestación de Majadahonda,Red Eléctrica de España,220000;132000,220,transmission,40.44848,-3.88364
+way/24378549,Subestación eléctrica de Aravaca,,220000;20000,220,distribution,40.46461,-3.80615
+way/24791388,Subestación eléctrica de Fuencarral,Iberdrola,400000;220000,400,transmission,40.51955,-3.67192
+way/26504405,Central tresformadora de Tresona,EDP,220000;132000,220,transmission,43.55151,-5.86715
+way/27475313,Subestación Eléctrica Ventas del Batán,Iberdrola,220000;45000,220,transmission,40.40026,-3.76178
+way/27668869,Subestación de Galapagar,Red Eléctrica de España,400000,400,transmission,40.59822,-4.00502
+way/27937443,Subestación de Coslada,Red Eléctrica de España,220000;45000,220,transmission,40.42230,-3.57507
+way/27949649,Subestación de Moraleja,Red Eléctrica de España,400000;220000,400,transmission,40.25996,-3.87508
+way/28048116,Subestación Leganés,Red Eléctrica de España,220000,220,transmission,40.31374,-3.77646
+way/28308003,Subestación de San Sebastián,Red Eléctrica de España,400000;220000,400,transmission,40.56599,-3.59602
+way/28400958,Subestación de Tres Cantos,Red Eléctrica de España,220000;66000,220,transmission,40.61695,-3.70559
+way/28401434,SET Arroyo de la Vega,,220000,220,transmission,40.53605,-3.59677
+way/28491137,Subestación de Valdemoro,Red Eléctrica de España,220000,220,distribution,40.16304,-3.64430
+way/28526821,SE Hornillo,Adif,220000;50000,220,traction,40.27599,-3.71075
+way/28602711,Subestación de La Fortuna,Red Eléctrica de España,220000;45000,220,transmission,40.34680,-3.78325
+way/28683005,Subestación de Villaviciosa,Red Eléctrica de España;UFD,400000,400,transmission,40.34701,-3.90544
+way/28683269,SET Retamar,Red Eléctrica de España,220000;45000,220,distribution,40.33485,-3.72308
+way/30643892,Subestación Eléctrica de la Casa de Campo,,220000,220,transition,40.43406,-3.74212
+way/43842955,Subestación Soto de Ribera,Red Eléctrica de España,400000;220000;132000,400,transmission,43.31374,-5.88682
+way/44716497,Subestación del Astillero,,220000;66000,220,transmission,43.39598,-3.82692
+way/46922274,Subestación de Cacicedo,,220000;66000,220,transmission,43.43603,-3.86744
+way/47367769,ST Villamayor,Red Eléctrica de España,220000,220,transmission,40.98916,-5.68881
+way/47842260,Subestación Eléctrica de Herrera,Red Eléctrica de España,400000;220000,400,transmission,42.59483,-4.34328
+way/47895778,Subestación de la Central Hidroeléctrica de Aldeadávila,Red Eléctrica de España,220000,220,generation,41.20886,-6.68636
+way/47911346,Subestación de Aldeadávila II,Red Eléctrica de España,400000,400,transmission,41.20773,-6.67876
+way/48304858,Subestación de Villalbilla de Burgos,Red Eléctrica de España,220000,220,transmission,42.34099,-3.78059
+way/48310486,SE Vallejera,,220000,220,transmission,42.16864,-4.16942
+way/48467553,Subestación Villímar,Red Eléctrica de España,220000,220,transmission,42.37189,-3.65156
+way/51188420,Central Eléctrica de Alcántara,Iberdrola,400000;220000;45000,400,transmission,39.72432,-6.87721
+way/51822825,Subestación de Aguayo,Red Eléctrica de España,400000;220000,400,transmission,43.11955,-4.01994
+way/52516392,SE Villameca,Red Eléctrica de España,400000,400,transmission,42.63170,-6.04093
+way/56137765,Subestación de Penagos,Red Eléctrica de España,220000,220,transmission,43.34603,-3.82585
+way/58928252,Subestación de Montearenas,Red Eléctrica de España,400000;220000,400,transmission,42.57290,-6.55022
+way/60063660,Subestación Eléctrica Virtus,Red Eléctrica de España,400000,400,transmission,43.00234,-3.84523
+way/60354466,Subestación Pazos de Borben,Red Eléctrica de España,220000;132000;66000,220,transmission,42.26303,-8.59000
+way/60354472,Subestación Eléctrica de Lourizán,,220000,220,transmission,42.41740,-8.66488
+way/61046626,SET Hornillos,,220000,220,generation,41.99807,-4.26915
+way/69311230,Subestación Eléctrica de Cornatelo,,220000,220,generation,42.47071,-6.81468
+way/73511619,Subestación Eléctrica La Aparecida,Grupo Ibereólica Renovables,400000;220000;45000,400,transmission,42.03356,-6.86205
+way/73683435,Subestación de Lubián,Red Eléctrica de España,220000;45000,220,transmission,42.03897,-6.89302
+way/74384031,Subestación de La Mudarra,Red Eléctrica de España,400000;220000,400,transmission,41.78964,-4.93661
+way/75807571,SE Parque Eólico El Pedrón II,,220000,220,generation,42.43157,-6.39881
+way/81152317,Subestacion de Vilecha,Red Eléctrica de España,400000;132000;45000,400,transmission,42.55267,-5.57560
+way/84526032,Subestación de Cedillo,Red Eléctrica de España,400000,400,transmission,39.66433,-7.53326
+way/84883895,Subestación Eléctrica de Santiago de Compostela,,220000;66000;20000,220,transmission,42.85470,-8.57823
+way/85674553,SET Parque Eólico El Carrasquillo,,220000,220,generation,42.20719,-4.21398
+way/85817031,SET Valdepero,,220000,220,generation,42.06786,-4.53585
+way/85817084,Subestación eléctrica de Grijota 440 kV,Red Eléctrica de España,400000;220000,400,transmission,42.07169,-4.55574
+way/91441017,Subestación de Almaraz,Red Eléctrica de España,220000;132000;66000,220,transmission,39.82117,-5.66553
+way/93387439,Subestación Atios,Gas Natural Fenosa,220000;132000;15000,220,transmission,42.13792,-8.62152
+way/100661083,Subestación Central Hidroelectrica Ricobayo,Iberdrola,220000;132000;45000,220,transmission,41.52558,-5.98536
+way/101078312,Subestación Eléctrica de Santo Agostiño,Red Eléctrica de España,220000;45000,220,transmission,42.15349,-7.06298
+way/101953901,Subestación de La Cereal,Red Eléctrica de España,400000,400,transmission,40.60058,-3.72309
+way/103158873,Subestación Eléctrica da Pobra de Trives,Red Eléctrica de España,400000;220000,400,transmission,42.34430,-7.28112
+way/103511952,La Lomba,Red Eléctrica de España,400000;220000,400,transmission,42.58572,-6.62415
+way/104025895,Las Ondinas,Red Eléctrica de España,220000,220,transmission,42.84279,-6.46968
+way/104026138,Subestación Eléctrica de Villablino (Sosas de Laciana),Unión Fenosa Distribución,220000;33000,220,distribution,42.93911,-6.28771
+way/104370242,Subestación Eléctrica do Mesón do Vento,Red Eléctrica de España,400000;220000,400,transmission,43.16705,-8.35579
+way/104730022,Subestación Eléctrica Ponte Bibei,REE;Iberdrola,220000,220,transmission,42.31445,-7.22279
+way/108259909,ST Carcedo,,220000,220,generation,42.27665,-3.60293
+way/108312093,SET Sidegasa,,220000;66000,220,distribution,43.15144,-8.02352
+way/116944631,Subestação de Canelas,REN,220000;60000,220,transmission,41.06887,-8.60997
+way/117973689,Subestación El Castre,,220000;30000,220,generation,41.95428,-4.71573
+way/118057369,Subestacion de Velilla del Río Carrión,Red Eléctrica de España,400000,400,transmission,42.82195,-4.85826
+way/118641117,SET Cillamajor,,220000,220,transmission,42.86803,-4.26112
+way/118758874,Central Térmica de Velilla,Red Eléctrica de España,400000;220000;132000,400,transmission,42.81853,-4.85233
+way/121159140,Subestação de Penamacor,Lestenergia,220000;60000,220,transmission,40.23968,-7.21962
+way/124722161,Subestação de Recarei,REN,400000;220000;60000,400,transmission,41.15689,-8.45421
+way/126366408,Posto de Corte de Urrô,REN,220000,220,switching,41.19037,-8.33782
+way/127205502,Subestação do Pocinho,REN,220000;60000,220,transmission,41.13784,-7.12494
+way/127205641,Subestação da Central Hidroelétrica do Pocinho,Energias de Portugal,220000,220,generation,41.13305,-7.11440
+way/127205653,Subestação da Central Hidroelétrica da Valeira,Energias de Portugal,220000,220,generation,41.16106,-7.37302
+way/132865612,Subestação de Riba d'Ave,REN,400000;150000;60000,400,transmission,41.40285,-8.38998
+way/134884956,Subestación de Hinojosa,Red Eléctrica de España,400000,400,transmission,41.01721,-6.73355
+way/135457228,Subestação da Central Hidroelétrica do Alto Lindoso,Energias de Portugal,400000,400,generation,41.86937,-8.20274
+way/135457230,Posto de Corte do Alto Lindoso,REN,400000,400,switching,41.86818,-8.20809
+way/136005929,Subestación de los Melancólicos,Iberdrola,220000;132000,220,distribution,40.40725,-3.72048
+way/137667702,Subestação de Vila Chã,REN,220000;60000,220,transmission,40.44825,-7.73868
+way/138785995,Subestación Central de Quereño,Endesa,220000;33000;20000,220,generation,42.41698,-6.83113
+way/140743482,Subestación de Chantada,UFD,220000;132000;66000;20000,220,transmission,42.62535,-7.76798
+way/140781473,Subestación Eléctrica de Belesar,Red Eléctrica de España,220000,220,transmission,42.62638,-7.71351
+way/142182853,Subestação de Vermoim,REN,400000;220000;60000,400,transmission,41.23045,-8.60481
+way/143483652,Subestación da Central Hidroeléctrica de Castrelo de Miño,,220000,220,generation,42.29162,-8.11369
+way/143483653,Subestación Colectora do Suído (Deva),Red Eléctrica de España,220000;30000,220,transmission,42.26106,-8.26930
+way/143483666,Subestación de Cartelle,Red Eléctrica de España,400000,400,transmission,42.25642,-8.05741
+way/144116982,SET PE La Muñeca,,220000,220,generation,41.91546,-4.74316
+way/144116983,SET Esquileo,,220000;30000,220,generation,41.85742,-4.78912
+way/144116984,Subestación Mudarrita,Red Eléctrica de España,220000,220,transmission,41.78905,-4.94195
+way/144138407,Subestación de Renedo de Esgueva,Iberdrola;Red Eléctrica de España,220000,220,transmission,41.64365,-4.67818
+way/144138410,Subestación Eléctrica de Zaratán,Red Eléctrica de España,220000,220,transmission,41.63862,-4.81293
+way/144138420,Subestación de Olmedo,Red Eléctrica de España,400000,400,transmission,41.32021,-4.72692
+way/144156731,Subestación Eléctrica de Velle,Red Eléctrica de España,220000,220,transmission,42.35780,-7.84876
+way/144297377,Subestación Eléctrica de Tivo,Red Eléctrica de España;Unión Fenosa Distribución,220000;66000,220,transmission,42.58506,-8.64402
+way/144297421,SET Parque Eólico Masgalan,,220000,220,generation,42.60724,-8.26630
+way/144297423,Subestación Eléctrica do Parque Eólico de Ameixeiras e do Testeiros,,220000,220,generation,42.54993,-8.20649
+way/144297426,SET Serra do Cando,,220000,220,generation,42.49009,-8.36743
+way/144297435,Subestación Eléctrica do Parque Eólico Monte Carrio (Monte Castelo),,220000,220,generation,42.74179,-8.15870
+way/144297438,Subestación Eléctrica de Portodemouros,Red Eléctrica de España,220000;66000,220,transmission,42.85381,-8.18967
+way/144306676,Subestación Eléctrica do Tambre II,Unión Fenosa Distribución,220000;66000;20000,220,distribution,42.83249,-8.84547
+way/144306678,Subestación Eléctrica do Tambre II,Red Eléctrica de España,220000,220,transmission,42.83070,-8.84527
+way/144312477,Subestación de Vimianzo,Unión Fenosa Distribución,220000;66000;20000,220,transmission,43.10133,-9.04841
+way/144312479,SET Mazaricos,Red Eléctrica de España,220000;66000,220,transmission,42.89143,-9.02995
+way/144312481,Subestación Eléctrica de Dumbría,Unión Fenosa Distribución,220000;66000,220,transmission,42.98198,-9.08526
+way/144313407,Subestación de Valparaíso,,220000,220,transmission,41.99732,-6.27378
+way/144327151,Subestación de Villalcampo,Red Eléctrica de España,220000,220,transmission,41.49098,-6.08918
+way/144327157,Subestación de Villarino,Red Eléctrica de España,400000;220000,400,transmission,41.25507,-6.48749
+way/144327917,Subestación de Saucelle II,Red Eléctrica de España,400000,400,transmission,41.03477,-6.80339
+way/144374439,Subestação de Carrapatelo,REN,220000;60000,220,transmission,41.08200,-8.12943
+way/144374442,Subestação de Estarreja,REN,220000;60000,220,transmission,40.78602,-8.55482
+way/144377301,Subestação de Custóias,REN,220000;60000,220,transmission,41.19920,-8.64842
+way/144385734,Subestação de Lagoaça,REN,400000;220000,400,transmission,41.21994,-6.73744
+way/144385735,Posto de Corte de Picote,REN,220000,220,switching,41.38301,-6.35391
+way/144385776,Subestação de Miranda,Movhera,220000,220,generation,41.48848,-6.26610
+way/144386243,Subestação de Macedo de Cavaleiros,REN,220000;60000,220,transmission,41.50098,-6.88648
+way/144387430,Subestação de Mogadouro,REN,220000;60000,220,transmission,41.33817,-6.57014
+way/144396412,Subestação de Armamar,REN,400000;220000,400,transmission,41.10180,-7.66240
+way/144396420,Subestação de Valdigem,REN,220000;150000;60000,220,transmission,41.13867,-7.75801
+way/144396428,Subestação da Central Hidroelétrica da Régua,Energias de Portugal,220000,220,generation,41.14755,-7.73794
+way/144398555,Subestação de Vila Pouca de Aguiar,REN,220000;60000,220,transmission,41.47257,-7.62168
+way/144398746,Subestação de São Martinho,Finerge,220000;60000,220,transmission,41.08203,-7.65593
+way/144400130,Subestação do Torrão,REN,220000;60000,220,transmission,41.09398,-8.26192
+way/144432478,Subestação de Chafariz,REN,220000;60000,220,transmission,40.63313,-7.41793
+way/144432485,Subestação de Tração de Sobral,Infraestruturas de Portugal,220000;25000,220,traction,40.61412,-7.25884
+way/144432489,Subestação de Ferro,REN,220000;60000,220,transmission,40.23454,-7.47715
+way/144433994,Subestação de Tração de Gouveia,Infraestruturas de Portugal,220000;25000,220,traction,40.57387,-7.65543
+way/144439469,Subestação de Paraimo,REN,400000;220000;60000,400,transmission,40.46857,-8.47961
+way/144439472,Subestação de Lobagueira,REN,400000;60000,400,transmission,40.70186,-7.99272
+way/144545386,Subestação de Tração de Mortágua,Infraestruturas de Portugal,220000;25000,220,traction,40.39179,-8.17023
+way/144545398,Subestação de Pereiros,REN,220000;60000,220,transmission,40.16531,-8.41949
+way/144552378,Subestação de Castelo Branco,REN,220000;150000;60000,220,transmission,39.82838,-7.55320
+way/144554435,Subestação de Lavos,REN,400000;60000,400,transmission,40.05791,-8.83697
+way/144564903,Subestação da Batalha,REN,400000;60000,400,transmission,39.65060,-8.78973
+way/144584580,Subestação de Penela,REN,220000;60000,220,transmission,39.97339,-8.39122
+way/144584585,Subestação de Tábua,REN,220000;60000,220,transmission,40.33251,-8.01343
+way/144586949,Subestação do Parque Eólico de Pampilhosa da Serra,Parque de Pampilhosa da Serra - Energia Eólica S.A.,220000,220,generation,40.13296,-7.91277
+way/144588414,Subestação do Zêzere,REN,220000;150000;60000,220,transmission,39.54513,-8.32747
+way/144599061,Subestação de Falagueira,REN,400000;150000;60000,400,transmission,39.52813,-7.74094
+way/145618130,,,220000,220,transmission,40.18005,-6.14189
+way/145618131,,,220000,220,generation,40.21931,-6.13379
+way/147559314,SET Redondal,,220000,220,generation,42.54313,-6.42131
+way/151061884,Subestação de Pedralva,REN,400000;150000;130000,400,transmission,41.57726,-8.32263
+way/151109816,Subestação da Siderurgia da Maia,"SN MAIA - Siderurgia Nacional, S.A.",220000;30000,220,industrial,41.25540,-8.55863
+way/151111218,Subestação da Prelada,REN,220000;60000,220,transmission,41.17247,-8.62544
+way/151162379,Subestação de Mourisca,REN,220000;60000,220,transmission,40.59567,-8.46310
+way/151705478,Subestação Portcast,"AAPICO Maia, S. A.",220000;60000,220,industrial,41.22762,-8.59998
+way/158971981,Subestación de Eirís,Red Eléctrica de España,220000;15000,220,distribution,43.34301,-8.39783
+way/159877922,SET REPSOL,,220000;66000,220,industrial,43.35606,-8.45243
+way/165474419,SET A Grela,,220000;15000,220,transmission,43.34262,-8.42935
+way/168358225,SET Arañuelo,Red Eléctrica de España,400000,400,transmission,39.95042,-5.58971
+way/169883205,Subestación de Boimente,Red Eléctrica de España,400000;132000,400,transmission,43.58909,-7.55294
+way/170371019,Subestación Eléctrica de Pinto,,220000;45000,220,distribution,40.25354,-3.73994
+way/170372283,Subestación de Torrijos,Red Eléctrica de España,220000,220,transmission,39.99957,-4.26951
+way/170395478,Subestación de Casatejada,Iberdrola,220000;45000,220,transmission,39.97533,-5.70361
+way/170479580,Subestación de Segovia,Red Eléctrica de España,400000,400,transmission,40.93992,-4.16540
+way/170485453,,,400000,400,transition,40.54992,-3.56670
+way/170505900,Subestación Torrecilla,Red Eléctrica de España,220000,220,,40.31884,-3.61344
+way/170510440,Subestación de Medina del Campo,Iberdrola,220000;45000,220,distribution,41.32711,-4.91136
+way/170511092,Subestación Tordesillas,Red Eléctrica de España,400000;220000,400,transmission,41.50680,-5.01289
+way/170519401,Subestación de Zamora,Red Eléctrica de España,220000;66000,220,transmission,41.53573,-5.73560
+way/170607798,Los Pradillos,,220000,220,transmission,40.13209,-3.82034
+way/170607800,,,220000,220,transmission,39.98073,-3.83792
+way/170671537,Subestación Aceca,Red Eléctrica de España,220000;132000;45000,220,transmission,39.94206,-3.85810
+way/172454609,Sabón,,220000;132000;66000,220,generation,43.32917,-8.50116
+way/173190939,,,220000,220,generation,43.17019,-8.43952
+way/173191596,Subestación Eléctrica de Meirama,Red Eléctrica de España,220000,220,transmission,43.16916,-8.40950
+way/173535816,SET La Robla,Red Eléctrica de España,400000,400,transmission,42.79586,-5.63743
+way/173939651,SET Santiz,,220000,220,generation,41.19722,-5.87649
+way/187189721,Central Hidroeléctrica das Veigas,,220000,220,transmission,42.16774,-7.17415
+way/187392726,Subestación Puebla de Sanabria,Red Eléctrica de España,220000,220,transmission,42.06154,-6.62372
+way/187645709,Subestación Eléctrica da Central Térmica das Pontes de García Rodríguez,Red Eléctrica de España,400000,400,generation,43.43942,-7.86055
+way/188618317,Compostilla II,Red Eléctrica de España,400000,400,transmission,42.60819,-6.56835
+way/188737728,Subestación Aluminio,,400000,400,industrial,43.70191,-7.47888
+way/189184531,Estacion de Salas,Red Eléctrica de España,400000,400,transmission,43.36633,-6.30197
+way/189184555,Subestación Eléctrica de Pesoz,Red Eléctrica de España,400000,400,transmission,43.24302,-6.86584
+way/189184557,SET Central Térmica de Narcea,,400000,400,generation,43.29195,-6.39541
+way/189577215,Central Térmica de La Robla,,400000;132000,400,generation,42.79424,-5.63393
+way/190058570,Subestacion de Lada,Red Eléctrica de España,400000;220000,400,transmission,43.30523,-5.69808
+way/190098039,Subestación Siero,,220000;132000,220,transmission,43.37940,-5.75722
+way/190110739,Estacion de Tabiella,,400000;220000;132000;66000,400,transmission,43.57482,-5.89831
+way/190593924,SE Cental Azután,Iberdrola,220000,220,generation,39.77988,-5.08760
+way/190907238,Subestación de Talavera de la Reina,Red Eléctrica de España,220000;45000;20000,220,transmission,40.00298,-4.82249
+way/191095881,Subestación de Ricobayo II,Red Eléctrica de España,220000,220,transmission,41.52780,-5.98771
+way/191458480,Subestación Eléctrica de Sanzo,,400000;132000,400,transmission,43.24266,-6.85469
+way/191480803,Anallares,,400000,400,generation,42.83725,-6.53299
+way/191485195,SE Compostilla I,,220000,220,transmission,42.61402,-6.56597
+way/191492712,Subestación de Peñadrada,Red Eléctrica de España,220000,220,transmission,42.76730,-6.53249
+way/194101137,Parque Eólico Los Llanos,,220000,220,generation,42.19545,-3.68741
+way/194341129,Subestación Colectora de Ribadelago,Red Eléctrica de España,220000,220,transmission,42.12320,-6.75424
+way/194360413,Subestación de Mataporquera,Red Eléctrica de España,220000;132000;30000,220,transmission,42.87962,-4.16005
+way/194370719,UNINSA,Arcelormittal España,220000;132000,220,industrial,43.52040,-5.72672
+way/194699926,Subestación Eléctrica Telledo,Red Eléctrica de España,220000;20000,220,traction,43.02689,-5.83847
+way/194699929,Subestación de Santa Marina,Red Eléctrica de España,220000,220,transmission,42.67003,-6.51298
+way/194701798,SET San Lorenzo,,220000,220,generation,41.72830,-5.03814
+way/217745445,Subestación de Santa María de Grado,Red Eléctrica de España,400000,400,transmission,43.38863,-5.99480
+way/218432502,Subestación de Mora Adif,,220000,220,traction,39.68055,-3.80214
+way/219408049,SET Peñarroldana 30/220 kv,,220000;30000,220,generation,41.66980,-5.93104
+way/219408050,SET Peña Nebina,,220000,220,generation,41.77736,-6.06138
+way/219501437,Subestación de El Palo,Red Eléctrica de España,400000,400,transmission,43.27021,-6.67670
+way/220179629,SET Parque eólico Páramo de Poza,,220000,220,generation,42.68179,-3.55055
+way/221182424,SET Parque Eólico Fonteavia I (Porto da Arca),Red Eléctrica de España,220000,220,generation,42.34225,-8.31747
+way/221193996,SET Montouto,Red Eléctrica de España,220000;20000,220,transmission,42.12434,-8.31211
+way/231184704,Cerro de la Plata,,220000,220,traction,40.39984,-3.68105
+way/231951162,ST Alcobendas,,220000;,220,distribution,40.54824,-3.65149
+way/236290371,Subestação de Folques,EDP Renováveis,220000;60000,220,transmission,40.22780,-8.01340
+way/251407376,Subestación de Sanchinarro,,220000,220,transmission,40.49072,-3.66060
+way/255627178,,,220000;132000,220,transmission,40.41769,-3.66561
+way/257573127,Estación Eléctrica ZINC,,220000;132000,220,industrial,43.57365,-5.92538
+way/283348372,Subestación de Lastras del Pozo,,400000;132000;45000;15000,400,transmission,40.88083,-4.33939
+way/287274807,SET AENA,,220000,220,industrial,40.50960,-3.59782
+way/291666290,Subestación Puente San Miguel (Turbera),Red Eléctrica de España,220000;132000;55000;12000,220,transmission,43.35692,-4.07809
+way/294402474,Subestación Eléctrica de Fuenlabrada,Iberdrola;REE,220000,220,distribution,40.27664,-3.78166
+way/297387357,Estación transformadora ST Parla,Iberdrola distribución,220000,220,distribution,40.22247,-3.76509
+way/297609957,,,220000,220,yes,40.38890,-3.62006
+way/309090493,SET Campo de las Naciones,,220000,220,distribution,40.46448,-3.62155
+way/325432908,,Iberdrola,220000,220,transmission,40.40779,-3.90886
+way/327135068,SET Parque Eólico El Cerro,,220000,220,generation,42.73342,-3.64972
+way/334176172,SET Cuevas de Alamanzora,Unión Fenosa Distribución,220000;45000,220,distribution,40.48019,-3.65757
+way/338411003,SE Montearenas,Iberdrola,220000,220,transmission,42.50392,-6.35419
+way/346490586,Subestación de Pinto,,220000,220,distribution,40.26354,-3.72286
+way/353660097,Subestación de Palafox,Iberdrola,220000,220,transmission,40.43079,-3.70082
+way/364748213,SET Celada Fusion,,220000,220,generation,42.01198,-4.19748
+way/377631631,Subestación eléctrica Global Steel Wire Nueva Montaña,,220000;55000,220,industrial,43.44083,-3.84605
+way/402953777,Subestación de Antonio Leyva,,220000,220,transmission,40.38652,-3.71757
+way/419408372,SE Central Hidroeléctrica de Santiago,,220000;15000,220,generation,42.39243,-7.08945
+way/434238959,SET Cerrato,Red Eléctrica de España,400000,400,transmission,41.88872,-4.38173
+way/489953309,Subestación Eléctrica de Xove,Red Eléctrica de España,400000,400,transmission,43.69328,-7.50390
+way/539470509,Posto de Transição de Valongo,REN,220000,220,transition,41.21147,-8.52828
+way/542145772,Subestação do Sub-parque Eólico de Moimenta,Finerge,400000;60000,400,transmission,40.97392,-7.68871
+way/580090586,SET Hortaleza,Red Eléctrica de España,220000;45000,220,distribution,40.47246,-3.66444
+way/591669458,Subestacion de Tracción Dueñas,Adif,400000;250000,400,traction,41.86889,-4.51347
+way/591673330,Subestación rectificadora,Adif,400000,400,traction,42.45032,-5.37121
+way/607764533,Subestación Eléctrica Ebora,Red Eléctrica de España,220000,220,yes,39.96443,-4.78781
+way/626886449,Subestación Eléctrica de Ludrio,Red Eléctrica de España,400000;132000,400,transmission,43.12807,-7.41646
+way/664505575,Subestación Aguacate,Red Eléctrica de España,220000,220,distribution,40.36492,-3.74830
+way/690953979,Subestação de Valpaços,REN,220000;60000,220,transmission,41.67647,-7.40906
+way/694016335,Subestação de Vila Nova de Famalicão,REN,400000;60000,400,transmission,41.35863,-8.61288
+way/701397734,Subestación Eléctrica de Arbillera,Red Eléctrica de España,400000;220000,400,,42.04771,-6.54361
+way/731605861,La Granda,,220000,220,industrial,43.55599,-5.85833
+way/751560789,Subestação da Feira,REN,400000;60000,400,transmission,40.95996,-8.46037
+way/753364578,Posto de Corte de Vieira do Minho,REN,400000,400,switching,41.67065,-8.03041
+way/754137798,Subestação de Montenegrelo,EDP Renováveis,220000;60000,220,transmission,41.47154,-7.62432
+way/765342394,Subestación Eléctrica Pola de Gordon,Red Eléctrica de España,220000,220,transmission,42.84761,-5.66888
+way/767739005,Subestação de Gouvães,Iberdrola,400000,400,transmission,41.53763,-7.76588
+way/768087809,Posto de Corte do Alto Tâmega,Iberdrola,400000,400,switching,41.57121,-7.72911
+way/771616113,Subestação da Central Hidroelétrica do Baixo Sabor - Escalão de Montante,Movhera,220000,220,generation,41.22798,-7.01482
+way/808388334,Subestación Pitiegua,,220000,220,traction,41.06209,-5.48176
+way/810172047,Subestação de Tração de Fatela,Infraestruturas de Portugal,220000;25000,220,traction,40.14577,-7.41861
+way/818531931,Subestación PF Capricornius Solar,,220000;30000,220,generation,41.99856,-4.46254
+way/828193563,SET San Pedro,,220000,220,generation,42.45124,-7.71292
+way/832204742,Subestación Getafe,,220000,220,,40.31833,-3.69119
+way/843629100,Subestación de La Mudarra IBD,Iberdrola,220000;13200,220,distribution,41.79080,-4.93855
+way/941947459,SET Adif Buniel,Adif,400000;25000,400,traction,42.32224,-3.81968
+way/964625644,Subestação de Ribeira de Pena,REN,400000,400,switching,41.55090,-7.81214
+way/967028062,Subestación Eléctrica de Arbillera de ADIF,Adif,220000;50000,220,,42.04526,-6.54367
+way/983523978,Subestación eléctrica de Fuencarral,Iberdrola,220000,220,transmission,40.51803,-3.66947
+way/986410926,SE Ciudad Rodrigo,Red Eléctrica de España,400000,400,transmission,40.64228,-6.55115
+way/986410945,SET Cuidad Rodrigo,Adif,400000,400,traction,40.61255,-6.56016
+way/987943713,SET Parque Eólico Ballestas,Iberdrola,220000,220,generation,42.17810,-4.18186
+way/989699715,SE Cañaveral,Red Eléctrica de España,400000,400,,39.79926,-6.36039
+way/990136230,subestacíon Los Arenales,Red Eléctrica de España,220000,220,transmission,39.50702,-6.42466
+way/1020710695,SET Torozos,,220000,220,generation,41.60475,-5.01984
+way/1032009205,SET Planta Fotovoltaica Francisco Pizarro,,400000;30000,400,generation,39.56434,-5.66691
+way/1054310285,Subestação do Fundão,REN,400000;220000,400,transmission,40.17657,-7.45556
+way/1054312727,SET FV SAN ANTONIO,Iberdrola,400000;30000,400,generation,39.62853,-7.46427
+way/1087534882,SET Las Matas,,220000;30000,220,generation,41.71383,-5.08979
+way/1087940222,,,220000,220,generation,41.51162,-5.02493
+way/1089441083,Subestação de Ermesinde,REN,220000;60000,220,transmission,41.20341,-8.55476
+way/1090854835,Subestación de Barbadillo,,220000,220,traction,40.89370,-5.94459
+way/1117748463,Subestación de Salas 132/400 kV,"Hidrocantábrico Distribución Eléctrica, S.A.U.",132000;400000,400,generation,43.36631,-6.30070
+way/1123377073,Posto de Corte de Daivões,Iberdrola,400000,400,switching,41.52342,-7.86151
+way/1141933143,Solórzano,Red Eléctrica de España,400000;220000,400,transmission,43.34047,-3.58591
+way/1141937282,SET Cicero,Red Eléctrica de España,220000;55000,220,transmission,43.39261,-3.52382
+way/1153834517,Subestación Eléctrica Otero de Herreros,Red Eléctrica de España,400000;20000,400,transmission,40.80267,-4.20879
+way/1168603539,Subestación Oriol,,220000;30000,220,,39.83027,-6.74498
+way/1168861008,Talayuela Solar,,400000,400,generation,39.91365,-5.40675
+way/1218840771,SET Sileda REE,Red Eléctrica de España,400000,400,transmission,42.74675,-8.25104
+way/1218840772,SET Sileda ADIF,Adif,400000;25000,400,traction,42.74792,-8.25235
+way/1227066186,SET Las Mazuelas,,400000;132000,400,transmission,41.79355,-4.93752
+way/1228190772,Subestação de Pombal,REN,220000;60000,220,transmission,39.91945,-8.63487
+way/1228547593,Subestação de Tração de Irivo,Infraestruturas de Portugal,220000;25000,220,traction,41.18969,-8.33818
+way/1232240349,LAS ARROYADAS,,220000,220,distribution,41.52550,-4.71439
+way/1232962946,Subestación Valdecarretas,Red Eléctrica de España,400000,400,transmission,41.45000,-5.36587
+way/1241153459,SET Promotores Virtus,,132000;400000,400,transmission,43.00337,-3.84463
+way/1241766549,Planta de cogeneración de SNIACE,,220000,220,generation,43.36044,-4.05965
+way/1242272378,Central Electrica la Remolina,,220000,220,generation,42.93182,-5.08703
+way/1243143644,Central térmica de la Pereda,,220000,220,generation,43.27343,-5.80997
+way/1244169854,,,132000;220000,220,transmission,42.42750,-6.18405
+way/1244663999,Subestación Villameca Eolica,,132000;400000,400,transmission,42.63211,-6.03889
+way/1245390527,SE Centro Hidráulica de Sobradelo,Red Eléctrica de España,220000;20000,220,generation,42.41436,-6.92025
+way/1246032818,Subestación Colectora das Lagoas,Red Eléctrica de España,220000,220,transmission,43.01404,-9.05112
+way/1246115410,,,400000;30000,400,,39.60541,-6.33947
+way/1246127985,Forest Atlantico,,220000,220,generation,43.46162,-8.23678
+way/1246127987,SET Porto Exterior de Ferrol,,220000,220,industrial,43.46832,-8.32088
+way/1247212292,Subestación José María Oriol Nuevo Parque,Red Eléctrica de España,220000,220,,39.72399,-6.87470
+way/1249189251,SET Parque Eólico Alto de la Degellada,,220000,220,generation,42.22541,-4.16500
+way/1252105002,SET San Fernando,Red Eléctrica de España,400000;220000,400,transmission,40.44396,-3.50827
+way/1252171502,SET Lucero,,220000,220,,40.34094,-3.88352
+way/1257622756,Subestação da Senhora da Póvoa,Finerge,220000;60000,220,transmission,40.23993,-7.22025
+way/1258290321,Subestação da Central Hidroelétrica do Carrapatelo,Energias de Portugal,220000,220,generation,41.08480,-8.13051
+way/1258290323,Subestação da Central Hidroelétrica de Foz Tua,Movhera,400000,400,generation,41.21576,-7.42680
+way/1258306512,Subestação da Central Hidroelétrica de Castelo de Bode,,220000,220,generation,39.54262,-8.31930
+way/1259166797,Subestação da Central Hidroelétrica de Daivões,Iberdrola,400000,400,generation,41.52381,-7.86560
+way/1265587702,SET Prosperidad,,220000,220,distribution,40.44283,-3.66642
+way/1270848181,SET Coculina,,132000;400000,400,transmission,42.59055,-3.85845
+way/1271688035,SET Planta Solar Folovolcaica Cáceres 2020,,220000;30000,220,generation,39.52318,-6.44057
+way/1271688039,SET SE1 Casar,,220000;30000,220,generation,39.50561,-6.42591
+way/1272548315,Subestación Buniel,Red Eléctrica de España,400000;25000,400,transmission,42.32270,-3.82060
+way/1299149924,Subestación El Anisal,,220000;66000,220,,41.99651,-4.48571
+way/1304749511,Subestación de Galapagar II,Iberdrola,220000;66000;20000,220,yes,40.59703,-4.00556
+way/1308518194,Subestación Algete,,220000;66000;20000,220,,40.59287,-3.55197
+way/1320416427,Subestação da Central Solar Fotovoltaica do Fundão,"Days of Luck, Unipessoal Lda.",220000;30000,220,generation,40.18166,-7.45274
+way/1323460918,Subestação de Nave da Mata,Pentagab,220000,220,transmission,40.13268,-7.26677
+way/1342628201,Subestación de Canillejas,,220000;45000;15000,220,,40.43468,-3.61450
+way/1344277366,Subestación de Villaverde,,220000;132000;45000,220,,40.34119,-3.66718
+way/1359377028,Subestación La Torca,Red Eléctrica de España,400000;132000,400,transmission,42.32462,-3.81810
+way/1380301638,Subestación Eléctrica de Tracción do Oural,Adif,220000;50000,220,traction,42.69621,-7.46351
+way/1385562544,Subestación Valle del Arcipreste,,220000;20000,220,,40.48782,-3.89424
+way/1421833203,Subestação da Central Hidroelétrica do Alto Tâmega,Iberdrola,400000,400,generation,41.57384,-7.73126
+way/1422828550,Subestação da Central Hidroelétrica do Torrão,Energias de Portugal,10000;220000,220,generation,41.09637,-8.26277
+way/1432060227,Subestación Edificio ICE,,400000,400,transmission,39.72342,-6.87893
+way/1432060229,Subestación FV Tagus IV,,400000;30000,400,,39.64971,-6.97404
+way/1435159155,Subestación de la Central Hidroeléctrica de Castro I,,220000,220,generation,41.57557,-6.18915
+way/1435159156,Subestación de la Central Hidroeléctrica de Castro II,,220000,220,generation,41.57412,-6.18961
+way/1436449530,Subestación Eléctrica de Tomeza,,220000,220,,42.38717,-8.62897
+way/1447258194,Subestación Velilla Solar,,400000;30000,400,yes,42.73923,-4.86671
+way/1447258198,Subestación Virgen de Areños III,,400000;30000,400,,42.62963,-4.85297
+way/1447258202,,,400000,400,,42.82244,-4.86261
+way/1448249985,Subestación Pizarroso I,,400000;30000,400,,39.79768,-6.35837
+way/1449716061,Subestación Toro Renovables,,400000;132000;66000;30000,400,generation,41.44862,-5.36764
+way/1450206203,SET PE Las Mulas,,220000;3000,220,generation,41.58831,-5.75989
+way/1456738973,Subestación eléctrica Andella,,220000;30000,220,generation,41.63905,-5.05000
+way/1462950857,Subestação de Ponte de Lima,REN,400000;150000,400,transmission,41.67816,-8.59387
+way/1479801013,SET Valcabado Generación,,30000;220000,220,generation,41.53466,-5.73316
+way/1480357664,Subestación Seccionadora Villalba,,220000,220,transmission,41.79102,-4.94535
+way/1480357665,Subestación Pinta y Guindalera,,220000;30000,220,generation,41.79079,-4.94474
+way/1480647902,Subestación Colectora Oliva,,400000;66000,400,transmission,41.79005,-4.92941
+way/1482318491,,,220000,220,distribution,42.07176,-4.55407
+way/1482328176,SET HUSILLOS 400/132 kV.,,400000;132000,400,generation,42.07016,-4.55588
+way/1482331587,SET Villaumbrales,,220000,220,generation,42.08516,-4.58269
+way/1482943792,SET Iglesias,,220000,220,generation,42.28791,-4.00300
+way/1483358113,Subestación Colectora Ricobayo 2,,220000;30000,220,generation,41.53124,-5.95284
+way/1483358114,Subestación Colectora Ricobayo 1,,220000;30000,220,generation,41.53005,-5.99895
+way/1484018453,subestación elevadora PSFV Campo de Arañuelo 30/400 kV,Naturgy,400000;30000,400,generation,39.54492,-5.69646
+way/1484036766,ST PFV Belvis,,220000;30000,220,generation,39.79850,-5.67542
+way/1487255854,STR Torrijos,Iberdrola,220000;45000;20000,220,distribution,39.99910,-4.26879
+way/1487255855,SET Carola Generación,,220000;30000,220,generation,39.99820,-4.26690
+way/1491278019,Subestación de la Central Hidroeléctrica del Salto de Touro,,220000,220,generation,42.82860,-8.24133
+way/1493646686,SE Saucelle II,Iberdrola,400000;45000,400,transmission,41.03478,-6.80339
+way/1497096638,Subestação da Central Solar Fotovoltaica Douro Solar,Sonnedix,220000,220,generation,41.03465,-7.67711
+way/1497273183,Subestación Eléctrica de Beariz,Red Eléctrica de España,400000,400,transmission,42.48922,-8.24951
+way/1497273186,Subestación de Fontefría,Red Eléctrica de España,400000;220000,400,transmission,42.25226,-8.31663
+way/1499389789,Subestación de la Central Hidroeléctrica de Cedillo,,400000;15000,400,generation,39.66387,-7.53989
+way/1564675622,Subestación Majano,,400000;132000;30000,400,generation,40.93436,-4.19315
+way/1564675626,,,400000,400,,40.93818,-4.16358
+relation/11311505,Subestación Eléctrica de San Caetano,Union Fenosa (UFD),220000;66000;20000,220,distribution,42.89096,-8.53181
+relation/15715982,Subestación de Saucelle I,Iberdrola,220000;45000,220,transmission,41.04407,-6.80643
+relation/17148268,Subestación Almaraz,Red Eléctrica de España,400000;220000,400,transmission,39.80711,-5.69323
+relation/17294958,Subestação da Central Hidroelétrica da Bemposta,Movhera,220000,220,generation,41.30124,-6.47301
+relation/17444204,Subestación La Lora,Red Eléctrica de España,400000,400,generation,42.59077,-3.85976
+relation/17805735,Subestación de Palencia,Red Eléctrica de España,220000;45000,220,transmission,41.99887,-4.49922
+relation/19040600,Subestação da Central Hidroelétrica de Frades,Energias de Portugal,400000,400,generation,41.69345,-8.02757
+relation/19585241,Subestação da Central Hidroelétrica do Picote,Movhera,220000,220,generation,41.37997,-6.35226
+relation/19645437,Subestação da Central de Ciclo Combinado de Lares,Energias de Portugal,400000,400,generation,40.12372,-8.77535
+relation/19645523,Subestação da Central Termoeléctrica da Tapada do Outeiro,Portugen,220000,220,generation,41.06993,-8.45917
+relation/19651625,Subestação da Central Hidroelétrica da Aguieira,Energias de Portugal,220000,220,generation,40.34026,-8.19832
+relation/20143572,Subestación Eléctrica de Albarellos,Unión Fenosa Distribución,220000;20000,220,distribution,42.39789,-8.15788
+relation/20347054,Alcoa,,220000;66000,220,industrial,43.34485,-8.44073
+relation/20355509,Subestación da Frieira,,220000;132000,220,transmission,42.15384,-8.19322
+node/12483925080,SET Segura,,30000;220000,220,converter,41.05104,-1.02562
+node/13137815699,SET Rueda Oeste,"Rueda Sur Wind 1, SL",220000;30000,220,converter,41.60981,-1.33596
+node/13137839467,SET Pre Rueda,,220000;400000,400,transmission,41.64789,-1.29103
+node/13137897860,SET Almendrales 400 kV,,400000,400,distribution,41.33338,0.20098
+node/13137939428,SET Las Mareas 30/400 kV,"Green Capital Development 68, SLU",30000;400000,400,converter,41.31770,0.25031
+node/13137939439,SET Almendra Promotores,"Green Capital Development 68, SLU",400000,400,transmission,41.35532,0.21313
+node/13137939440,SET Almendra 400 kV,,400000,400,distribution,41.35377,0.21287
+way/26376870,Poste électrique de Tamareau,RTE,400000;225000,400,transmission,43.63263,3.71619
+way/27936937,Subestación de Morata,Red Eléctrica de España,400000;220000,400,transmission,40.25598,-3.44301
+way/28343429,SET Ardoz Nueva,,220000;132000;66000;20000,220,distribution,40.44227,-3.48236
+way/30295834,Subestación Loeches 2,Unión Fenosa Distribución,220000;132000;45000;15000,220,transmission,40.38698,-3.41962
+way/31110032,Arkale,,220000,220,transmission,43.30507,-1.84244
+way/33771314,Subestacion electrica La Eliana,Red Eléctrica de España;Iberdrola,400000;220000;132000;20000,400,transmission,39.55458,-0.51063
+way/34585227,Subestación de la Plana,Red Eléctrica de España,400000;220000;132000,400,transmission,39.96679,-0.09653
+way/38674256,Subestació Badalona,Endesa,220000,220,transmission,41.42758,2.23454
+way/39827901,El Ingenio,Iberdrola,220000,220,transmission,39.97838,-0.01508
+way/46172375,Subestación de Trévago,Red Eléctrica de España,220000;66000;30000,220,,41.87310,-2.12112
+way/46619201,Subestación Santo Cristo de Magallón,,220000,220,generation,41.79856,-1.36195
+way/47908906,Subestación de Logroño,,220000;66000,220,transmission,42.45801,-2.49030
+way/49025600,Subestación de Magallón,Red Eléctrica de España,220000,220,transmission,41.84684,-1.37848
+way/49252090,ST Tafalla,Red Eléctrica de España,220000,220,transmission,42.50221,-1.68383
+way/49258709,Subestación electrica Cordovilla,Red Eléctrica de España;Iberdrola,220000;66000;13000,220,transmission,42.78595,-1.63523
+way/49510896,Poste électrique de Lesquive,RTE,400000;225000;63000,400,transmission,43.81678,1.27330
+way/51247251,Subestación de Medinaceli,Red Eléctrica de España,400000,400,transmission,41.10606,-2.37449
+way/51824074,Subestación El Campo,,220000,220,generation,39.98933,-0.68036
+way/60340351,SET La Plana,Red Eléctrica de España,220000,220,transmission,41.50184,-0.92952
+way/60342307,Substacion Monte Torrero,Red Eléctrica de España,220000;132000,220,transmission,41.59734,-0.85402
+way/60398296,Subestación de Puentelarrá,Red Eléctrica de España,220000;45000;30000,220,transmission,42.75614,-3.04858
+way/71531354,Subestacion de Peñalba,Red Eléctrica de España,400000,400,transmission,41.52572,-0.10033
+way/71796402,Estació receptora de Can Figueres,Endesa,220000;132000,220,transmission,41.55514,2.04781
+way/75606778,Subestació de Pierola,Red Eléctrica de España,400000;220000;132000,400,transmission,41.52347,1.82973
+way/75619319,Subestació de Abrera,Red Eléctrica de España,220000,220,transmission,41.50770,1.89436
+way/76353093,Subcentral Elèctrica de la Feixa Llarga,Red Eléctrica de España,220000,220,,41.34607,2.09991
+way/77594046,ST Sagunt (Sagunto),,220000,220,transmission,39.67225,-0.26774
+way/77640470,SET Gaussa,Red Eléctrica de España,400000,400,transmission,39.65985,-0.31700
+way/77652277,SET SIDMED,,220000;66000,220,industrial,39.65129,-0.23915
+way/77654729,,,400000,400,generation,39.64224,-0.23665
+way/81409681,Estació elèctrica de Son Reus,,220000,220,transmission,39.65086,2.67889
+way/82837097,Poste électrique de Baixas,RTE,400000;225000;63000,400,transmission,42.73224,2.80421
+way/86512030,Santa Engracia,Red Eléctrica de España,400000;220000,400,transmission,42.34762,-2.26368
+way/88760627,Subestación de El Sequero,,220000;66000,220,transmission,42.41785,-2.25315
+way/89084456,SE Quel,,220000;66000,220,transmission,42.27849,-2.01864
+way/90829734,,,400000,400,transmission,42.17062,-1.67587
+way/93349144,Subestació de Canyet,,220000,220,transition,41.46612,2.23465
+way/98890904,Poste électrique de La Gaudière,RTE,400000;225000,400,transmission,43.24107,2.67739
+way/103190094,Subestación de Orcoyen,Red Eléctrica de España,220000;66000,220,transmission,42.81917,-1.70964
+way/104020696,Subestació de Sentmenat,Red Eléctrica de España,400000;220000,400,transmission,41.61948,2.11178
+way/105259481,Subestación de Abanto,Red Eléctrica de España,400000,400,transmission,43.32681,-3.09396
+way/105579046,Subestació de Juià,Red Eléctrica de España,220000,220,transmission,42.02287,2.90083
+way/109788663,Subestación de Sangüesa,Red Eléctrica de España,220000;66000,220,transmission,42.59816,-1.27571
+way/109817708,Poste électrique de Verfeil,RTE,400000;225000;63000,400,transmission,43.62936,1.67220
+way/109859712,Poste électrique de Issel,RTE,400000;63000,400,transmission,43.38428,1.98309
+way/110443404,Poste électrique de Cazaril,RTE,400000;225000,400,transmission,43.17131,0.51350
+way/110506713,,Red Eléctrica de España,220000,220,transmission,41.56790,2.18577
+way/111402009,,Red Eléctrica de España,220000,220,transmission,41.58778,2.32021
+way/111414142,Poste électrique de Marsillon,RTE,400000;225000;63000,400,transmission,43.38578,-0.59532
+way/111558550,Poste électrique de Argia,RTE,400000;225000;63000,400,transmission,43.42155,-1.43026
+way/111584995,Subestació de Sant Celoni,Red Eléctrica de España,220000;110000,220,transmission,41.70665,2.47069
+way/115680075,Subestación de Arrazua,Red Eléctrica de España,400000;220000,400,transmission,42.88379,-2.60341
+way/117690905,Subestació Aeroport,REE;Endesa,220000;25000,220,distribution,41.31492,2.10340
+way/122814554,Sant Andreu,Red Eléctrica de España,220000,220,,41.44642,2.18858
+way/124121959,Subestació elèctrica de Can Jardí,,400000;220000,400,transmission,41.47481,2.02381
+way/124121964,Subestació de Rubí,Red Eléctrica de España,400000;220000,400,,41.47325,2.00987
+way/126100935,Sant Cugat,Red Eléctrica de España,220000,220,transmission,41.48692,2.07649
+way/126881765,Subestación de Morella,Iberdrola,400000;132000,400,transmission,40.61098,-0.19540
+way/127528728,SET Vall d'Uixo Futura,Iberdrola,220000;20000,220,distribution,39.79352,-0.22157
+way/127528769,Subestación de Segorbe,Red Eléctrica de España,220000;66000;20000,220,distribution,39.82744,-0.45651
+way/127605081,Subestación Benadresa,Iberdrola,220000,220,transmission,40.00312,-0.08633
+way/127787669,Subestación Eléctrica Aragón,Red Eléctrica de España,400000,400,transmission,41.21730,-0.28047
+way/127922062,,Iberdrola,400000;220000,400,transmission,39.64917,-0.24741
+way/129767234,Subestación de Mequinenza,Red Eléctrica de España,400000;220000,400,transmission,41.36822,0.27693
+way/131323212,Subestación HVDC Son Bugadelles,,250000;220000,250,converter,39.53390,2.50637
+way/135806477,Subestación Rueda de Jalón,Red Eléctrica de España,400000,400,,41.64984,-1.29658
+way/139280545,Estació de So n'Orlandis,,220000;66000,220,transmission,39.60017,2.74435
+way/139280769,Central de Llubi,,220000;66000,220,transmission,39.67377,3.03959
+way/140011919,Subestació de Vandellòs,Red Eléctrica de España,400000,400,transmission,40.97631,0.87901
+way/143044526,Sant Joan de Déu,Endesa,220000;66000,220,transmission,39.54741,2.70168
+way/143207685,Subestación de Peñaflor,Red Eléctrica de España,400000;220000,400,transmission,41.72173,-0.74180
+way/143207686,Villanueva de Gallego,Red Eléctrica de España,220000,220,transmission,41.74218,-0.84684
+way/143293789,Central d'es Bessons,,220000;132000;66000,220,transmission,39.58199,3.15840
+way/144777809,SET Betxí,Iberdrola,220000;20000,220,distribution,39.92817,-0.17797
+way/145171008,Subestación de Minglanilla,Red Eléctrica de España,400000,400,transmission;traction,39.52480,-1.56517
+way/145302700,,Red Eléctrica de España,400000,400,transmission,41.20447,0.57112
+way/145302702,Central hidroelèctrica de Riba-roja,Red Eléctrica de España,220000,220,transmission,41.24225,0.43087
+way/145312949,Subestació elèctrica de Maials,Red Eléctrica de España,400000,400,transmission,41.38840,0.50519
+way/145316518,Subestació els Aubals,Endesa,220000;25000,220,distribution,41.11844,0.64171
+way/145326592,Subestación de Monzón,Red Eléctrica de España,220000,220,transmission,41.93376,0.17514
+way/145330286,SET Calamocha,Red Eléctrica de España,220000,220,transmission,40.91467,-1.28641
+way/145333039,José Cabrera,Red Eléctrica de España,220000,220,transmission,40.34944,-2.88582
+way/145337069,Ehariko azpiestazioa,,220000,220,transmission,42.85625,-2.70746
+way/145337070,SE Gamarra,Iberdrola,220000;30000;13200,220,distribution,42.86905,-2.66616
+way/145821099,SET Escucha,Red Eléctrica de España,220000,220,transmission,40.79627,-0.81593
+way/145823171,Subestación PE Escucha,,220000,220,transmission,40.77047,-0.82715
+way/145823172,Subestación de Mezquita,Red Eléctrica de España,400000;220000,400,transmission,40.72417,-0.84939
+way/146826566,,Red Eléctrica de España,400000,400,transmission,43.25625,-1.97537
+way/148347794,Central de Valldurgent,,220000;66000,220,transmission,39.58428,2.54938
+way/148380950,ST Irun,,220000,220,transmission,43.33804,-1.81158
+way/153232112,ST Moncada,,400000,400,traction,39.71598,-1.93129
+way/156435509,Converter HVDC de Morvedre,,400000;250000,400,converter,39.64110,-0.23542
+way/158620489,Codonyers,Red Eléctrica de España,220000,220,,41.47802,2.09916
+way/158959475,SET Parque Eólico Atalaya,,220000,220,generation,41.78983,-1.31372
+way/159930931,Subestación de Barcina,Red Eléctrica de España,400000,400,transmission,42.77709,-3.21547
+way/165580300,Subestació de Viladecans,Red Eléctrica de España,400000;220000,400,transmission,41.32554,2.02798
+way/169523042,Subestació elèctrica de Les Comes,,400000;220000,400,transmission,41.40413,1.12665
+way/169523046,Subestació elèctrica de l'Espluga de Francolí,Red Eléctrica de España,400000;220000,400,,41.40506,1.12517
+way/169528510,Subestació Castellet i la Gornal,Fecsa Endesa,220000,220,transmission,41.25612,1.58183
+way/169641331,SET Montblanc,REE;Endesa,220000;25000,220,,41.39585,1.13449
+way/169680270,SET Puigpelat,Red Eléctrica de España,220000,220,transmission,41.28340,1.29141
+way/169703139,,Adif,220000,220,traction,41.62871,0.49708
+way/169703140,Subestació de Torres de Segre,Red Eléctrica de España,220000,220,transmission,41.50019,0.49376
+way/169703141,Subestació d'Albatàrrec,Red Eléctrica de España,220000,220,transmission,41.57749,0.62200
+way/169722563,,,220000;110000,220,transmission,41.11407,1.19805
+way/169723926,,,220000,220,transmission,41.13539,1.22500
+way/169723928,,,220000,220,transmission,41.11538,1.16350
+way/169729505,Subestació de Bescanó (MAT),Red Eléctrica de España,400000;132000,400,transmission,41.97248,2.69583
+way/169769013,,,220000,220,transmission,41.54869,2.17278
+way/169867109,,Red Eléctrica de España,400000;220000,400,,41.29524,-0.34135
+way/169867119,SET Peaker,,400000;132000,400,transmission,41.28002,-0.21836
+way/169874396,Subestació de Centelles,Red Eléctrica de España,220000,220,transmission,41.80812,2.21229
+way/169882238,Subestació transformadora de Rubió,Red Eléctrica de España,220000,220,transmission,41.64853,1.59158
+way/169882239,SET Pobla,Red Eléctrica de España,220000,220,,42.24993,0.97254
+way/169947613,,Red Eléctrica de España,220000,220,transmission,42.15337,0.23303
+way/169995134,Central de Moralets,,220000,220,transmission,42.56905,0.75645
+way/169999915,Subestación de Fuendetodos,Red Eléctrica de España,400000;220000,400,transmission,41.33679,-0.97666
+way/170014037,Terrer Vega,Red Eléctrica de España,400000,400,,41.32095,-1.70571
+way/170138196,Subestación Moncayo,Red Eléctrica de España,220000,220,transmission,41.74615,-1.92466
+way/170138597,Lanzas Agudas,Red Eléctrica de España,220000,220,transmission,41.86254,-1.69272
+way/170139950,Subestación Los Visos,,220000,220,generation,41.69496,-1.40893
+way/170140947,SET Los Vientos,Red Eléctrica de España,220000,220,transmission,41.49300,-1.13792
+way/170142091,Subestacion de Cabezo San Roque,Red Eléctrica de España,220000,220,transmission,41.47348,-1.14877
+way/170156684,,Red Eléctrica de España,220000,220,transmission,41.55094,-1.13198
+way/170156685,Subestación de María de Huerva,Red Eléctrica de España,220000,220,transmission,41.50520,-1.01375
+way/170162234,Subestacion Zaragoza G.I.F,Red Eléctrica de España,220000,220,distribution,41.57034,-0.78922
+way/170162276,SET Cartujos,Red Eléctrica de España,220000,220,yes,41.58993,-0.84285
+way/170162283,Subestación Eléctrica Megasa Zaragoza,,220000,220,industrial,41.57192,-0.85826
+way/170267594,Subestacion de El Espartal,Red Eléctrica de España,220000,220,transmission,41.54337,-0.67908
+way/170272140,Fuentes de la Alcarría,Red Eléctrica de España,400000,400,transmission,40.74813,-2.98354
+way/170272148,SE Anchuelo,Red Eléctrica de España,400000,400,transmission,40.46468,-3.29667
+way/170485452,Subestación de Huelves,Iberdrola,220000;66000,220,transmission,40.05892,-2.93932
+way/172872714,SET Entrerríos,REE;Endesa,220000;45000,220,distribution,41.74861,-1.18677
+way/178294745,Subestació de Vic,"Red Eléctrica de España, S.A.",400000;220000,400,transmission,41.95704,2.28218
+way/179492338,Subestació de Juneda,Red Eléctrica de España,220000,220,transmission,41.53064,0.82800
+way/179582169,Eriste,Red Eléctrica de España,220000,220,generation,42.58891,0.49202
+way/179582170,Subestación Eléctrica de Sesue,Red Eléctrica de España,220000,220,generation,42.54305,0.47026
+way/180545587,Subestació de Sant Just,,220000,220,transmission,41.39242,2.07959
+way/181621073,Miranda 220kv,Red Eléctrica de España,220000;30000;13000,220,transmission,42.69569,-2.92144
+way/181651949,,,220000,220,transmission,39.98460,-2.75656
+way/181652541,Villanueva de los Escuderos I,,400000,400,traction,40.03413,-2.32406
+way/181652542,Villanueva de los Escuderos II,Red Eléctrica de España,400000,400,transmission,40.03031,-2.32287
+way/181906370,La Serna,Red Eléctrica de España,400000;220000,400,transmission,42.09745,-1.66746
+way/181912569,Subestación de Muruarte,Red Eléctrica de España;Iberdrola,400000;220000;66000,400,transmission,42.66946,-1.65454
+way/181917947,SE Olite,Red Eléctrica de España,220000,220,transmission,42.41321,-1.67977
+way/190236352,Subestación de Almazán,Red Eléctrica de España,400000,400,transmission,41.43772,-2.50261
+way/190249315,Estació Elèctrica de Pujalt,Red Eléctrica de España,220000,220,transmission,41.67965,1.44602
+way/190249507,Subestació elèctrica Anoia,Red Eléctrica de España,220000,220,transmission,41.57706,1.66714
+way/190289516,Subestación de Lafortunada,Red Eléctrica de España,220000,220,transmission,42.54263,0.19690
+way/190289523,SET Escalona,Red Eléctrica de España,220000,220,transmission,42.46981,0.14476
+way/195665633,,Adif,220000;25000,220,traction,41.25573,1.57790
+way/196076112,Subestació Tavascan,Fecsa Endesa,220000,220,transmission,42.64613,1.25938
+way/196202210,Subestacion Ormaiztegi,Red Eléctrica de España,220000,220,transmission,43.04337,-2.24216
+way/196202213,Subestación de Itxaso,Red Eléctrica de España,400000;220000,400,transmission,43.06146,-2.27398
+way/196202222,,,220000,220,industrial,43.03917,-2.22343
+way/196207063,Subestación Eléctrica de Hernani,,400000;220000;132000,400,transmission,43.25982,-1.96859
+way/196207064,Subestación Eléctrica de Azpeitia,,400000,400,transmission,43.21265,-2.25240
+way/196215046,Subestación de Gatika,Red Eléctrica de España,400000;220000;132000;30000,400,transmission,43.34961,-2.88060
+way/196371124,Subestación Ayala,Iberdrola,220000;30000;13000,220,transmission,43.08418,-3.01127
+way/196371643,subestación Amurrio Sur,Iberdrola,220000;30000,220,distribution,43.03266,-3.00137
+way/196371646,,,220000,220,transmission,43.07741,-2.99421
+way/196380396,Sestaoko azpiestazioa,,220000,220,transmission,43.30468,-3.00172
+way/196478732,ST Alonsótegui,Iberdrola,220000,220,transmission,43.24704,-2.98196
+way/196483351,Abadiano,Red Eléctrica de España,220000;132000,220,transmission,43.13883,-2.59629
+way/196483352,Subestación de Sidenor,,220000,220,industrial,43.22256,-2.88072
+way/196484246,,,220000,220,transmission,43.09707,-2.42871
+way/196484252,ST Zumarraga,,220000;30000,220,transmission,43.08029,-2.32112
+way/196522656,Subestación de Mercedes,,220000,220,industrial,42.85135,-2.71068
+way/196522660,Subestación de Jundiz,,220000;30000,220,distribution,42.83621,-2.74666
+way/196522661,Forjas,,220000,220,industrial,42.86423,-2.66499
+way/196526411,SEHaro,,220000;66000,220,transmission,42.56832,-2.88508
+way/196533207,SET Las Llanas,,220000,220,transmission,42.60167,-2.38201
+way/196533213,Subestación de Laguardia,Red Eléctrica de España,220000;66000,220,transmission,42.50772,-2.58476
+way/196538101,Subestación de Biescas,Enel,220000,220,transmission,42.62844,-0.31565
+way/196544701,Subestación de Gurrea,Red Eléctrica de España,220000,220,transmission,42.03797,-0.77379
+way/196634589,SET Parc eòlic de la Serra del Tallat,,220000,220,generation,41.47402,1.12293
+way/200253359,Subestació Garraf,Red Eléctrica de España,400000,400,transmission,41.25505,1.71926
+way/202891403,Subestación de Güeñes,Red Eléctrica de España,400000;220000,400,transmission,43.21886,-3.03033
+way/203623276,Subestación Las Aldehuelas,Red Eléctrica de España,220000,220,transmission,41.96309,-2.24678
+way/205141906,Subestación de Basauri,,220000,220,transmission,43.22079,-2.89496
+way/207915691,SET Parc eòlic de Montagùll,,220000,220,generation,41.55436,1.36029
+way/209332566,Estació receptora de Collblanc,,220000;110000;25000;11000,220,transmission,41.37703,2.10551
+way/210411778,SET les Forques,Subestació elèctrica de les Forques,220000,220,generation,41.49646,1.20158
+way/217979941,SET La Fatarella,,220000;132000;30000,220,,41.18848,0.47137
+way/223207745,Subestación de Zierbena,Red Eléctrica de España,400000,400,transmission,43.35874,-3.09103
+way/223307054,Subestació de Santa Llogaia d'Àlguema,Adif,400000;25000,400,traction,42.22970,2.94834
+way/226363063,Subestación de Trillo,Red Eléctrica de España,400000,400,transmission,40.70328,-2.62574
+way/226364133,,,220000,220,transmission,40.70030,-2.62647
+way/226886241,Belinchon,Red Eléctrica de España,400000,400,transmission,40.03418,-3.07982
+way/239807715,SET Plaza,Endesa/REE,220000;132000;45000;15000,220,transmission,41.63009,-0.99733
+way/249408310,Subestació Les Corts,REE;Endesa,220000;110000;11000,220,distribution,41.38739,2.13789
+way/255726160,Los Leones,,220000;132000;45000;10000,220,,41.69128,-0.87357
+way/256334221,Estació transformadora de Santa Llogaia d'Àlguema,INELFE,400000;320000,400,converter,42.23039,2.94425
+way/258916144,Subestación PE Valdeconejos,,220000;30000,220,converter,40.79295,-0.88192
+way/260018670,Subestación de Santa Cruz de la Zarza,Adif,400000,400,traction,39.98178,-3.11396
+way/263366365,,,220000,220,transmission,41.92347,0.19364
+way/264348139,,,220000;45000,220,,41.19914,1.23005
+way/274593968,Subestación de Daganzo,,220000,220,transmission,40.55371,-3.47876
+way/276336621,Subestació de Marratxí,,220000;66000,220,,39.61187,2.72627
+way/312728271,Station de conversion de Baixas,INELFE,400000;320000,400,converter,42.73093,2.80167
+way/329277804,Subestación de Meco,Red Eléctrica de España;Iberdrola,220000;132000;45000;20000,220,transmission,40.54114,-3.31361
+way/340399370,Estació transmissora de Santa Llogaia d'Àlguema,Red Eléctrica de España,400000,400,transmission,42.22994,2.94652
+way/347643820,Subestació de Santa Ponça,,220000,220,transmission,39.53632,2.50935
+way/365551344,Subestación de Nervacero,,220000,220,industrial,43.31009,-3.02818
+way/370803224,SET Mediano,Red Eléctrica de España,220000,220,transmission,42.31306,0.21194
+way/374135022,Subestació Guixeres,REE;Endesa,220000;25000,220,,41.46238,2.26003
+way/384888518,Subestación PE La Torrecilla,,220000;30000,220,transmission,40.79203,-0.96967
+way/387673197,Subestaciò d'Adrall,,220000,220,,42.32386,1.39549
+way/396162343,Subestación de Elgea,Iberdrola,220000;30000,220,yes,42.89256,-2.45028
+way/398913918,Subestación Rabosera,EDP RENOVABLES ESPAÑA S.L.U,30000;220000,220,transmission,42.09250,-0.84703
+way/398913922,Almudévar,Red Eléctrica de España,220000,220,traction,41.99007,-0.66018
+way/399055749,Subestación 220 kV FOIX,Red Eléctrica de España,220000,220,transmission,41.21014,1.65797
+way/401804126,Subestación de Udalla,Red Eléctrica de España,400000,400,transmission,43.32364,-3.46222
+way/401922040,Subestació Via Favència,,220000,220,transition,41.44943,2.18089
+way/402088750,Subestació Eixample,REE;Endesa,220000;25000;11000,220,distribution,41.40880,2.16934
+way/402088758,Subestació Eixample,REE;Endesa,220000;25000;11000,220,distribution,41.40874,2.16933
+way/411107082,Subestación eléctrica Esquedas 220,Red Eléctrica de España,220000,220,yes,42.21554,-0.57153
+way/417624897,SET Tardienta,Iberdrola,220000,220,generation,41.93406,-0.58297
+way/430071597,Iberduero S.a.,Red Eléctrica de España,400000,400,distribution,43.25697,-1.97496
+way/452693264,Subestación de Larraskitu,Iberdrola,220000;132000;30000,220,distribution,43.24316,-2.93356
+way/453378204,Subestación Río Gállego,,220000;30000,220,generation,42.01104,-0.68581
+way/463726606,Subestació eléctrica Sant Boi,Red Eléctrica de España,220000,220,transmission,41.33607,2.04077
+way/468774874,Siubestació Tanger,REE;Endesa,220000;25000;11000,220,distribution,41.40304,2.19309
+way/475867002,SE Llodio - Laudio,,220000;30000;13200,220,distribution,43.14367,-2.95230
+way/506058990,Estació receptora de Perafort,Red Eléctrica de España,220000,220,,41.19451,1.24854
+way/528721624,Oncala,Red Eléctrica de España,220000,220,transmission,41.98892,-2.37336
+way/529061183,Subestación PE La Loma,,220000;30000,220,converter,40.76414,-0.76072
+way/586348408,Subestació de Santa Coloma,R.E.E.;Endesa,220000;132000;66000;25000,220,transmission,41.46036,2.19109
+way/592435155,Subestació Besòs,REE;Endesa,220000;110000;66000;25000;11000,220,,41.42033,2.22835
+way/627293640,SET Muniesa,Red Eléctrica de España,400000,400,,41.03300,-0.83972
+way/662930928,Subestació Maragall,REE;Endesa,220000;25000;11000,220,,41.41685,2.17997
+way/677413570,Subestación Loeches 1,Red Eléctrica de España,400000;220000,400,transmission,40.38777,-3.42257
+way/683693772,Subestacion De Mudéjar,Red Eléctrica de España,400000,400,transmission,41.02291,-0.38216
+way/683892938,La Farga,Red Eléctrica de España,400000;220000,400,transmission,42.06246,2.88311
+way/702532047,Zamudioko,Iberdrola,220000,220,distribution,43.30126,-2.86402
+way/730893342,Subestació Mata,REE;Endesa,220000;110000;25000;11000,220,distribution,41.37363,2.17219
+way/775256181,Subestación Mata Alta,Forestalia - Repsol,220000;30000,220,converter,41.25810,-1.02045
+way/831327268,Arubal,,400000,400,generation,42.41845,-2.24974
+way/832323313,,,220000,220,transmission,42.02839,-2.01502
+way/931032666,Subestació elèctrica de l'Espluga de Francolí,Adif,400000;25000,400,traction,41.40426,1.12404
+way/931181199,Peñalba,Adif,400000,400,traction,41.52649,-0.10036
+way/931574994,Rueda de Jalón,Adif,400000;50000,400,traction,41.65032,-1.29751
+way/931602168,Terrer Vega (Adif),Red Eléctrica de España,400000,400,traction,41.32164,-1.70594
+way/931733590,Medinaceli (Adif),,400000;50000,400,traction,41.10552,-2.37375
+way/931743752,SET Anchuelo,,400000;50000,400,traction,40.46383,-3.29614
+way/961741975,CS Fuendetodos,,220000,220,transmission,41.33661,-0.97048
+way/961840189,Subestación Ventavieja,,220000;30000,220,transmission,41.08606,-0.72930
+way/965347086,Subestación Monforte,Forestalia,220000,220,converter,41.08315,-1.01183
+way/965351154,Subestación Cañaseca,,220000,220,converter,41.10715,-0.90128
+way/965918883,Subestación Sierra de Oriche,Enel Green Power España S.L,220000,220,converter,40.98000,-1.00857
+way/970599107,SET Penedés,,220000,220,distribution,41.36445,1.70825
+way/987010664,Subestación de Daganzo,,220000,220,transmission,40.55381,-3.47891
+way/1023900476,Subestació Elèctrica Zona Franca,Red Eléctrica de España,220000,220,distribution,41.32313,2.13329
+way/1027078325,SET Majas VI,,220000;30000,220,converter,41.28263,-0.88235
+way/1027086226,,,220000;30000,220,converter,41.22173,-1.03740
+way/1027086227,SET Majas VII D,,220000;30000,220,converter,41.18508,-0.92750
+way/1028926498,SET Promotores Muniesa,,220000;400000,400,,41.03280,-0.84092
+way/1028937639,CS Los Vientos,,220000,220,compensation,41.49147,-1.14222
+way/1029033786,SET Valcardera,,30000;220000,220,converter,41.84357,-1.37643
+way/1031589976,SET Valdenavarro,,220000,220,,42.02809,-0.92950
+way/1100866837,SET Sur,,400000;132000;30000,400,,41.23048,-0.26215
+way/1131770060,,,220000,220,generation,40.63146,-2.81829
+way/1154224087,Subestación de Sabiñánigo,Red Eléctrica de España,220000,220,transmission,42.51636,-0.35800
+way/1167713589,SET Híjar,Red Eléctrica de España,220000,220,transmission,41.17270,-0.41877
+way/1194027525,Villar del Águila,,220000,220,transmission,39.94995,-2.53627
+way/1237239896,Villanueva de los Escuderos II,,400000;132000,400,distribution,40.02976,-2.32060
+way/1237353930,SET Pedregales,,220000,220,generation,41.12323,-0.99598
+way/1239197408,,,220000,220,generation,42.64995,-1.45642
+way/1240967180,Amorebieta,Red Eléctrica de España,400000,400,generation,43.23596,-2.74929
+way/1245866984,Subestación Sabinar Generación,,400000;132000,400,generation,39.64120,-2.08185
+way/1246090890,Subestació Els Magraners,Red Eléctrica de España,220000,220,,41.61187,0.66854
+way/1249583127,,,220000,220,,41.20229,1.22525
+way/1252094933,SET Anchuelo,,220000,220,transmission,40.46414,-3.29814
+way/1252514183,,Red Eléctrica de España,220000,220,,42.49597,1.21282
+way/1254646680,Subestación Magaña,,220000,220,,41.95355,-2.20019
+way/1255236015,SET Cercs,,220000;110000;25000,220,,42.17436,1.85484
+way/1257151190,Sant Fost,Red Eléctrica de España,220000,220,,41.51153,2.21792
+way/1258384938,Subestació elèctrica de Can Barba,Red Eléctrica de España,400000,400,,41.55195,2.05697
+way/1259344219,Subestació Facultats,REE;Endesa,220000;25000,220,distribution,41.38344,2.11946
+way/1259344220,Subestació Facultats,REE;Endesa,220000;25000,220,distribution,41.38359,2.11973
+way/1259344221,Subestació Urgell,REE;Endesa,220000;11000,220,distribution,41.38812,2.14660
+way/1259344222,Subestació Vilanova,REE;Endesa,220000;25000;11000,220,distribution,41.39246,2.18192
+way/1259370155,ST Sagunto amplification (Sagunt),,220000;20000,220,distribution,39.67323,-0.26780
+way/1259449584,Subestació Motors,REE;Endesa,220000;25000,220,distribution,41.34537,2.13023
+way/1261932482,,Adif,220000;50000,220,traction,41.99057,-0.66061
+way/1262644008,Subestacion Zaragoza G.I.F,Adif,220000,220,traction,41.56990,-0.78973
+way/1263211052,Subestación Valdeconejos,Red Eléctrica de España,220000,220,transmission,40.79355,-0.88148
+way/1263279632,SET Mudéjar Promotores,,400000;220000;33000,400,,41.02458,-0.38433
+way/1263430948,Subestación Platea,Red Eléctrica de España,400000,400,transmission,40.44332,-1.11586
+way/1263526773,Subestación PFV Loma Gorda,,220000;30000,220,,41.34331,-0.93026
+way/1266061513,SET Sotillo-Tablares,,220000;20000,220,,41.65759,-1.35054
+way/1266061515,Subestación La Serreta,,220000;20000,220,,41.69688,-1.28761
+way/1266081844,Subestación de Magallón,Red Eléctrica de España,400000,400,transmission,41.84665,-1.38109
+way/1266109989,Subestació elèctrica de Maials,,400000;132000,400,transmission,41.38778,0.50549
+way/1267909080,SE Tudela,Red Eléctrica de España,220000,220,distribution,42.05046,-1.61551
+way/1275359449,Subestación Eléctrica de Bolarque II,Red Eléctrica de España,220000,220,transmission,40.36465,-2.83004
+way/1277630100,,,400000;132000,400,generation,39.63936,-2.08354
+way/1277630103,,Red Eléctrica de España,400000;220000,400,,39.63867,-2.08627
+way/1277630152,Subestación de Olmedilla,Red Eléctrica de España,400000,400,transmission,39.63831,-2.08475
+way/1277780445,,Adif,400000,400,traction,39.52405,-1.56473
+way/1277780459,Minglanilla-Generación,,400000,400,,39.52697,-1.56730
+way/1277780472,,,400000,400,,39.52496,-1.56713
+way/1341650369,Subestación Arganda,,220000;45000;15000,220,,40.30178,-3.45928
+way/1358349622,Subestación Colectora Belinchón,,400000;132000;30000,400,,40.03430,-3.07548
+way/1369136582,SET Fuentes,,220000,220,converter,41.51336,-0.68777
+way/1369161160,CS AVE Zaragoza,,220000,220,transmission,41.56971,-0.78765
+way/1396838755,Subestación Sant Martí,,220000;66000,220,minor_distribution,39.81308,3.09440
+way/1411792935,Fuendejalón,Molinos del Moncayo SL,220000,220,generation,41.73278,-1.44546
+way/1411809831,SET El Campo,Enel,220000,220,generation,41.90011,-1.49631
+way/1431026200,CS El Peral,,220000,220,,40.65871,-2.74403
+way/1431026202,Subestación Las Represas,,220000;30000,220,generation,40.69450,-2.77694
+way/1431026204,Subestación Uma,,400000;220000,400,,40.70918,-2.64137
+relation/6329325,SET Santa Quitería,,220000;20000,220,,41.97633,-0.61408
+relation/8259893,Subestació de Trinitat,REE;Endesa,220000;25000,220,transmission,41.44846,2.18897
+relation/10295969,Estació receptora de Calders,,400000,400,,41.76693,1.93506
+relation/16809528,Subestació de Begues,Red Eléctrica de España,400000;220000,400,transmission,41.35544,1.90239
+relation/17678185,Central del Pont de Suert,Red Eléctrica de España,220000,220,transmission,42.40366,0.73847
+relation/20143465,ST Villares del Saz,Iberdrola,220000;66000;20000,220,distribution,39.86160,-2.57020
+way/43797051,Subestación Alcores,Red Eléctrica de España,220000;132000;66000,220,transmission,37.38639,-5.85634
+way/44633677,Subestación Eléctrica de Puerto Real,Red Eléctrica de España,220000,220,transmission,36.51808,-6.15533
+way/75902880,Subestación Tajo de la Encantada,,400000;220000,400,transmission,36.89503,-4.74563
+way/89616317,Subestación de Ciudad Real (AVE),,220000,220,traction,38.95707,-3.91895
+way/93147473,Poste 400kV de Melloussa,,400000,400,transmission,35.64711,-5.66130
+way/94185870,Subestación de Los Montes,Red Eléctrica de España,220000;132000;66000,220,transmission,36.74539,-4.38889
+way/96928920,Subestación Puerto de la Cruz,Red Eléctrica de España,220000;66000,220,transmission,36.07389,-5.61430
+way/97199647,Subestación de Pinar del Rey,Red Eléctrica de España,400000,400,transmission,36.24847,-5.41159
+way/97286424,Subestación de Jordana,Red Eléctrica de España,400000;220000,400,transmission,36.44416,-5.21868
+way/97851756,Subestación Cartuja,Red Eléctrica de España,220000;66000,220,transmission,36.61837,-6.12003
+way/98127909,Subestación Facinas,,220000;66000,220,transmission,36.14523,-5.71773
+way/98603324,Subestación de Tarifa,,400000,400,transition,36.03232,-5.60606
+way/107479377,SE Caceres,,220000;132000,220,transmission,39.47960,-6.35796
+way/120552938,Subestación Santa Elvira,,220000;132000;66000;15000,220,transmission,37.38988,-5.93052
+way/144487932,Subestación de Arcos de la Frontera,Red Eléctrica de España,400000;220000,400,transmission,36.67154,-5.82060
+way/144601080,Subestação de Estremoz,REN,400000;60000,400,transmission,38.88961,-7.52891
+way/144639174,Subestação de Alqueva,REN,400000;60000,400,transmission,38.18595,-7.49836
+way/144767084,SET Balboa,Red Eléctrica de España,400000;220000,400,transmission,38.32584,-6.71261
+way/144767090,SE Brovales,Red Eléctrica de España,400000,400,transmission,38.32039,-6.70313
+way/144775943,Subestación Eléctrica de Mérida,Red Eléctrica de España,220000;132000,220,transmission,38.89656,-6.34164
+way/144778677,SET Albuera,Red Eléctrica de España,220000,220,transmission,38.71505,-6.80053
+way/144778695,,,220000,220,transmission,38.82249,-6.82262
+way/144778698,,,220000,220,transmission,38.81258,-6.83820
+way/144787749,Subestación de Don Rodrigo,Red Eléctrica de España,400000;220000;66000,400,transmission,37.24519,-5.84346
+way/144799209,Subestación de Quintos,,220000;66000,220,transmission,37.35016,-5.95190
+way/144812118,Subestación de Dos Hermanas,Red Eléctrica de España,220000;132000;66000,220,transmission,37.29830,-5.90582
+way/144812135,Subestación Siderúrgica,,220000,220,industrial,37.36169,-5.88754
+way/144813618,Subestación de Aljarafe,Red Eléctrica de España,220000;66000,220,transmission,37.34443,-6.09449
+way/144827711,Subestación de Casaquemada,Red Eléctrica de España,220000,220,transmission,37.44023,-6.26626
+way/145456406,Subestación de Casillas,Red Eléctrica de España,220000;132000;66000,220,transmission,37.85801,-4.81232
+way/145456411,Subestación Lancha,,220000,220,transmission,37.91694,-4.70967
+way/145456425,Subestación Arroyo del Valle,,220000,220,transmission,38.19172,-4.50974
+way/145461765,Subestación de Guadalquivir Medio,Red Eléctrica de España,400000;220000,400,transmission,38.04871,-4.19301
+way/145466007,Puertollano,Red Eléctrica de España,220000,220,transmission,38.64746,-4.12514
+way/145466009,,Red Eléctrica de España,220000,220,transmission,38.65718,-3.98704
+way/145478409,Subestación de Andújar,Red Eléctrica de España,220000;132000,220,transmission,38.04323,-3.99676
+way/145594445,La Nava,Red Eléctrica de España,220000,220,transmission,38.67834,-4.14663
+way/145599515,Subestación Alarcos,,220000;132000;45000,220,distribution,38.94802,-3.96204
+way/151490968,Subestación de Santiponce,Red Eléctrica de España,220000;132000;66000,220,transmission,37.42537,-6.03939
+way/164823726,Subestación de Salteras,,220000,220,transmission,37.48177,-6.06988
+way/168357739,Subestación de Valdecaballeros,Red Eléctrica de España,400000,400,transmission,39.29119,-5.18250
+way/169993787,Subestación Montecillo Bajo,,220000,220,transmission,37.92556,-4.69200
+way/170090015,AVE Venta de Inés,Adif,220000,220,traction,38.56563,-4.42806
+way/170424446,Subestación de Puebla de Guzmán,Red Eléctrica de España,400000;66000,400,transmission,37.54861,-7.24135
+way/170424447,Subestación de Guillena,Red Eléctrica de España,400000;220000,400,transmission,37.63635,-6.09743
+way/170424455,Subestación de Palos de la Frontera,,400000;220000,400,transmission,37.18473,-6.88294
+way/170433597,Subestación de Onuba,,220000;66000,220,transmission,37.29983,-6.92537
+way/170433606,Subestación Cristóbal Colón,,220000;66000;50000,220,distribution,37.21692,-6.94371
+way/170433617,Subestación de Ence,,220000,220,industrial,37.30477,-6.86480
+way/170779407,Carroyuelas,Red Eléctrica de España,220000,220,transmission,39.48437,-3.58065
+way/170946426,Subestación de Caparacena,Red Eléctrica de España,400000;220000;132000,400,transmission,37.26798,-3.72609
+way/170954487,Subestación de Cabra,Red Eléctrica de España,400000,400,transmission,37.45707,-4.49429
+way/170961288,Subestación de La Roda de Andalucía,Red Eléctrica de España,400000,400,transmission,37.25486,-4.77701
+way/170961292,Subestación de La Roda de Andalucía,,220000,220,switching,37.25580,-4.77872
+way/170968145,Subestación de Cártama,Red Eléctrica de España,400000;220000;66000,400,transmission,36.75092,-4.60510
+way/170968150,Subestación Eléctrica de Los Ramos,,220000;132000;66000,220,transmission,36.72899,-4.47290
+way/171071300,Subestación de Atarfe,,220000;66000;20000,220,transmission,37.22512,-3.69722
+way/171106850,Subestación de Alhaurín,Red Eléctrica de España,220000;66000,220,transmission,36.65585,-4.57494
+way/171113534,Subestación Costa del Sol,Red Eléctrica de España,220000;66000,220,transmission,36.52306,-4.85949
+way/171557472,Subestación de Los Olivares,Red Eléctrica de España,220000;132000;66000,220,transmission,37.79917,-3.80116
+way/171558297,Subestación eléctrica El Esperador,Red Eléctrica de España,220000,220,transmission,39.34070,-3.87224
+way/171560231,,,220000,220,transmission,39.26687,-4.09279
+way/171560239,,Red Eléctrica de España,220000,220,transmission,39.02090,-4.10794
+way/181664117,Subestación Colectora Promotores Carmona,Red Eléctrica de España,400000;220000,400,transmission,37.55717,-5.75906
+way/181677165,,,220000,220,transition,36.21170,-5.41576
+way/182253926,Subestación de Villanueva del Rey,,220000,220,compensation,37.52950,-5.16376
+way/182253927,Subestación Saetillas,,220000,220,transmission,37.64352,-5.24732
+way/182253930,Subestación de Villanueva del Rey,Red Eléctrica de España,220000;66000,220,transmission,37.52765,-5.16423
+way/182260861,Subestación de El Puerto de Santa María,Red Eléctrica de España,220000;66000,220,transmission,36.67064,-6.30104
+way/182261552,Subestación TMS Lebrija,,220000,220,transmission,37.00281,-6.04531
+way/187380300,Subestación Nueva Casares,,220000;132000;66000,220,transmission,36.40548,-5.22005
+way/187830917,Subestación de Las Gabias,,220000;66000;20000,220,transmission,37.14579,-3.67066
+way/191053031,Subestación Parralejos,Red Eléctrica de España,220000,220,transmission,36.29731,-5.98874
+way/191053032,Subestación Gazules,Red Eléctrica de España,220000,220,transmission,36.49690,-5.78434
+way/191210664,Subestación Paterna II,,220000,220,transmission,36.52584,-5.83154
+way/216226370,Subestación Almodóvar del Río,,220000,220,transmission,37.75081,-5.02041
+way/216251164,Subestación Vallesol,,400000;132000,400,transmission,36.66970,-5.82795
+way/222867769,,,220000,220,transmission,38.95818,-6.46434
+way/222873301,Subestación de Vaguadas,,220000;66000,220,transmission,38.83793,-6.97895
+way/222885175,Subestación Medina Norte,,220000;66000,220,transmission,36.48937,-5.91369
+way/222903016,,Red Eléctrica de España,220000,220,transmission,38.64708,-3.97082
+way/222903017,,Red Eléctrica de España,220000,220,transmission,38.62572,-3.97627
+way/222998401,Subestación de Generación TMS Lebrija,,220000,220,generation,37.00412,-6.04879
+way/249897127,poste 400 kV Ferdioua,,400000,400,transmission,35.83096,-5.61382
+way/292277455,Alvarado,Red Eléctrica de España,220000,220,transmission,38.78715,-6.80012
+way/338683860,Subestación de Torrearenillas,,220000;66000,220,transmission,37.19091,-6.90374
+way/403150976,Subestación de Costa de la Luz,,220000;66000,220,transmission,37.30712,-7.20764
+way/420403750,Subestación Guadalteba,,220000,220,generation,37.04346,-4.97379
+way/457010443,Subestación Centenario,Red Eléctrica de España,220000,220,transmission,37.39200,-6.01238
+way/487381592,Subestación de Archidona,,400000,400,transmission,37.12020,-4.41510
+way/495050398,Subestación La Escalereta,,220000,220,generation,36.94899,-5.05762
+way/513869641,Subestación El Álamo,,220000;66000,220,generation,37.08525,-4.93579
+way/576439241,Subestación de Brazatortas,Red Eléctrica de España,400000;220000,400,transmission,38.65243,-4.25376
+way/593535391,SET Mesa de Copa,,400000,400,generation,39.21994,-5.37657
+way/647697389,Subestación de Fargue,Red Eléctrica de España,220000,220,transmission,37.19637,-3.57507
+way/648169311,Subestação da Central Hidroelétrica de Alqueva 2,,400000;15000,400,generation,38.19383,-7.49706
+way/651711449,SE Servan,Red Eléctrica de España,400000;220000,400,transmission,38.80645,-6.51526
+way/664941154,Poste blindé 400/225 kV Béni Harchane,,400000;225000,400,transmission,35.51104,-5.75445
+way/666476490,Subestación Cañuelo,,220000,220,transmission,36.21374,-5.45282
+way/691036111,Subestación Puerto de la Cruz,Red Eléctrica de España,400000;220000,400,transmission,36.07225,-5.61512
+way/742612300,Subestação de Tração do Alandroal,Infraestruturas de Portugal,400000;25000,400,traction,38.73886,-7.27659
+way/751278521,Subestación Polígono,,220000;66000,220,distribution,36.69454,-4.46647
+way/782365013,Subestación de Íllora,,220000,220,transmission,37.24039,-3.88494
+way/788716327,,,400000;30000,400,transmission,38.42222,-6.22351
+way/829082641,,,400000,400,transmission,38.32706,-6.71410
+way/829082643,Siderúrgica Balboa,,400000,400,transmission,38.32033,-6.71359
+way/879054614,Poste 400/225kV de Tahaddart,,400000;225000,400,,35.58894,-5.98807
+way/891962367,Subestación Central Hidroeléctrica La Breña II,,220000;110000,220,generation,37.82363,-5.04712
+way/913515391,,,220000,220,generation,37.24650,-5.86003
+way/931763733,,Adif,220000,220,traction,38.67796,-4.14636
+way/931771523,Subestación de Tracción Arroyo del Valle,,220000,220,traction,38.19132,-4.50950
+way/931778222,,,220000,220,traction,37.75078,-5.01946
+way/977168018,Subestación del Rocío,,220000;66000,220,transmission,37.14429,-6.49374
+way/996050563,Subestación Las Cruces,Cobre Las Cruces,220000,220,industrial,37.49588,-6.10149
+way/1002151700,Subestación El Zumajo,Red Eléctrica de España,220000;66000,220,transmission,36.29795,-5.98963
+way/1032009185,Subestación de Planta Fotovoltaica La Vega 1 y 2,,220000,220,generation,37.01025,-4.95482
+way/1032009197,SE Talarrubias II,,220000;30000,220,generation,39.33049,-5.33107
+way/1032009198,SE Talarrubias I,,220000;30000,220,generation,39.33130,-5.33725
+way/1032009204,Subestacion PV Valdecaballeros Ingenostrum,,220000;30000,220,generation,39.26050,-5.42724
+way/1032009212,Valdecaballeros Euder,,220000,220,generation,39.24858,-5.29493
+way/1158411305,,Red Eléctrica de España,220000,220,transmission,38.78721,-6.80267
+way/1158427320,,,220000,220,generation,38.77866,-6.80427
+way/1164100988,Sub-1 Colectora San Serván,,400000;220000,400,generation,38.80493,-6.52178
+way/1164100996,SET El Doblón,,220000;30000,220,generation,38.75772,-6.49605
+way/1164101006,SET Los Juncales,,220000,220,generation,38.75020,-6.48746
+way/1164184948,SE VERACRUZ,,220000;30000,220,generation,38.74880,-6.43328
+way/1164294512,Sub-2 San Serván V,,220000;30000,220,generation,38.80609,-6.52418
+way/1165661175,Subestación Olivenza,,220000,220,,38.73796,-7.06267
+way/1172185252,SET Apicio,,400000;132000;30000,400,transmission,38.23793,-6.58915
+way/1175023992,Subestación Nudo S5,,220000,220,,38.65852,-3.98848
+way/1175024019,Subestación Puertollano PV,,220000;30000,220,,38.65899,-3.98935
+way/1177310827,SET FV Picón,,220000,220,generation,39.15075,-4.09848
+way/1183902141,SET San Serván 8,,220000;30000,220,generation,38.78325,-6.55516
+way/1216892183,Subestación Cerro de la Higuera,,220000,220,transmission,36.92515,-4.87244
+way/1216892184,Subestación Cerro de la Higuera,,220000,220,generation,36.92455,-4.87242
+way/1235319282,La Solana,Red Eléctrica de España,220000,220,transmission,38.67863,-4.14576
+way/1246916016,,,400000;30000,400,yes,38.28655,-6.16035
+way/1256744849,Subestação da Central Hidroelétrica de Alqueva 1,Energias de Portugal,400000,400,generation,38.19706,-7.49641
+way/1262722031,Subestación de Los Barrios,,400000;220000,400,transmission,36.18464,-5.42042
+way/1262722032,Subestación de Los Barrios,,220000,220,transmission,36.18356,-5.42363
+way/1262722037,Subestación de Algeciras,,220000,220,generation,36.18336,-5.38830
+way/1262722046,Subestación de Central de Ciclo Combinado Bahía de Algeciras,,220000,220,generation,36.18372,-5.38949
+way/1262731213,Subestación de Pinar del Rey,Red Eléctrica de España,220000,220,transmission,36.24760,-5.41292
+way/1267694217,SET CARMONITA,Red Eléctrica de España,400000;220000,400,transmission,39.09502,-6.36921
+way/1271688038,"SET Planta Fotovoltaica ""FV Arenales""",,220000;30000,220,generation,39.45925,-6.55078
+way/1271737400,SET CANDELARIA,,220000;30000,220,generation,38.81821,-6.58347
+way/1272514928,Subestación Sagrajas,Adif,400000,400,traction,38.92624,-6.72119
+way/1273759380,Subestación Chucena,Red Eléctrica de España,220000;66000,220,transmission,37.34240,-6.38479
+way/1273954223,Subestación La Luz,,220000,220,generation,37.32153,-6.89797
+way/1274014801,Subestación El Condado,Red Eléctrica de España,220000,220,transmission,37.39461,-6.53034
+way/1308895546,Subestación Planta Solar Fotovoltaica Guillena,,220000;20000,220,generation,37.56639,-6.07288
+way/1312242525,Subestación Planta Solar Puerto Real,,220000;20000,220,generation,36.54786,-6.10124
+way/1316657449,Subestación Mirabal,,220000,220,,36.69764,-6.06538
+way/1316855580,Subestación Entrenúcleos,,220000,220,transmission,37.31462,-5.94490
+way/1316892946,Subestación de Central de Ciclo Combinado Campo de Gibraltar,,400000,400,generation,36.18417,-5.39076
+way/1328740428,,,220000,220,generation,37.25438,-5.70276
+way/1332493810,Subestación de Castellar de la Frontera,,400000,400,transmission,36.30634,-5.39753
+way/1349887432,SE 2 Colectora 220 Kv,,220000,220,transmission,38.65689,-4.25068
+way/1376978389,Subestación Burguillos,,220000;33000,220,,37.59949,-5.99224
+way/1447429832,SET FV Carmonita Norte,FRV,220000;30000,220,generation,39.12991,-6.30862
+way/1447429834,SCT Las Tiendas,,220000;30000,220,generation,38.98747,-6.44240
+way/1447429837,CARMONITA 400/220,,400000;220000,400,transmission,39.09804,-6.36881
+way/1447429838,SE Morantes,,220000;30000,220,generation,39.06138,-6.63729
+way/1448088711,Subestación Colectora Renopool,,220000;30000,220,generation,38.81061,-6.64051
+way/1448088712,,,220000,220,transmission,38.81115,-6.64118
+way/1448088713,Subestación elevadora El Encinar I,Naturgy,220000;30000,220,generation,38.81613,-6.65857
+way/1448240979,SE Segura de Leon,,400000;30000,400,generation,38.19899,-6.39725
+way/1448240984,SE PFS Emin,,400000;30000,400,generation,38.18568,-6.33520
+way/1484773439,Subestación La Reunión,,400000;30000,400,distribution,37.54931,-6.08711
+way/1485775385,SET Balboa,Endesa,400000;66000,400,transmission,38.32441,-6.71235
+way/1486888054,Subestación Navuelos,,220000;30000,220,,36.33839,-5.86200
+way/1486888057,,,220000,220,,36.29579,-5.98899
+way/1487830852,Subestación Promotores Guillena,,400000;220000,400,,37.63201,-6.09058
+way/1487835521,Subestación FV Castilblanco,,220000;30000,220,,37.65889,-5.95761
+way/1487835524,Subestación ICE Guillena,,220000,220,,37.63685,-6.10217
+way/1488040451,Subestación El Canto,,220000;30000,220,,37.56227,-5.59330
+way/1488040454,,,220000,220,,37.53459,-5.58192
+way/1488040457,Subestación Promotores Nudo Carmona 400,,220000,220,,37.54800,-5.62077
+way/1488040458,,,220000,220,,37.54873,-5.62085
+way/1488040460,,,220000,220,,37.55298,-5.62088
+way/1488040468,,,220000,220,,37.51723,-5.73554
+way/1488040473,,,220000,220,,37.55410,-5.75634
+way/1488097677,,,220000,220,,37.54176,-5.59445
+way/1488396746,Subestación PFV Villanueva el Rey,,220000;30000,220,,37.57672,-5.19007
+way/1491085843,SE Madridejos 220 kv,Red Eléctrica de España,220000,220,transmission,39.48707,-3.53141
+way/1492149870,Subestación Guadalsolar,,220000;30000,220,,36.69364,-6.03249
+way/1492216949,Subestación Álamo,,220000,220,,36.49516,-5.78882
+way/1492216951,Subestación La Miranda,,220000;30000,220,,36.52440,-5.78434
+way/1493573614,SE La Muela,,220000;30000,220,generation,39.09184,-6.58094
+way/1493949514,Subestación Atenea,,220000;30000,220,,37.18741,-5.68982
+way/1493949515,Subestación Marchamorón,,220000;30000,220,,37.25026,-5.75816
+way/1493949519,Subestación Matallana,,400000;220000,400,,37.28489,-5.78223
+way/1493949522,Subestación Campos,,220000;30000,220,,37.37856,-5.65939
+way/1517819534,S6,,400000;132000,400,,37.12037,-4.44461
+way/1518525084,Subestación Promotores Caparacena,,400000;220000;30000,400,,37.26893,-3.72981
+way/1564914494,Subestación Antilia,,220000;30000,220,,38.62588,-4.01702
+relation/20290680,Subestación de Bienvenida,Red Eléctrica de España,400000,400,transmission,38.31791,-6.19755
+node/11710795824,ST Alameda,,220000;132000;20000,220,distribution,39.45630,-0.34751
+way/28648202,SET San Vicente,Red Eléctrica de España,220000;132000;66000,220,transmission,38.39688,-0.53800
+way/46106589,Subestación de Benahadux,Red Eléctrica de España,220000;132000;66000,220,transmission,36.90875,-2.46596
+way/60351390,Subestació elèctrica de Torrent,Red Eléctrica de España;Iberdrola,400000;220000;132000;66000;20000,400,transmission,39.42355,-0.45467
+way/93602097,SET Beniferri,Red Eléctrica de España;Iberdrola,220000;132000;20000,220,distribution,39.49429,-0.40874
+way/97937366,Subestación de Huéneja,Red Eléctrica de España,400000;220000,400,transmission,37.21655,-2.94230
+way/107574175,Station Electrique de Boudouaou,,220000,220,transmission,36.72712,3.38456
+way/107614291,المحطة الكهرباء أولاد فايت,,220000,220,,36.73093,2.96741
+way/107649691,Poste électrique de Beni Mered,,220000;60000,220,transmission,36.53367,2.84901
+way/107655510,Station Electrique Kouba,,220000,220,,36.72394,3.07818
+way/107672070,Subestación El Palmar,Iberdrola Distribución Eléctrica,220000;132000;66000;20000;11000,220,,37.93542,-1.18516
+way/126987023,Subestación de Catadau,Red Eléctrica de España,400000;220000;132000,400,transmission,39.25024,-0.56085
+way/128873801,Subestación Hoyamorena,Iberdrola Distribución Eléctrica,220000;66000;20000,220,transmission,37.74164,-0.87456
+way/129441519,Subestación El Palmar,Red Eléctrica de España,400000,400,transmission,37.94075,-1.18801
+way/144909709,ST Totana,Red Eléctrica de España,400000;132000,400,transmission,37.76564,-1.44573
+way/144909722,Subestación Litoral,Red Eléctrica de España,400000;132000,400,,36.97825,-1.90800
+way/144909723,Subestación La Asomada,Iberdrola Distribución Eléctrica,400000;132000;66000;36000;33000;20000,400,transmission,37.63341,-0.96108
+way/144915428,Subestación Escombreras,Red Eléctrica de España,400000;220000;132000;66000;20000;11000,400,,37.56426,-0.95503
+way/144915438,Subestación Nueva Escombreras,Red Eléctrica de España,400000,400,transmission,37.57280,-0.94161
+way/144922719,Subestación San Pedro del Pinatar,Iberdrola Distribución Eléctrica,220000;66000;20000;11000,220,transmission,37.85926,-0.81496
+way/144926472,Subestación San Miguel de Salinas,Iberdrola Distribución Eléctrica,220000,220,transmission,38.00026,-0.76566
+way/144926486,Subestación de Campoamor,,220000,220,transmission,37.90717,-0.78357
+way/144931782,Subestación de Ayora,Red Eléctrica de España,400000,400,transmission,39.04137,-1.00742
+way/144933376,Subestación de Requena,Red Eléctrica de España,400000,400,transmission,39.45922,-0.98822
+way/144940509,Requena,Adif,400000;25000,400,,39.46596,-0.97057
+way/144941889,Subestación Eléctrica Romica,Red Eléctrica de España,400000,400,transmission,39.04358,-1.79979
+way/144942113,Subestación de Pinilla,Red Eléctrica de España,400000;132000;20000,400,transmission,38.76454,-1.60211
+way/148488880,Subestación de Galera,,400000;55000,400,traction,39.10536,-1.95770
+way/169616880,Subestación de Elda,,220000;66000;20000,220,distribution,38.50008,-0.79097
+way/170779408,Subestación La Paloma,UFD,220000;132000;45000;15000,220,transmission,39.02084,-3.37505
+way/171251565,Subestación de Rocamora,Iberdrola Distribución Eléctrica,400000;132000;66000,400,transmission,38.14780,-0.94621
+way/171256169,ST Beneixama,Red Eléctrica de España,400000;220000;132000,400,transmission,38.71901,-0.72256
+way/171274139,SET Saladas,Red Eléctrica de España,220000;132000,220,transmission,38.29930,-0.62018
+way/171277174,SET Elche HC,Red Eléctrica de España,220000,220,transmission,38.26455,-0.63616
+way/171277691,Subestación de Rojales,Red Eléctrica de España,220000,220,transmission,38.05626,-0.73682
+way/171419971,Subestación de Xixona,Red Eléctrica de España,220000,220,transmission,38.49175,-0.47733
+way/171419975,SET Cantalar,,220000;20000,220,distribution,38.42451,-0.42049
+way/171433651,SET Valle de Cárcer,Red Eléctrica de España,220000;20000,220,transmission,39.06135,-0.52125
+way/171442816,Subestación de l'Albal,Iberdrola,220000,220,transmission,39.39769,-0.44524
+way/171537720,SET El Pameral,,220000;20000,220,distribution,38.32871,-0.51930
+way/171544194,Central Electrica del Salto de Millares,,220000,220,transmission,39.22407,-0.71848
+way/171549323,,,220000;66000,220,transmission,38.43898,-0.78213
+way/171556372,,Red Eléctrica de España,220000,220,transmission,39.13301,-0.41440
+way/172698243,,,220000;60000,220,,36.50639,2.57015
+way/173670736,Poste électrique de Khemis Miliana,SONELGAZ,220000,220,transmission,36.26003,2.24079
+way/173670759,,Sonelgaz,400000;220000,400,transmission,36.45031,2.60145
+way/173677993,El Hassi,GRTE,400000;220000,400,transmission,35.72090,-0.47251
+way/173805804,,,220000,220,transmission,35.20247,-0.57077
+way/173985842,,,220000,220,transmission,35.76873,-0.19256
+way/174171686,,,220000,220,transmission,36.01304,0.12857
+way/174171691,,,220000,220,transmission,35.87867,0.13938
+way/174338940,,,220000,220,transmission,35.38509,0.17404
+way/174342293,,,220000,220,industrial,35.53148,-0.27862
+way/174342295,المحطة الكهرباء غليزان 220/60/30 كف,الشركة الجزائرية لتسيير شبكة نقل الكهرباء,220000;60000;30000,220,transmission;distribution,35.75403,0.55640
+way/174347010,Centrale Electrique de Oued Sly,,220000,220,transmission,36.08681,1.19882
+way/186942438,Subestació del Grau,Iberdrola,220000;132000;66000;20000,220,distribution,39.45638,-0.33287
+way/193793262,Subestación Espinardo,Iberdrola Distribución Eléctrica,220000;132000;66000;20000;11000,220,distribution,38.01666,-1.15779
+way/206847211,,,220000,220,transmission,36.24882,1.88871
+way/221085150,Bir Ghbalou electrical substation,,400000;220000,400,transmission,36.25091,3.57488
+way/222885498,Subestación de Aldeire,,220000;66000,220,transmission,37.22237,-3.06798
+way/222894678,SET Planta FV Valdecarro,,220000,220,transmission,39.18417,-3.32141
+way/222895334,SE Manzanares,Red Eléctrica de España,400000;220000,400,transmission,39.04485,-3.34431
+way/222901014,SET ARENAS DE SAN JUAN,Red Eléctrica de España,220000,220,transmission,39.24339,-3.49304
+way/226879630,,,220000,220,industrial,35.87842,4.44224
+way/229184275,,,400000;132000,400,generation,38.52320,-1.33281
+way/254853839,Thameur substation,,220000,220,transmission,36.33638,3.95031
+way/261594435,Subestación de Valldigna,Red Eléctrica de España;Iberdrola,220000;20000,220,transmission,39.06093,-0.27915
+way/265408693,Cortes II,Iberdrola,400000,400,generation,39.26271,-0.91905
+way/290064982,ST Nou Moles,REE;Iberdrola,220000;20000,220,minor_distribution,39.47142,-0.39432
+way/299287342,Subestación de Gandia,i-DE,220000;132000,220,transmission,38.98244,-0.18526
+way/327268322,Subestación de Tabernas,,400000;220000,400,transmission,37.07097,-2.31232
+way/340101878,Subestación S2,,220000,220,transmission,37.17042,-2.78593
+way/340101879,Subestación S3,,220000,220,transmission,37.14399,-2.70177
+way/340227647,,,220000;60000,220,,36.20156,1.19061
+way/342760596,,,220000,220,generation,37.22742,-3.05047
+way/359380463,poste O/Abtal 400kv,grto,400000;220000,400,transmission,35.45271,0.65048
+way/366187313,,SONELGAZ,220000,220,transmission,35.53559,-0.39594
+way/371593266,,,220000;60000,220,transmission,36.64994,2.83965
+way/377716686,,,400000,400,transmission,36.57512,2.07938
+way/381266482,,Sonelgaz,220000,220,transmission,35.63951,-0.70778
+way/381355305,,,220000,220,generation,35.70720,4.48032
+way/382497416,Oued Smar electrical substation,,220000,220,transmission,36.69629,3.13756
+way/384575278,,,220000,220,,36.59715,3.14059
+way/445989313,Subestación de Novelda,,220000,220,,38.37454,-0.75688
+way/502982128,SET Viveros,,220000;66000;20000,220,distribution,39.48304,-0.36876
+way/504178826,Campanario,,400000,400,transmission,38.88297,-1.27823
+way/574859222,,,400000;220000,400,transmission,36.19103,1.48625
+way/581521534,Subestación Murcia,Iberdrola Distribución Eléctrica,220000;20000,220,,37.96481,-1.13511
+way/587931418,Subestación Balsicas,Iberdrola Distribución Eléctrica,220000;20000,220,,37.79745,-0.95872
+way/589902332,Poste SK2 220/60 kv,STOS,220000;60000,220,transmission,35.93668,0.56470
+way/610844609,,,400000;220000,400,transmission,35.43616,2.96169
+way/611220827,,,220000,220,,36.59588,2.87834
+way/635672953,sous station 2,,400000,400,transmission,35.76945,-0.25505
+way/675714143,Subestación Peñarrubia,Iberdrola,400000,400,transmission,38.52179,-1.33334
+way/729485840,Subestación Torremendo,Iberdrola Distribución Eléctrica,400000;220000,400,transmission,37.96345,-0.89686
+way/751040071,,,400000;220000,400,transmission,35.76629,-0.16828
+way/766063119,Subestación de Berja,,220000,220,transmission,36.83447,-2.92054
+way/766063120,Subestación de Berja,,220000;66000,220,distribution,36.83355,-2.92074
+way/772002801,,Red Eléctrica de España,400000,400,transmission,37.96111,-1.37866
+way/772400244,Subestación Carril,,400000,400,transmission,37.43702,-1.71896
+way/777446899,Subestación Fausita,Iberdrola Distribución Eléctrica,400000;220000;132000;66000;20000;11000,400,,37.56433,-0.94943
+way/789683722,SET Quart,Red Eléctrica de España,220000,220,distribution,39.48053,-0.52661
+way/845179231,,Iberdrola,400000,400,distribution,38.56188,-0.86190
+way/872952391,Subestación Torrevieja,Iberdrola Distribución Eléctrica,220000;20000,220,distribution,37.97406,-0.69991
+way/921541546,La Muela II,,400000,400,generation,39.24380,-0.93170
+way/936350097,Poste SK1 220/60kV,STOS,220000;60000,220,transmission,35.94215,0.61194
+way/981933507,Subestación Totana Adif,Administrador de Infraestructuras Ferroviarias (Adif),400000;25000,400,traction,37.71862,-1.54453
+way/1037301407,,,220000,220,industrial,35.46249,-0.39292
+way/1042227719,Subestación de Baza,,400000,400,transmission,37.55924,-2.74734
+way/1120397197,Subestación SSP,,400000;132000,400,,39.48311,-2.10149
+way/1167188755,SET Fuente San Luis,Red Eléctrica de España;Iberdrola,220000;132000;20000,220,distribution,39.43923,-0.37348
+way/1169740285,Subestación Torrevieja,Iberdrola Distribución Eléctrica,220000;20000,220,distribution,37.97363,-0.69964
+way/1175485497,Subestación Ictio Alcázar,,220000;20000,220,generation,39.34664,-3.29900
+way/1175633701,SET Perseo Foton,,220000;30000,220,generation,39.07997,-3.31350
+way/1175744923,Subestación Manzanares colectora,,400000;132000;30000,400,generation,39.04744,-3.34174
+way/1236450374,Campanario Adif,,400000,400,traction,38.88389,-1.27793
+way/1236451628,SET Campanario Renovables,Elawan,400000;132000,400,transmission,38.88107,-1.28089
+way/1245361619,,,220000;30000,220,yes,38.99560,-3.48075
+way/1257540996,SET Montebello,,220000;132000;20000,220,distribution,38.59601,-0.13955
+way/1258841550,SET Alcira,Red Eléctrica de España;Iberdrola,220000;66000;20000,220,distribution,39.14967,-0.45742
+way/1258994984,SET Benicull,,220000;20000,220,distribution,39.18495,-0.40237
+way/1259434653,Torrente-ADIF,Adif,400000;25000,400,traction,39.42136,-0.45116
+way/1259639286,ST Parque Central,REE;Iberdrola,220000;20000,220,distribution,39.45798,-0.38253
+way/1259647174,Subestación Eléctrica de Aldaya,Red Eléctrica de España,220000,220,transmission,39.45170,-0.50110
+way/1278864373,,,400000,400,generation,39.46019,-0.98759
+way/1303896195,,,220000,220,,35.43503,-0.41075
+way/1354358035,INJECTEUR (OUED RHIOU2),STOS,220000;60000,220,transmission,35.94032,0.85857
+way/1376683443,Subestación de Órgiva,Endesa,220000,220,transmission,36.89526,-3.41984
+way/1384132537,Subestación Venalta,,220000;30000,220,generation,37.21495,-2.94422
+way/1384133189,Subestacion S1 Hueneja,,220000,220,,37.21731,-2.94284
+way/1488478024,SET colectora La Alquería,,400000;132000,400,generation,38.52088,-1.33039
+way/1489081301,SE7 Preconcentradora 400/132 kV,,400000;132000,400,transmission,39.04191,-1.00884
+way/1492226447,SET Perea,,220000;30000,220,generation,39.29268,-3.31779
+way/1518713742,Subestación Tabernas Renovables,,400000;132000,400,,37.07010,-2.31596
+relation/14933133,Subestación Desaladora de Torrevieja,Iberdrola Distribución Eléctrica,220000;20000,220,transmission,37.96753,-0.70533
+relation/17319555,SET Bernat,Red Eléctrica de España,220000,220,transmission,39.14914,-0.45926
+way/105923106,Los Vallitos,,220000,220,transmission,28.08985,-16.70687
+way/190597947,Granadilla,,220000,220,industrial,28.08565,-16.49639
+way/954758717,,,220000,220,transmission,28.17381,-16.43793
+way/1134581775,,Red Electrica De Espana,220000,220,transmission,28.16094,-16.44585
+way/1135297742,,,220000,220,transmission,28.17238,-16.43738
+way/1135303300,Los Caletillas,,220000,220,transmission,28.38366,-16.36043
+way/1135319863,Buenos Aires,,220000,220,,28.45477,-16.26889
+way/1249177630,Sabinal,,220000,220,yes,28.04462,-15.41908
+way/1338360789,El Rosario,,220000,220,,28.45053,-16.34064
+way/1471715088,Subestación Abona,Red Eléctrica de España,220000;66000,220,,28.07929,-16.50215
