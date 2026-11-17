@@ -1,0 +1,73 @@
+﻿fac_id,nombre,organizacion,direccion,cp,ciudad,provincia,latitud,longitud,num_redes,num_ix,num_carriers,voltaje_disponible,subestaciones_diversas,propiedad,estado
+121,Espanix Datacenter,Asociación ESpanix,Mesena 80,28033,Madrid,Madrid,40.466022,-3.660963,46,6,4,"48 VDC,400 VAC,480 VAC",true,,ok
+122,Equinix BA1 - Barcelona,"Equinix, Inc.",Carrer de l'Acer 30-32,08038,Barcelona,,41.351557,2.137457,74,3,7,,,,ok
+127,Equinix MD2 - Madrid,"Equinix, Inc.",Calle Valgrande 6,28108,Alcobendas,Madrid,40.536855,-3.648584,83,6,12,,,,ok
+130,Digital Realty Madrid MAD1-2,Digital Realty,C/ Albasanz 71,28037,Madrid,,40.439323,-3.621211,231,10,13,,,,ok
+138,CSUC Campus Nord,CSUC,"Gran Capita, 2 - 4 (Edifici Nexus)",E-08034,Barcelona,,41.387314,2.111883,9,1,0,,,,ok
+166,Verizon Madrid,"Verizon Communications, Inc.",C/ Yecora 4,,Madrid,,40.447968,-3.574684,4,0,0,,,,ok
+179,Equinix MD1 - Madrid,"Equinix, Inc.",Calle Isabel Colbrand 6-8,28050,Madrid,,40.513497,-3.671891,14,1,5,,,,ok
+1160,iDataGreen,Pep Requena,"Carrer Acer, 30, planta 3",08038,Barcelona,,,,1,0,0,,,,ok
+1181,Civicos Networking DCLAGUNA,"Civicos Networking, S.L.U.","La Isa, 2",38205,San Cristóbal de La Laguna,Santa Cruz de Tenerife,28.475976,-16.312445,2,0,0,,false,Owner,ok
+1288,Amune Networks CPD !,Amune Networks,"Avda Balsicas, 6",30730,San Javier,MU,37.80561,-0.83857,0,0,0,,,,ok
+1533,IPCore Datacenter Madrid,IPCore Datacenter SL,Calle Marzo 16,28022,Madrid,,40.44598,-3.570053,16,1,0,,,,ok
+1864,Andrino Telecom MAD1,Andrino Telecom,Calle Albasanz 71,28037,Madrid,MA,40.439323,-3.621211,3,0,0,,,,ok
+1870,Templus DC Málaga MAL01,TEMPLUS DATACENTERS,C/ Eduardo Queipo de Llano Caballero 59,29004,Málaga,,36.694764,-4.474589,13,1,1,,,,ok
+1993,Ibercom Madrid,Ibercom,"Maria Tubau, 8",28050,Madrid,,40.513898,-3.673567,3,0,0,,,,ok
+1994,Ibercom San Sebastian,Ibercom,"Parque Empresarial Zuatzu, Edificio Easo 2",20018,San Sebastián,Gipuzkoa,43.296669,-2.009168,2,0,0,,,,ok
+2085,Television Torrevieja CPD (TVT-CPD),Television Costa Blanca SL,C. San Pascual 75,03181,Torrevieja,AL,37.97929,-0.686973,1,0,0,,,,ok
+2393,NIXVAL Datacenter,"NIXVAL (Falbox, S.L.)","Calle Villa de Madrid, 44",46988,Paterna,,39.519555,-0.46719,33,2,3,"48 VDC,400 VAC",,,ok
+2834,SYS4NET DATACENTER,"GRUPO SYS4NET, S.L.",P.E. Magalia P.I. Oeste,30820,Alcantarilla,Murcia,37.958679,-1.194223,6,0,0,,,Owner,ok
+2890,Templus DC Barcelona BCN01,TEMPLUS DATACENTERS,"c/ Pablo iglesias, 56",08908,L'Hospitalet de Llobregat,Barcelona,41.34862,2.129779,53,5,0,,,,ok
+3082,nLighten Madrid MAD1,nLighten HQ BV,"c/ Lezama, 4",28034,Madrid,,40.49048,-3.691058,12,1,1,,,Owner,ok
+3225,TEDRA LE01,TEDRA GROUP,"C/La Cepeda, 10",24008,León,,42.58964,-5.557896,0,0,0,,,,ok
+3302,Templus DC Sevilla SEV01,TEMPLUS DATACENTERS,Avenida Montes Sierra 36,41007,Seville,,37.396502,-5.948152,8,1,0,,,,ok
+3744,CONSORCIO DE TELECOMUNICACIONES AVANZADA S.A.,CONSORCIO DE TELECOMUNICACIONES AVANZADA S.A.,"C/ Uruguay, parcela13R, nave 6",30820,Alcantarilla,Murcia,37.959055,-1.193928,2,0,0,,,,ok
+4084,Templus DC Barcelona BCN02,TEMPLUS DATACENTERS,Acero 5-9,08038,Barcelona,,41.349513,2.13885,4,0,1,,,,ok
+4085,Templus DC Madrid MAD02,TEMPLUS DATACENTERS,"Avenida de Manoteras, 42",28050,Madrid,,40.48699,-3.664977,8,4,2,,,,ok
+4192,Espacio Rack,Espacio Rack,Ana Mariscal 5,28223,Pozuelo de Alarcón,Madrid,40.395981,-3.795879,0,0,0,,,,ok
+4591,KIO Murcia 1 (MUR1),KIO,Calle Santiago Navarro 8,30100,Murcia,España,38.024856,-1.168926,2,0,0,,,,ok
+4597,Sevilla Datacenter,Sevilla Datacenter,"Nicolas Copernico, 18",ES,Seville,,37.4847,-5.93039,8,0,0,,,Owner,ok
+4710,ParcBit CPD Palma,Soluciones Corporativas IP (SCIP),Carrer de Laura Bassi ParcBit,07121,Palma,Baleares,39.634325,2.631838,1,0,0,,,,ok
+4882,Global Switch Madrid,Global Switch,"Calle Yecora, 4",28022,Madrid,,40.447968,-3.574684,19,2,2,,,,ok
+5339,Vozelia Telecom Madrid,Vozelia Telecom SL,"Avenida de Manoteras 22, Oficina 73-74",28050,Madrid,,40.487315,-3.667491,0,0,0,,,,ok
+5748,Acens Technologies,Acens Technologies,"C/ San Rafael, 14",28108,Alcobendas,Madrid,40.526407,-3.66113,1,0,0,,,,ok
+5963,Plexval Datacenter,Axarnet Comunicaciones S.L.,C/ Ciudad de Sevilla 76,46980,Paterna,Valencia,39.523258,-0.466529,1,0,0,,,,ok
+6113,IslaLink FSL,BalaLink S.A.U,Camino Molino de las Fuentes S/N,46026,Valencia,Valencia,39.440181,-0.370117,3,0,0,,,,ok
+7069,TecnoAlcalá,Telefonica de España,Avenida Punto Com 23,28805,Alcalá de Henares,Madrid,40.519524,-3.341208,0,0,0,,,,ok
+7414,Digital Realty Madrid MAD3,Digital Realty,Calle de Emilio Muñoz 49-51,28037,Madrid,,40.433899,-3.62408,49,1,7,,,Owner,ok
+7666,IUKANET Datacenter,IUKANET SERVEIS SL,"C. Ocho de marzo, 1",46910,Alfafar,Valencia,39.416592,-0.396344,0,0,0,,,,ok
+7686,IXPlay Neutral Acces Point,IXPlay Neutral Datacenter,"Av. de Andalucia, 12",29679,Benahavis,Malaga,37.97101,-1.15645,0,0,0,,,Owner,ok
+8285,Cogent Madrid,"Cogent Communications, Inc.","Subestacion Electrica de REE, PD Majuelos Nuevos",28700,Madrid,Madrid,40.565558,-3.605486,11,1,0,,,,ok
+8326,Templus DC Valencia VAL01,TEMPLUS DATACENTERS,"Parque Tecnológico de Valencia, Carrer de Louis Pasteur, 6",46980,Paterna,Valencia,39.554075,-0.467377,4,0,0,,,,ok
+9088,Telxius Derio DC,Telxius Cable,Parque Tecnológico de Bizkaia,48160,Derio,Bizkaia,43.296942,-2.870282,8,0,3,,,,ok
+9670,Barcelona Cable Landing Station,AFR-IX Telecom,Carrer de Ramon Viñas 4,08930,Sant Adrià de Besòs,Catalonia,41.427287,2.230662,9,7,2,,,,ok
+10645,DATA4 Madrid-Alcobendas - MAD1,DATA4 s.a r.l,"Av. de la Industria, 15",28108,Alcobendas,Community of Madrid,40.535051,-3.647835,12,4,3,,,,ok
+11297,NTT Madrid 1 Data Center (MAD1),NTT DATA's Global Data Centers division,Calle Aquisgran 2,28232,Las Rozas de Madrid,Madrid,40.499827,-3.890363,2,0,1,,,,ok
+11568,Civicos Networking DCARRECIFE,"Civicos Networking, S.L.U.","Calle Ntra. Sra. de los Volcanes, 6",38500,Arrecife,Lanzarote,28.963987,-13.550746,1,0,0,,,,ok
+11733,EdgeConneX Barcelona (EDCBCN01),EdgeConneX Inc.,Careterra Santa Creu de Calafell 99,08830,Sant Boi de Llobregat,Barcelona,41.324942,2.032896,1,1,1,,,,ok
+11955,EXA Edge DC Basauri,EXA Infrastructure,Calle Artunduaga 10 Local 3 Semisotano 1,48970,Basauri,,43.229184,-2.881757,0,0,1,,,,ok
+11956,EXA Edge DC Hereña,EXA Infrastructure,"Parcela 27, Polígono PGCP",1420,Hereña,,,,0,0,1,,,,ok
+11968,EXA Edge DC Valencia,EXA Infrastructure,Ribarroja de Turia,46190,Valencia,,39.473433,-0.536672,0,0,1,,,,ok
+13204,CyrusOne Madrid 1,CyrusOne Inc.,Calle de EL Nevero,2-28108,Madrid,,40.53576,-3.659225,0,0,1,,,,ok
+13560,Iron Mountain Data Center - Madrid (MAD-1),Iron Mountain Data Centers,Calle del Mar Egeo 4,28830,San Fernando de Henares,Madrid,40.457935,-3.498711,1,0,0,,,Owner,ok
+13666,ODC Malaga,Olivenet Data Centers Spain S.L.,Calle Estonia 17,29004,Málaga,,36.694725,-4.496181,1,0,0,,,Owner,ok
+13938,IaaS Datacenter Madrid,IaaS Datacenter Madrid,Maraton 12,28037,Madrid,Madrid,40.439748,-3.624212,20,1,2,,,,ok
+13959,Civicos Networking - IAAS (MADRID),"Civicos Networking, S.L.U.","C/ Maraton, 12",28037,Madrid,Madrid,40.439748,-3.624212,0,0,0,,false,Lessee,ok
+14020,Templus DC Madrid MAD03,TEMPLUS DATACENTERS,C/ Albasanz 65,28037,Madrid,,40.438822,-3.623048,8,1,1,,,,ok
+14096,OASIX ALICANTE AIRENETWORKS,Aire Networks del Mediterraneo S.L.U.,"C/ SANTIAGO RAMÓN Y CAJAL Nº 11, ELCHE PARQUE EMPRESARIAL",03203,Elche,Alicante,38.291392,-0.611276,0,0,0,,,,ok
+14233,Adam - PTV,ADAM,C/ Artesans 7,08290,Cerdanyola del Vallès,Barcelona,41.484761,2.127266,6,0,0,,,Owner,ok
+14234,Adam - MAD,ADAM,"C/ Punto Mobi, 1",28805,Alcalá de Henares,Madrid,40.514618,-3.338656,4,0,0,,,Owner,ok
+14235,Adam - BCN,ADAM,Travessera de Gràcia 342,08025,Barcelona,Barcelona,41.408865,2.170067,1,0,0,,,Owner,ok
+14310,CPD Titan,CPD Titan,Avenida Canal del Taibilla 11,30100,Murcia,Murcia,38.029681,-1.163561,8,0,0,,,,ok
+14854,Digital Realty Madrid MAD4,Digital Realty,Calle de Alfonso Gómez 4,28037,Madrid,,40.438933,-3.629449,25,0,4,,,Owner,ok
+15254,MERLIN Edged MAD01 - Madrid-Getafe,MERLIN Edged,Fundidores 40,28906,Getafe,Madrid,40.310814,-3.692923,1,0,2,48 VDC,,Owner,ok
+15255,MERLIN Edged BAR01 - Barcelona-PLZ,MERLIN Edged,"Av. Parc Logístic, 42",08040,Barcelona,Barcelona,41.341884,2.129492,2,0,2,,,Owner,ok
+15261,MERLIN Edged BIL03 - Bilbao-Arasur,MERLIN Edged,Avenida Ribera Baja S/N,01213,Rivabellosa,Álava,42.698312,-2.910495,1,0,2,,,Owner,ok
+15307,EXA Edge DC Barcelona,EXA Infrastructure,Carrer Bosc Tancat 1,8290,Cerdanyola del Vallès,,41.500726,2.13558,0,0,0,"48 VDC,400 VAC,480 VAC",,,ok
+15419,Equinix BA2 - Barcelona,"Equinix, Inc.",Carretera del Mig 219,8907,Barcelona,Barcelona,41.351324,2.09898,0,0,1,,,,ok
+15524,Equinix MD6,"Equinix, Inc.","Calle Pedriza, 12, Alcobendas",28108,Madrid,,40.533739,-3.661545,5,0,3,,,,ok
+15526,Magdalena Datacenter,Asociación ESpanix,Gran Via de Hortaleza 3,28033,Madrid,Madrid,40.467654,-3.658841,0,4,0,400 VAC,false,Owner,ok
+15527,Cantabria Datacenter,Asociación ESpanix,Gran Via de Hortaleza 1,28033,Madrid,Madrid,40.464784,-3.659262,0,4,0,400 VAC,false,Owner,ok
+15721,DIVERSITY CLOUD MAD1,ON DIVERSITY CLOUD,Not Disclosed,28500,Arganda del Rey,Madrid,,,1,0,0,,,Owner,ok
+15771,Pozuelo de Alarcon,Cloud Builders SA,"Calle Ana Mariscal, 5",28223,Pozuelo de Alarcón,Madrid,40.396008,-3.79599,0,0,0,400 VAC,,Owner,ok
+17642,Digital Realty BCN1 - Barcelona,Digital Realty,43 Avenida del Maresme,08918,Sant Adrià de Besòs,CT,41.429798,2.23282,1,0,0,,,Owner,ok

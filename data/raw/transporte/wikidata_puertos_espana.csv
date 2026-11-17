@@ -1,0 +1,353 @@
+﻿wikidata_id,nombre,tipo,municipio,unlocode,latitud,longitud,posible_interes_general
+Q3398535,Puerto de Pasajes,puerto,Pasajes,ESPAS,43.3211,-1.91557,1
+Q3398628,Puerto de la bahía de Cádiz,puerto,Cádiz,,36.53062,-6.28925,1
+Q3751181,Puerto de Gijón,puerto,Gijón,,43.56277778,-5.68333333,1
+Q260556,Puerto de Palma de Mallorca,puerto,Palma de Mallorca,ESPMI,39.55361111,2.62916667,1
+Q612416,Puerto de Peñíscola,puerto,Peñíscola,,40.356311111,0.405002777,0
+Q668057,Puerto de Santa Cruz de Tenerife,puerto,Santa Cruz de Tenerife,,28.460221,-16.246423,1
+Q928852,Puerto de Sanlúcar,puerto,Sanlúcar de Barrameda,,36.801,-6.335,0
+Q947819,Puerto de Vigo,puerto,Vigo,ESVGO,42.237,-8.733,1
+Q956068,Puerto de La Coruña,puerto,Ciudad de La Coruña,ESLCG,43.36447,-8.39382,1
+Q1013333,Puerto de Mogán,puerto,Mogán,,27.8175,-15.76528,0
+Q1114612,Port Vell de Barcelona,puerto,Distrito de Ciutat Vella,,41.37675,2.18463889,1
+Q2156122,Puerto de Bilbao,puerto,,,43.3524,-3.0489,1
+Q1798768,Puerto de la Duquesa,puerto,Manilva,,36.35138889,-5.23361111,0
+Q2837502,Puerto de Tarifa,puerto,Tarifa,,36.00973,-5.60603,1
+Q3005738,Puerto de Castellón,puerto,Castellón de la Plana,,39.97093611,0.017425,1
+Q3179524,puerto de Málaga,puerto,Málaga,,36.71666667,-4.41666667,1
+Q3199756,Puerto de Almería,puerto,Almería,,36.83368,-2.4669,1
+Q3277356,Muelle de Gallineras,puerto,San Fernando,,36.44027778,-6.20611111,0
+Q3393980,Puerto Deportivo de Pontevedra,puerto,Ciudad de Pontevedra,ESPEV,42.4355,-8.650305555,0
+Q3394104,Puerto de Ferrol,puerto,Ferrol,,43.4766,-8.24008,1
+Q111387321,Ribadeo,puerto,,,43.533333333,-7.033333333,0
+Q15647517,Puerto de Ciudadela,puerto,Ciudadela,,40.000497,3.832769,0
+Q18005906,Puerto de Badalona,puerto,Badalona,,41.43455,2.24169,0
+Q18005907,puerto de Denia,puerto,provincia de Alicante,,38.83921,0.11501,0
+Q20101534,Puerto de Palamós,puerto,Palamós,,41.84481,3.125477,0
+Q23980229,Port de Sant Antoni,puerto,San Antonio Abad,,38.97649,1.29965,0
+Q23983089,Puerto Deportivo Radazul,puerto,Canarias,,28.4,-16.316666666,0
+Q23986276,Puerto de Gran Tarajal,puerto,Tuineje,,28.20632,-14.02782,0
+Q23988769,port d'Alcúdia,puerto,Alcudia,,39.83906,3.13521,1
+Q23990745,Puerto de San Pedro del Pinatar,puerto,Región de Murcia,,37.816666666,-0.7625,0
+Q23991777,Puerto de Vallcarca,puerto,Sitges,,41.23916,1.86343,0
+Q24021182,Minorca Port,puerto,Ciudadela,,39.98796,3.83269,0
+Q24021183,Puerto de Arrecife,puerto,Arrecife,,28.97088,-13.52951,1
+Q24021187,Orzola Port,puerto,Haría,,29.22311,-13.45248,0
+Q24021188,Puerto de Playa Blanca,puerto,Yaiza,,28.85944,-13.83536,0
+Q24021189,Puerto de Puerto del Rosario,puerto,Puerto del Rosario,,28.49912,-13.85547,1
+Q24021194,Puerto de Formentera,puerto,Formentera,ESFLD,38.73386,1.41478,0
+Q24021195,Ciutadella Port,puerto,Ciudadela,,39.988931,3.829496,0
+Q24021200,Corralejo Port,puerto,La Oliva,,28.74079,-13.86346,0
+Q24024873,Puerto de Santa Pola,puerto,provincia de Alicante,,38.18946,-0.56125,0
+Q24024898,puerto de San Sebastián de La Gomera,puerto,San Sebastián de La Gomera,,28.08874,-17.10774,1
+Q24024901,puerto de Tabarca,puerto,provincia de Alicante,,38.1671,-0.47837,0
+Q60968702,Puerto de Silla,puerto,Silla,,39.361277,-0.390268,0
+Q61388485,Q61388485,puerto,Ribadeo,,43.533295673,-7.038148086,0
+Q61987126,Puerto de Redes,puerto,Redes,,43.4241,-8.2037,0
+Q65559898,Puerto De Arriluze,puerto,Guecho,,43.339794,-3.014714,0
+Q96484531,Puerto de Marín y Ría de Pontevedra,puerto,Pontevedra,ESMPG,42.400888888,-8.692166666,1
+Q97627197,Estero de Palos,puerto,Palos de la Frontera,,,,0
+Q97628469,Puerto Deportivo de Mazagón,puerto,Palos de la Frontera,,37.13275534,-6.832415559,0
+Q97629728,La Melosa,puerto,Lopera,,,,0
+Q97629987,Cortijo Primitivo,puerto,Castellar,,,,0
+Q97630121,La Vega I,puerto,Andújar,,,,0
+Q97643205,Cerro del Toribio,puerto,Lebrija,,,,0
+Q97643221,La Higuerita,puerto,Lebrija,,,,0
+Q97652770,Puerto el Barco,puerto,La Rinconada,,,,0
+Q98502389,Espacio del Puerto Histórico,puerto,San Juan del Puerto,,,,0
+Q98505252,sitio arqueológico de Bahía de Almuñécar,puerto,Almuñécar,,,,0
+Q25509204,Q25509204,puerto,Q20541373,,43.390555555,-8.298055555,0
+Q28492293,Puerto de Sagunto,puerto,Sagunto,,39.648877777,-0.212830555,1
+Q28553326,Puerto de Gandía,puerto,,,38.994788888,-0.149538888,1
+Q31283136,puerto de San Cibrao,puerto,Lago,ESSCI,43.707141394,-7.462028439,1
+Q31844123,La Grandiosa Port,puerto,,,29.22981,-13.50254,0
+Q31844135,Marina Marbella,puerto,provincia de Málaga,,36.48851,-4.95008,1
+Q31844147,Marina San Miguel,puerto,provincia de Santa Cruz de Tenerife,,28.02107,-16.6116,1
+Q31844216,Puerto deportivo Marina Rubicon,puerto,Yaiza,,28.85772,-13.81548,1
+Q31844223,Puerto de Pasito Blanco,puerto,San Bartolomé de Tirajana,,27.74651,-15.62388,0
+Q31844236,Club Nautico Cala Gamba,puerto,Palma de Mallorca,,39.54727,2.6946,0
+Q31844239,Club Nautico Mar Menor,puerto,Región de Murcia,,37.73561,-0.84916,0
+Q31844240,Club Náutico Lo Pagán,puerto,,,37.81742,-0.78437,0
+Q31844245,Marina De Las Salinas,puerto,,,37.82094,-0.7558,1
+Q31844247,Club Náutico Torre Horadada,puerto,provincia de Alicante,,37.86707,-0.7578,0
+Q31844251,Marina del Sur,puerto,Arona,,28.00732,-16.65998,1
+Q31844343,Club Marítimo Varadero de Gran Canaria,puerto,Las Palmas de Gran Canaria,,28.12764,-15.42649,0
+Q32194261,Port of Getaria,puerto,Guetaria,,43.304667,-2.201177,0
+Q43387884,Puerto de Granadilla,puerto,Granadilla de Abona,,28.074361111,-16.491861111,1
+Q43388995,Puerto de Garachico,puerto,Garachico,,28.373083333,-16.754444444,0
+Q56707040,Puerto de Vinaroz,puerto,Vinaroz,,40.465272,0.474871,0
+Q3925443,Puerto de Las Palmas,puerto,Las Palmas de Gran Canaria,ESLPA,28.15,-15.4167,1
+Q4779578,Puerto de Ibiza,puerto,Ibiza,,38.9125,1.435278,1
+Q4891396,Puerto de Alicante,puerto,Alicante,ESALC,38.33694444,-0.48861111,1
+Q5390823,Puerto Sherry,puerto,El Puerto de Santa María,,36.57722222,-6.25416667,0
+Q5391265,Puerto de Motril,puerto,Motril,,36.723,-3.5218,1
+Q5396885,Puerto de La Caleta,puerto,Vélez-Málaga,,36.74638889,-4.07083333,0
+Q5398728,Espasante,puerto,Espasante,,43.721666666,-7.810277777,0
+Q5438836,Puerto de Avilés,puerto,Avilés,,43.58333333,-5.93333333,1
+Q5490335,Puerto Deportivo de Benalmádena,puerto,Benalmádena,,36.594147222,-4.512402777,0
+Q5679845,Puerto de Melilla,puerto,Melilla,,35.292002777,-2.932227777,1
+Q5774492,Club Náutico de Moraira,puerto,provincia de Alicante,,38.68639,0.1368,0
+Q5850866,Puerto de Gandía,puerto,Gandía,,38.99390556,-0.15603889,1
+Q6083023,Port America's Cup,puerto,Valencia,,39.461708394,-0.329222116,0
+Q6092019,Puerto Deportivo Sancti Petri,puerto,Chiclana de la Frontera,,36.39613889,-6.20794444,0
+Q6092024,Puerto Deportivo de Atella Domaio,puerto,Domayo,,42.287237718,-8.677585493,0
+Q6092036,Puerto Deportivo de Marbella,puerto,Marbella,,36.50609,-4.88888,0
+Q6092228,Puerto de Arinaga,puerto,Agüimes,,27.845430555,-15.397944444,1
+Q6092232,Puerto de Burriana,puerto,Burriana,,39.862222222,-0.071388888,0
+Q6092244,Puerto de Ceuta,puerto,Ceuta,,35.89388,-5.32112,1
+Q6092248,Puerto de Chipiona,puerto,Chipiona,,36.745402777,-6.428491666,0
+Q6092253,Puerto de Cillero,puerto,Celeiro,,43.678661,-7.594436,0
+Q6092265,Puerto de El Candado,puerto,Málaga,,36.714426,-4.344979,0
+Q6092270,Puerto de Estepona,puerto,Estepona,,36.41277778,-5.15694444,0
+Q6092276,Puerto de Fuengirola,puerto,Fuengirola,,36.535,-4.61888889,0
+Q6092284,Puerto de Garrucha,puerto,Garrucha,,37.183958333,-1.81875,0
+Q6092301,Puerto de Isla Cristina,puerto,Isla Cristina,,37.2,-7.31666667,0
+Q6092312,Puerto de La Estaca,puerto,Valverde,,27.785,-17.9017,1
+Q6092324,Puerto de La Restinga,puerto,El Pinar de El Hierro,,27.639961111,-17.978977777,0
+Q6092390,puerto de Requejada,puerto,Requejada,,43.39722778,-4.02836667,0
+Q6092392,Puerto de Salinetas,puerto,Telde,ESSAT,27.976322222,-15.377358333,1
+Q6092405,Puerto de Santa Cruz de La Palma,puerto,provincia de Santa Cruz de Tenerife,,28.67799,-17.76618,1
+Q6092417,Puerto de Sotogrande,puerto,provincia de Cádiz,,36.29,-5.269444444,0
+Q6092419,Puerto de Taliarte,puerto,Telde,,27.990911111,-15.368644444,0
+Q6092544,Puerto deportivo de Vivero,puerto,Viveiro,,43.666483,-7.594811,0
+Q6092561,Puertochico,puerto,Santander,,43.462388888,-3.795305555,0
+Q9064592,Puerto de Los Cristianos,puerto,Arona,ESLCR,28.04861111,-16.71916667,1
+Q9064595,Puerto de Mahón,puerto,Mahón,,39.891667,4.266667,1
+Q11206033,Portopí,puerto,Palma de Mallorca,,39.55,2.620833333,0
+Q11918470,El Port Nou,puerto,Son Servera,,39.624994,3.394689,0
+Q11942389,Puerto de Arenys de Mar,puerto,Arenys de Mar,,41.5795,2.55877,0
+Q12255024,Port of Bermeo,puerto,Bermeo,,43.41666667,-2.71666667,0
+Q12256452,Puerto Deportivo de Ea,puerto,,,43.38388889,-2.58305556,0
+Q12258463,Port of Getaria,puerto,Guetaria,,43.305412965,-2.200814702,0
+Q12262150,Puerto de Lekeitio,puerto,Lequeitio,,43.3644045,-2.5040135,0
+Q12266045,Puerto Deportivo de Plencia,puerto,Plencia,,43.40722222,-2.94611111,0
+Q12267056,Puerto de Santurce,puerto,Santurce,,43.329432367,-3.029250956,0
+Q111700172,Puerto de Adra,puerto,Adra,,36.745464192,-3.020530578,0
+Q111704098,marina of Port d'Andratx,puerto,Andrach,,39.545833333,2.386111111,1
+Q112357089,puerto pesquero de Almería,puerto,Almería,,36.83556,-2.48078,1
+Q113303960,Port of Baiona,puerto,Baiona,,42.121723763,-8.84542099,0
+Q113363251,Puerto de San José,puerto,Níjar,,36.76247,-2.10262,0
+Q113363253,Puerto de Carboneras,puerto,Carboneras,,36.9908,-1.89761,1
+Q114915185,Charco de San Ginés,puerto,Arrecife,,28.961111111,-13.544305555,0
+Q115210196,Port of El Cotillo,puerto,El Cotillo,,28.681388888,-14.012944444,0
+Q116939565,Puerto de la Línea de la Concepción,puerto,La Línea de la Concepción,,36.158314691,-5.356557241,0
+Q116940738,Puerto de La Atunara,puerto,La Línea de la Concepción,,36.180026771,-5.333960259,0
+Q117761007,Puerto de Altos Hornos del Mediterráneo,puerto,Sagunto,,39.651388888,-0.214722222,0
+Q123992409,Puerto de Ayamonte,puerto,Ayamonte,,37.209747222,-7.409702777,0
+Q123992515,Puerto de Marina Isla Canela,puerto,Ayamonte,,37.187944436,-7.339281717,1
+Q124055028,Puerto de Punta Umbría,puerto,Punta Umbría,,37.179611111,-6.956361111,0
+Q124094074,Port del Port de la Selva,puerto,Puerto de la Selva,,42.341091513,3.201904336,0
+Q124728409,Muelle De La Estación Villa,puerto,Zumaya,,43.29592339,-2.256190891,0
+Q127869000,Port of Comillas,puerto,Comillas,,43.39299118,-4.28913959,0
+Q130221061,Port d'Alcanar,puerto,Alcanar,,40.571377548,0.551684815,0
+Q130307989,Port de la Ràpita,puerto,San Carlos de la Rápita,,40.618829296,0.60067451,0
+Q130471180,puerto de Puerto de Tazacorte,puerto,Puerto de Tazacorte,,28.64390629,-17.943314094,0
+Q131756138,Puerto de la Bajadilla,puerto,Marbella,,36.507474638,-4.874635906,0
+Q133504742,Puerto de Conil,puerto,Conil de la Frontera,,36.295214636,-6.137375402,0
+Q133504816,Port of El Puerto de Santa María,puerto,El Puerto de Santa María,,36.590974599,-6.228997821,0
+Q133504996,Puerto de El Rompido,puerto,Cartaya,,37.216664265,-7.127716421,0
+Q133505027,Port of Sanlúcar de Guadiana,puerto,Sanlúcar de Guadiana,,37.472868839,-7.468685745,0
+Q133505116,Port of El Terrón,puerto,Lepe,,37.225244156,-7.173406886,0
+Q133540495,Port de sa Calobra,puerto,Escorca,,39.85001552,2.79938632,0
+Q133730027,Port of O Grove,puerto,O Grove,,42.496664516,-8.860508751,0
+Q133730040,Port of Meloxo,puerto,Q20544475,,42.489602577,-8.889255469,0
+Q133730043,Port of Pedras Negras,puerto,Q12397366,,42.457804411,-8.919153646,0
+Q133730052,Port of Cambados,puerto,Cambados,,42.511373579,-8.818411645,0
+Q133730066,Port of Cangas de Morrazo,puerto,Cangas,,42.260147888,-8.783629086,0
+Q133730076,Port of Combarro,puerto,Combarro,,42.428654889,-8.70551927,0
+Q133730099,Port of A Guarda,puerto,A Guarda,,41.899524979,-8.877186169,0
+Q133730128,Port of Moaña,puerto,Moaña,,42.27498063,-8.735188468,0
+Q133730923,Port of Corvaceiras,puerto,Pontevedra,,42.42797832,-8.652783801,0
+Q133730953,Port of Sanxenxo,puerto,Sangenjo,,42.397653266,-8.803920683,0
+Q133730965,Port of O Carril,puerto,O Carril,,42.614414024,-8.778277487,0
+Q133730971,Port of Vilanova de Arousa,puerto,Vilanova de Arousa,,42.564653644,-8.833280282,0
+Q133731005,Port of A Pobra do Caramiñal,puerto,Puebla del Caramiñal,,42.606606726,-8.933878754,0
+Q133731008,Port of Aguiño,puerto,Aguiño,,42.520559208,-9.017574972,0
+Q133731023,Port of Barqueiro,puerto,Puerto del Barquero,,43.737072823,-7.700684979,0
+Q133731031,Port of O Cabo da Cruz,puerto,O Cabo da Cruz / A Pesqueira,,42.616065922,-8.889250704,0
+Q133731037,Port of Camariñas,puerto,Camariñas,,43.12618913,-9.182033208,1
+Q133731081,Port of Cariño,puerto,Cariño,,43.736291437,-7.865660174,0
+Q133731089,Port of Portocubelo,puerto,"Portocubelo, Lira, Carnota",,42.80502782,-9.136448735,0
+Q133731096,Port of Escarabote,puerto,Escarabote,,42.63644063,-8.901449605,0
+Q133731110,Port of Fisterra,puerto,Q24001402,,42.907806304,-9.260692107,0
+Q133731116,Port of Laxe,puerto,Q20548540,,43.222995042,-9.003140169,0
+Q133731124,Port of Malpica de Bergantiños,puerto,Q20542811,,43.322427448,-8.80677204,0
+Q133731164,Port of Muros,puerto,Q20547650,,42.777089365,-9.055253568,0
+Q133731200,Port of Muxía,puerto,Muxía,,43.105570149,-9.214302338,0
+Q133731237,Port of Palmeira,puerto,Palmeira,,42.579517064,-8.957222704,0
+Q133731244,Port of O Porto do Son,puerto,Puerto del Son,,42.72787845,-9.002068716,0
+Q133731251,Port of Portosín,puerto,Portosín,,42.762329746,-8.947294648,0
+Q133731257,Port of Rianxo,puerto,Rianjo,,42.648505051,-8.823882704,0
+Q133731260,Port of Ribeira,puerto,Ribeira,,42.558856958,-8.989341907,0
+Q133731265,Port of Sada,puerto,Sada,,43.360611541,-8.247582389,0
+Q133731272,Port of Foz,puerto,Foz,,43.56642552,-7.255409837,0
+Q133731278,Port of Burela,puerto,Burela,,43.657463058,-7.352093778,0
+Q133731293,Port of Rinlo,puerto,Rinlo,,43.558250927,-7.10463551,0
+Q133731325,Port of Panxón,puerto,Panjón,,42.142353855,-8.824689576,0
+Q133731536,Port of Cesantes,puerto,Cesantes,,42.295561814,-8.616820107,0
+Q133766319,Port of Santa Eulària,puerto,Santa Eulalia del Río,,38.983624413,1.539416745,0
+Q133766603,Port of Colindres,puerto,Colindres,,43.395400067,-3.463227347,0
+Q133767046,Port of El Astillero,puerto,El Astillero,,43.405969038,-3.816486368,0
+Q133767173,Port of Laredo,puerto,Laredo,,43.417069936,-3.417711364,0
+Q133767443,Port of Pedreña,puerto,Marina de Cudeyo,,43.446782686,-3.765428668,0
+Q133768179,Port of San Vicente de la Barquera,puerto,San Vicente de la Barquera,,43.38559199,-4.397490372,0
+Q133768331,Port of Santoña,puerto,Santoña,,43.440734115,-3.461835887,0
+Q133771642,Port of Candás,puerto,Carreño,,43.590232733,-5.760470342,0
+Q133771741,Port of Castropol,puerto,Castropol,,43.52638403,-7.032948875,0
+Q133771979,Port of Cudillero,puerto,Cudillero,,43.567542252,-6.149852552,0
+Q133772178,Port of Lastres,puerto,Colunga,,43.515849352,-5.265604499,0
+Q133772349,Port of Llanes,puerto,Llanes,,43.421039208,-4.748637097,0
+Q133772533,Port of Luarca,puerto,Valdés,,43.545922266,-6.532836137,0
+Q133772686,Port of Ortiguera,puerto,Coaña,,43.560990363,-6.740928558,0
+Q133772824,Port of Ribadesella,puerto,Ribadesella,,43.463582573,-5.062577991,0
+Q133772906,Port of Tapia de Casariego,puerto,Tapia de Casariego,,43.572459367,-6.946083589,0
+Q133773058,Port of Vega,puerto,Navia,,43.564974173,-6.645227933,0
+Q133773191,Port of Viavélez,puerto,El Franco,,43.563942487,-6.840113592,0
+Q133774085,Port of Águilas,puerto,Águilas,,37.40369592,-1.577125396,0
+Q133774479,puerto de Cabo de Palos,puerto,Cartagena,,37.63241749,-0.701726793,0
+Q133776412,Port of Altea,puerto,Altea,,38.589658113,-0.054863693,0
+Q133776515,Port of Benidorm,puerto,Benidorm,,38.534899418,-0.133557097,0
+Q133776677,Port of Calp,puerto,Calpe,,38.637939707,0.070169156,0
+Q133776764,Port of El Campello,puerto,El Campello,,38.431098629,-0.385170251,0
+Q133776880,Port of Moraira,puerto,Moraira,,38.68614927,0.136822339,0
+Q133777251,Port of Torrevieja,puerto,Torrevieja,,37.971174688,-0.686473169,0
+Q133777322,Port of La Vila Joiosa,puerto,Villajoyosa,,38.508230292,-0.217797597,0
+Q133777446,Port of Xàbia,puerto,Jávea,,38.797477402,0.186217399,0
+Q133777698,Port Blanc de Calp,puerto,Calpe,,38.634539342,0.034332748,0
+Q133777868,Port de les Bassetes,puerto,Benisa,,38.659734488,0.085295084,0
+Q133777975,Port de Mar i Muntanya,puerto,Altea,,38.624170819,-0.018531522,0
+Q133778042,Port esportiu Campomanes,puerto,Altea,,38.629498991,-0.001894896,0
+Q133778172,Port of Pilar de la Horadada,puerto,Pilar de la Horadada,,37.86714213,-0.757914835,0
+Q133778252,Portet de l'Olla,puerto,Altea,,38.614278275,-0.03210838,0
+Q133778783,Port of Oropesa del Mar,puerto,Oropesa del Mar,,40.076182682,0.134022367,0
+Q133791705,Port of Caleta de Fuste,puerto,Antigua,,28.392298869,-13.855709356,0
+Q133792386,Port of Las Playitas,puerto,Tuineje,,28.227727318,-13.983983979,0
+Q15125080,Puerto de Roses,puerto deportivo,Rosas,,42.25627,3.17873,0
+Q16621038,puerto Ginesta,puerto deportivo,Sitges,,41.2597,1.92528,0
+Q23982901,Es Portitxol,puerto deportivo,Palma de Mallorca,,39.56137,2.66908,0
+Q24001052,Puerto del Garraf,puerto deportivo,Sitges,,41.25,1.9,0
+Q25512748,Ribadeo Marina,puerto deportivo,,,43.54,-7.036666666,0
+Q31844233,Puerto Deportivo Cala'n Bosch,puerto deportivo,Ciudadela,,39.92832,3.83425,0
+Q31844235,Club Náutico Can Pastilla,puerto deportivo,Palma de Mallorca,,39.53321,2.71573,0
+Q31844237,Club Nàutic S'Estanyol,puerto deportivo,Llucmajor,,39.35981,2.91868,0
+Q31844260,Port de Llançà,puerto deportivo,Llansá,,42.37246,3.16271,0
+Q31844345,Marina Coruña,puerto deportivo,provincia de La Coruña,,43.36802,-8.38603,0
+Q48747766,Puerto del Toro,puerto deportivo,Calviá,,39.488888888,2.477777777,0
+Q107207998,Port of Portopetro,puerto deportivo,Santañí,,39.360777777,3.210611111,0
+Q107285782,Puerto de Santa Ponça,puerto deportivo,Calviá,,39.511111111,2.468055555,0
+Q107285903,Club nàutic Calanova,puerto deportivo,Palma de Mallorca,,39.549166666,2.598611111,0
+Q107290774,Caló d'en Rigo,puerto deportivo,Palma de Mallorca,,39.558333333,2.675,0
+Q107294601,Port de Cala Bona,puerto deportivo,Son Servera,,39.614444444,3.3925,0
+Q107294613,Club Nàutic de Palmanova,puerto deportivo,Calviá,,39.524444444,2.541666666,0
+Q107294618,Port of Son Serra,puerto deportivo,Santa Margarita,,39.739444444,3.220833333,0
+Q107295047,Port of Portocolom,puerto deportivo,Felanich,,39.422222222,3.266666666,0
+Q107295132,Port of Porto Cristo,puerto deportivo,Manacor,,39.538333333,3.333333333,0
+Q107295255,Club Nàutic de la Colònia de Sant Pere,puerto deportivo,Artá,,39.7375,3.275,0
+Q107295352,Port Esportiu Marina de Bonaire,puerto deportivo,Alcudia,,39.866111111,3.144444444,0
+Q108631499,Puerto Deportivo de Getxo,puerto deportivo,Guecho,,43.339761611,-3.015474068,0
+Q109312496,Real Club Náutico de Castro-Urdiales,puerto deportivo,Cantabria,,43.380042183,-3.215636359,0
+Q110440508,Marina Vela Barcelona,puerto deportivo,Barcelona,,41.367352493,2.188269829,0
+Q113282623,Puerto deportivo de Domaio,puerto deportivo,Domayo,,42.287294288,-8.678190708,0
+Q115178649,Puerto de Rota,puerto deportivo,Rota,,36.617129588,-6.355669061,0
+Q117184644,IGY Málaga Marina,puerto deportivo,Distrito Centro,,36.71783,-4.41378,0
+Q120973567,Port de l'Escala,puerto deportivo,La Escala,,42.11819757,3.149029769,0
+Q122252061,port de l'Estartit,puerto deportivo,Torroella de Montgrí,,42.053888888,3.202222222,0
+Q122292568,Port de Cambrils,puerto deportivo,Cambrils,,41.063333333,1.061388888,0
+Q123249367,Port of Portbou,puerto deportivo,Portbou,,42.425606889,3.166345402,0
+Q123258592,Port of Colera,puerto deportivo,Colera,,42.404334815,3.157971954,0
+Q124394781,Port d'Aiguablava,puerto deportivo,Bagur,,41.938467969,3.216789599,0
+Q124414238,Port de Blanes,puerto deportivo,Blanes,,41.674058445,2.798635559,0
+Q124499344,Port de Cala Canyelles,puerto deportivo,Lloret de Mar,,41.703626769,2.880932896,0
+Q124635332,Port de Sant Feliu de Guíxols,puerto deportivo,San Feliu de Guíxols,,41.778755171,3.035188311,0
+Q124663252,Port Marina Port d'Aro,puerto deportivo,"Castillo de Aro, Playa de Aro y S'Agaró",,41.801010776,3.063484292,0
+Q124738107,Marina Palamós,puerto deportivo,Palamós,,41.845822168,3.135780098,0
+Q125072187,Port of Llafranc,puerto deportivo,Palafrugell,,41.892998275,3.196351127,0
+Q126011047,Port de Segur de Calafell,puerto deportivo,Calafell,,41.187864399,1.606891889,0
+Q126366520,Port de Roda de Berà,puerto deportivo,Roda de Bará,,41.168518941,1.485684282,0
+Q126486027,Port de Torredembarra,puerto deportivo,Torredembarra,,41.135320478,1.40224627,0
+Q126721508,Port Esportiu de Tarragona,puerto deportivo,Tarragona,,41.108602143,1.252300016,0
+Q126901688,Puerto deportivo de la Bahía de La Concha. Real Club Náutico de San Sebastián,puerto deportivo,San Sebastián,,43.321483,-1.988168,0
+Q126912100,Port de Salou,puerto deportivo,Salou,,41.073807763,1.131128384,0
+Q128310939,Port de l'Hospitalet de l'Infant,puerto deportivo,Vandellós y Hospitalet del Infante,,40.988939491,0.928480742,0
+Q128983337,Port de Calafat,puerto deportivo,La Ametlla de Mar,,40.928465363,0.850916827,0
+Q128997167,Port de Sant Jordi d'Alfama,puerto deportivo,La Ametlla de Mar,,40.914679497,0.835702608,0
+Q129328090,Port de l'Ametlla de Mar,puerto deportivo,La Ametlla de Mar,,40.881883154,0.803468952,0
+Q129418853,Port de l'Ampolla,puerto deportivo,La Ampolla,,40.811321497,0.711540533,0
+Q129632961,puerto deportivo de Lo Pagán,puerto deportivo,Lo Pagán,,37.817320075,-0.785292492,0
+Q130220223,Port de les Cases d'Alcanar,puerto deportivo,Las Casas de Alcanar,,40.551781319,0.531331563,0
+Q130354635,Port de Deltebre,puerto deportivo,Deltebre,,40.71779352,0.843563364,0
+Q130418480,Puerto Deportivo Noray,puerto deportivo,Melilla,,35.289722222,-2.934166666,0
+Q133799284,Puerto Calero Marina,puerto deportivo,Yaiza,,28.916825039,-13.702958585,0
+Q133858093,Dársena da Mariña,puerto deportivo,La Coruña,,43.368435064,-8.396872558,0
+Q133858151,Marina Club Marítimo de Oza,puerto deportivo,La Coruña,,43.348677594,-8.383723952,0
+Q133873728,Port of Portals Vells,puerto deportivo,Calviá,,39.475390355,2.522555177,0
+Q133929885,Puerto de Mogán,puerto deportivo,Mogán,,27.816737861,-15.765468575,0
+Q138820336,Dàrsena Nacional Marina,puerto deportivo,Barrio Gótico,,41.377348,2.181388,0
+Q138820382,Marina Port Vell,puerto deportivo,Barrio Gótico,,41.378486,2.185475,0
+Q171204,Puerto Olímpico de Barcelona,puerto deportivo,Barcelona,,41.38666667,2.20027778,0
+Q609023,Puerto Deportivo de Benicarló,puerto deportivo,Benicarló,,40.414444444,0.433888888,0
+Q2117451,Puerto Banús,puerto deportivo,Marbella,,36.4875,-4.9525,0
+Q2877881,Puerto Portals,puerto deportivo,Calviá,,39.530423,2.568244,0
+Q2895285,Puerto de Cabo Roig,puerto deportivo,Orihuela,,37.911823,-0.726039,0
+Q3703035,Puerto Deportivo Pobla Marina,puerto deportivo,Puebla de Farnals,,39.56666667,-0.28333333,0
+Q5397285,Puerto Deportivo de Villaricos La Esperanza,puerto deportivo,provincia de Almería,,37.246300632,-1.771971648,0
+Q5639551,Puerto deportivo de San Sebastián,puerto deportivo,San Sebastián,,43.322288737,-1.988722099,0
+Q5775049,Club de Mar de Almería,puerto deportivo,Almería,,36.8317,-2.4614,0
+Q6083025,Port Balís,puerto deportivo,San Andrés de Llavaneras,,41.558702,2.505961,0
+Q6092014,Puerto Deportivo Marina de Cala d'Or,puerto deportivo,Cala d'Or,,39.369166666,3.223611111,0
+Q6092021,Puerto Deportivo de Ares,puerto deportivo,Ares,,43.421914135,-8.239896364,0
+Q6092028,Puerto Deportivo de Bueu,puerto deportivo,Bueu,,42.3282041,-8.7858891,0
+Q6092033,Puerto Deportivo de Gijón,puerto deportivo,Gijón,,43.545555555,-5.666666666,0
+Q6092042,Puerto deportivo de Orio,puerto deportivo,Orio,,43.28388889,-2.12777778,0
+Q6092044,Puerto Deportivo de Oropesa,puerto deportivo,,,40.07611,0.13309,0
+Q6092237,Puerto de Cabopino,puerto deportivo,Marbella,,36.484899915,-4.739762971,0
+Q6092522,Puerto deportivo Colonia de Sant Jordi,puerto deportivo,Las Salinas,,39.315277777,2.997222222,0
+Q6092524,Puerto deportivo El Masnou,puerto deportivo,El Masnou,,41.475743,2.312569,0
+Q6092526,Puerto deportivo de Aguadulce,puerto deportivo,Roquetas de Mar,,36.81465,-2.56192,0
+Q6092528,Puerto deportivo de Cala Figuera,puerto deportivo,Santañí,,39.331944444,3.1675,0
+Q6092531,Puerto deportivo de Cala Rajada,puerto deportivo,Capdepera,,39.710555555,3.463888888,0
+Q6092533,puerto deportivo de Castro Urdiales,puerto deportivo,Castro-Urdiales,,43.38,-3.215,0
+Q6092536,Puerto deportivo de Coma-Ruga,puerto deportivo,Comarruga,,41.177373,1.526095,0
+Q6092538,Puerto deportivo de Sa Rapita,puerto deportivo,Campos,,39.361111111,2.952777777,0
+Q6092545,Puerto deportivo de Águilas,puerto deportivo,Región de Murcia,,37.40083333,-1.56888889,0
+Q6092547,Puerto deportivo del Real Club Marítimo del Abra – Real Sporting Club,puerto deportivo,Guecho,,43.33,-3.015833333,0
+Q6092550,Puerto deportivo del Real Club Mediterráneo,puerto deportivo,Málaga,,36.7082,-4.4127,0
+Q9061839,Port Fórum,puerto deportivo,Barcelona,,41.41418889,2.22758333,0
+Q9064544,puerto deportivo Almerimar,puerto deportivo,El Ejido,,36.695902224,-2.791952462,0
+Q9064547,Puerto Deportivo Las Fuentes,puerto deportivo,Alcalá de Chivert,,40.24944444,0.28777778,0
+Q9064554,Puerto deportivo de Fuenterrabía,puerto deportivo,Fuenterrabía,,43.37611111,-1.79444444,0
+Q9064555,Puerto deportivo de Guetaria,puerto deportivo,Guetaria,,43.30421395,-2.201106548,0
+Q9064556,Puerto deportivo de Zumaya,puerto deportivo,Zumaya,,43.296944444,-2.2525,0
+Q9064559,Puerto deportivo El Abra - Getxo,puerto deportivo,Guecho,,43.34666667,-3.02833333,0
+Q9064582,Puerto de Aiguadolç,puerto deportivo,Sitges,,41.23194444,1.82333333,0
+Q11701268,Puerto deportivo de Bermeo,puerto deportivo,Bermeo,,43.418737948,-2.721104008,0
+Q11701288,Puerto deportivo de Mutriku,puerto deportivo,Motrico,,43.307155867,-2.382328089,0
+Q11942388,Q11942388,puerto deportivo,Oropesa del Mar,,40.076158333,0.133811111,0
+Q11942404,Port de Valldemosa,puerto deportivo,Valldemosa,,39.71861111,2.58972222,0
+Q12256663,Port of Elantxobe,puerto deportivo,Elanchove,,43.40416667,-2.63777778,0
+Q12267055,Puerto deportivo de Santurce,puerto deportivo,Santurce,,43.32916667,-3.02777778,0
+Q138411453,Puerto de Caleta del Sebo,puerto,Caleta de Sebo,,29.2285417,-13.5014817,0
+Q133792513,Port of Puerto de la Cruz,puerto,Pájara,,28.073417407,-14.497762884,0
+Q133792666,Puerto de Playa Santiago,puerto,Alajeró,,28.026689128,-17.197859112,0
+Q133792740,Puerto Vueltas,puerto,Valle Gran Rey,,28.079696006,-17.332222141,0
+Q133792820,Puerto de Arguineguín,puerto,Mogán,,27.7574092,-15.684344195,0
+Q133792944,Puerto de Puerto Rico (gran Canaria),puerto,Mogán,,27.783007121,-15.715216052,0
+Q133798682,Port of Arrieta,puerto,Haría,,29.132155406,-13.459196519,0
+Q133799083,Port of La Santa,puerto,Tinajo,,29.109672667,-13.665304474,0
+Q133799467,Port of Puerto del Carmen,puerto,Tías,,28.921093572,-13.674763768,0
+Q133799544,Port of Talavera,puerto,Barlovento,,28.830958521,-17.773940711,0
+Q133799566,Puerto Colón,puerto,Adeje,,28.078292015,-16.737235462,0
+Q133809709,Port of Campoamor,puerto,Orihuela,,37.899849455,-0.748117655,0
+Q133810069,Port of Mazarrón,puerto,Mazarrón,,37.56357257,-1.256687852,0
+Q133856382,Port of Bueu,puerto,Bueu,,42.328335654,-8.785724929,0
+Q133857402,Port of Brens,puerto,Santa Eulalia de Brens,,42.944362023,-9.181723791,0
+Q133857403,Port of Caión,puerto,Cayón,,43.319151795,-8.603904036,0
+Q133857405,Port of Castiñeiras,puerto,Castiñeiras,,42.530262845,-8.99657205,0
+Q133897618,Port of Campamento,puerto,San Roque,,36.169231667,-5.376983365,0
+Q133935224,Port of Güímar,puerto,Güímar,,28.287705217,-16.379876597,0
+Q133936561,Port of Candelaria (Tenerife),puerto,Candelaria,,28.356904209,-16.368481184,0
+Q133959497,Port of Los Abrigos,puerto,Granadilla de Abona,,28.027956018,-16.592794329,0
+Q133959907,Port of El Médano,puerto,Granadilla de Abona,,28.042638747,-16.535220445,0
+Q133961525,Port of Playa San Juan,puerto,Guía de Isora,,28.179393981,-16.814577662,0
+Q134955974,Q134955974,puerto,,,43.3671882,-8.3986,0
+Q135313394,Q135313394,puerto,Ribeira do Freixo,,42.794467878,-8.945717508,0

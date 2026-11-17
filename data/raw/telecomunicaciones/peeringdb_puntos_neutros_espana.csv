@@ -1,0 +1,19 @@
+﻿ix_id,nombre,nombre_largo,ciudad,num_redes,num_cpd,num_cpd_con_coord,latitud,longitud,cpds,web,estado
+62,CATNIX,Catalunya Neutral Internet Exchange,Barcelona,54,4,4,41.37869,2.15245,CSUC Campus Nord / Equinix BA1 - Barcelona / Templus DC Barcelona BCN01 / Barcelona Cable Landing Station,http://www.catnix.net,ok
+63,ESpanix Madrid Lower LAN,Espanix Lower LAN,Madrid,161,8,8,40.60300,-2.91638,Espanix Datacenter / Digital Realty Madrid MAD1-2 / Equinix MD2 - Madrid / Templus DC Madrid MAD02 / DATA4 Madrid-Alcobendas - MAD1 / Barcelona Cable Landing Station / Cantabria Datacenter / Magdalena Datacenter,https://www.espanix.net,ok
+1146,ESpanix Madrid Upper LAN,Espanix Upper LAN,Madrid,57,8,8,40.60300,-2.91638,Espanix Datacenter / Digital Realty Madrid MAD1-2 / Equinix MD2 - Madrid / DATA4 Madrid-Alcobendas - MAD1 / Templus DC Madrid MAD02 / Barcelona Cable Landing Station / Cantabria Datacenter / Magdalena Datacenter,https://www.espanix.net/,ok
+1160,NIXVAL-IX,Neutral Internet Exchange Valencia,Valencia,10,1,1,39.51955,-0.46719,NIXVAL Datacenter,https://ixp.nixval.com,ok
+1277,DE-CIX Madrid,,Madrid,189,4,4,40.47866,-3.63388,Digital Realty Madrid MAD1-2 / nLighten Madrid MAD1 / Equinix MD2 - Madrid / Global Switch Madrid,https://www.de-cix.net/locations/madrid/,ok
+2130,Equinix Madrid,Equinix Internet Exchange Madrid,Madrid,12,1,1,40.53686,-3.64858,Equinix MD2 - Madrid,https://ix.equinix.com/home/madrid/,ok
+2633,Equinix Barcelona,Equinix Internet Exchange Barcelona,Barcelona,11,1,1,41.35156,2.13746,Equinix BA1 - Barcelona,https://www.equinix.com/data-centers/europe-colocation/spain-colocation/barcelona-data-centers,ok
+3149,IXPlay Global Peers,,Madrid,63,7,7,40.05028,-2.90620,Digital Realty Madrid MAD1-2 / Espanix Datacenter / Templus DC Málaga MAL01 / IaaS Datacenter Madrid / Templus DC Madrid MAD03 / IPCore Datacenter Madrid / Barcelona Cable Landing Station,https://ixplay.global,ok
+3446,DE-CIX Barcelona,DE-CIX Barcelona,Barcelona,42,4,4,41.36310,2.13270,Equinix BA1 - Barcelona / Templus DC Barcelona BCN01 / EdgeConneX Barcelona (EDCBCN01) / Barcelona Cable Landing Station,https://www.de-cix.net/en/locations/barcelona,ok
+3832,ixFabric - Barcelona,ixFabric - Barcelona,Barcelona,52,1,1,41.34862,2.12978,Templus DC Barcelona BCN01,https://ixfabric.net,ok
+4002,Mario IX,,Elche,0,0,0,,,,https://ix.mario.gdn,ok
+4064,ELX-IX,Elche Internet Exchange,Elche,0,0,0,,,,https://ix.mario.gdn/,ok
+4322,Barcelona-IX,Barcelona IXP,Barcelona,25,1,1,41.34862,2.12978,Templus DC Barcelona BCN01,https://barcelona-ix.net/,ok
+4511,AxiusIX EIR,AxiusIX EIR,Eirenia,1,0,0,,,,https://axiusix.io,ok
+4583,ESpanix Barcelona Lower LAN,Barcelona Lower LAN,Barcelona,2,8,8,40.60300,-2.91638,Barcelona Cable Landing Station / Espanix Datacenter / Digital Realty Madrid MAD1-2 / Templus DC Madrid MAD02 / DATA4 Madrid-Alcobendas - MAD1 / Equinix MD2 - Madrid / Cantabria Datacenter / Magdalena Datacenter,https://www.espanix.net,ok
+4584,ESpanix Barcelona Upper LAN,Barcelona Upper LAN,Barcelona,2,8,8,40.60300,-2.91638,Barcelona Cable Landing Station / Espanix Datacenter / Digital Realty Madrid MAD1-2 / Templus DC Madrid MAD02 / DATA4 Madrid-Alcobendas - MAD1 / Equinix MD2 - Madrid / Magdalena Datacenter / Cantabria Datacenter,https://www.espanix.net,ok
+4993,1-ES FREE,,Madrid,18,1,1,40.43932,-3.62121,Digital Realty Madrid MAD1-2,https://1-ix.eu/1es,ok
+5063,MegaIX Madrid,,Madrid,3,0,0,,,,https://www.megaport.com,ok
