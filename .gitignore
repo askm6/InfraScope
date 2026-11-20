@@ -1,0 +1,30 @@
+# Secretos (API keys). NUNCA subir a GitHub
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+
+# Datasets: no se sube ninguno a GitHub (ni los de origen ni los generados).
+# Se ignora todo lo que haya dentro de data/, también en carpetas nuevas.
+# Solo se suben los .gitkeep, para que las carpetas existan al clonar.
+data/**
+!data/**/
+!data/**/.gitkeep
+
+# Por si se guarda algún dataset fuera de data/
+*.csv
+*.xlsx
+*.xls
+*.parquet
+*.duckdb
+
+# Sistema / editor
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
