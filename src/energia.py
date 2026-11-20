@@ -5,8 +5,12 @@ CARPETA_ENTRADA = "data/raw/energia/"
 RUTA_DEMANDA_CCAA = CARPETA_ENTRADA + "ree_demanda_ccaa_anual.csv"
 RUTA_RENOVABLES_CCAA = CARPETA_ENTRADA + "ree_generacion_renovable_ccaa_anual.csv"
 RUTA_PRECIOS = CARPETA_ENTRADA + "ree_precios_horarios.csv"   # de src/ree_precios_descarga.py
+# de src/ree_ccaa_mensual_descarga.py
+RUTA_DEMANDA_CCAA_MES = CARPETA_ENTRADA + "ree_demanda_ccaa_mensual.csv"
+RUTA_RENOVABLES_CCAA_MES = CARPETA_ENTRADA + "ree_generacion_renovable_ccaa_mensual.csv"
 
 RUTA_SALIDA_CCAA = "data/processed/energia_ccaa_anual.csv"
+RUTA_SALIDA_CCAA_MES = "data/processed/energia_ccaa_mensual.csv"
 RUTA_SALIDA_PICOS_PRECIO = "data/processed/energia_picos_precio.csv"
 
 # Datos por comunidad: solo el último año de los datos
@@ -46,32 +50,36 @@ def normalizar_ccaa(df):
     return df
 
 
-def limpiar_demanda_ccaa(ruta):
-    """Demanda eléctrica anual por comunidad. Solo años completos (12 meses)."""
+def limpiar_demanda_ccaa(ruta, periodo=("anio",)):
+    """Demanda eléctrica por comunidad y periodo (año, o año y mes)."""
     df = pd.read_csv(ruta, encoding="utf-8")
-    df["anio"] = pd.to_numeric(df["anio"], errors="coerce")
-    df["demanda_mwh"] = pd.to_numeric(df["demanda_mwh"], errors="coerce")
-    df = df.dropna(subset=["ccaa", "anio", "demanda_mwh"])
-    df = df[(df["meses"] == 12) & (df["demanda_mwh"] > 0)]
+    for col in [*periodo, "demanda_mwh"]:
+        df[col] = pd.to_numeric(df[col], errors="coerce")
+    df = df.dropna(subset=["ccaa", *periodo, "demanda_mwh"])
+    df = df[df["demanda_mwh"] > 0]
+    if "meses" in df.columns:          # datos anuales: solo años completos (12 meses)
+        df = df[df["meses"] == 12]
     df = normalizar_ccaa(df)
-    df["anio"] = df["anio"].astype(int)
-    return df.drop_duplicates(subset=["ccaa", "anio"])[["ccaa", "anio", "demanda_mwh"]]
+    for col in periodo:
+        df[col] = df[col].astype(int)
+    return df.drop_duplicates(subset=["ccaa", *periodo])[["ccaa", *periodo, "demanda_mwh"]]
 
 
-def limpiar_renovables_ccaa(ruta):
-    """Generación anual por comunidad, separada en renovable y no renovable."""
+def limpiar_renovables_ccaa(ruta, periodo=("anio",)):
+    """Generación por comunidad y periodo, separada en renovable y no renovable."""
     df = pd.read_csv(ruta, encoding="utf-8")
-    df["anio"] = pd.to_numeric(df["anio"], errors="coerce")
-    df["generacion_mwh"] = pd.to_numeric(df["generacion_mwh"], errors="coerce")
+    for col in [*periodo, "generacion_mwh"]:
+        df[col] = pd.to_numeric(df[col], errors="coerce")
     df["tipo"] = df["tipo"].str.strip().str.lower()
-    df = df.dropna(subset=["ccaa", "anio", "tipo", "generacion_mwh"])
+    df = df.dropna(subset=["ccaa", *periodo, "tipo", "generacion_mwh"])
     df = df[df["generacion_mwh"] >= 0]
     df = normalizar_ccaa(df)
-    df["anio"] = df["anio"].astype(int)
-    df = df.drop_duplicates(subset=["ccaa", "anio", "tipo"])
+    for col in periodo:
+        df[col] = df[col].astype(int)
+    df = df.drop_duplicates(subset=["ccaa", *periodo, "tipo"])
 
-    # Una fila por comunidad y año, con una columna por tipo
-    tabla = (df.pivot(index=["ccaa", "anio"], columns="tipo", values="generacion_mwh")
+    # Una fila por comunidad y periodo, con una columna por tipo
+    tabla = (df.pivot(index=["ccaa", *periodo], columns="tipo", values="generacion_mwh")
                .rename(columns={"renovable": "generacion_renovable_mwh",
                                 "no renovable": "generacion_no_renovable_mwh"})
                .reset_index())
@@ -83,15 +91,15 @@ def limpiar_renovables_ccaa(ruta):
     return tabla
 
 
-def unir_ccaa(demanda, renovables):
+def unir_ccaa(demanda, renovables, periodo=("anio",)):
     """Junta demanda y generación y calcula cuánto cubre la comunidad con lo que produce."""
-    df = demanda.merge(renovables, on=["ccaa", "anio"], how="outer")
+    df = demanda.merge(renovables, on=["ccaa", *periodo], how="outer")
     # > 100 %: la comunidad genera más de lo que consume (exporta electricidad)
     df["autoabastecimiento_pct"] = (df["generacion_total_mwh"] / df["demanda_mwh"] * 100).round(1)
-    columnas = ["ccaa", "anio", "demanda_mwh", "generacion_renovable_mwh",
+    columnas = ["ccaa", *periodo, "demanda_mwh", "generacion_renovable_mwh",
                 "generacion_no_renovable_mwh", "generacion_total_mwh",
                 "renovable_pct", "autoabastecimiento_pct"]
-    return df[columnas].sort_values(["ccaa", "anio"]).reset_index(drop=True)
+    return df[columnas].sort_values(["ccaa", *periodo]).reset_index(drop=True)
 
 
 def picos_precio(ruta):
@@ -136,6 +144,16 @@ if __name__ == "__main__":
 
     ccaa.to_csv(RUTA_SALIDA_CCAA, index=False, encoding="utf-8-sig")
 
+    # Mismo dato que el anual pero mes a mes, para el mismo año
+    mes = ("anio", "mes")
+    ccaa_mes = unir_ccaa(limpiar_demanda_ccaa(RUTA_DEMANDA_CCAA_MES, mes),
+                         limpiar_renovables_ccaa(RUTA_RENOVABLES_CCAA_MES, mes), mes)
+    ccaa_mes = ccaa_mes[ccaa_mes["anio"] == ccaa["anio"].max()].reset_index(drop=True)
+    ccaa_mes.to_csv(RUTA_SALIDA_CCAA_MES, index=False, encoding="utf-8-sig")
+    meses_por_ccaa = ccaa_mes.groupby("ccaa")["mes"].nunique()
+    if (meses_por_ccaa < 12).any():
+        print(f"Aviso: comunidades sin los 12 meses: {meses_por_ccaa[meses_por_ccaa < 12].to_dict()}")
+
     picos = picos_precio(RUTA_PRECIOS)
     picos.to_csv(RUTA_SALIDA_PICOS_PRECIO, index=False, encoding="utf-8-sig")
 
@@ -156,4 +174,5 @@ if __name__ == "__main__":
     print(f"\nPicos de precio diario ({SERIE_PRECIO}, €/MWh) por año:")
     print(picos.pivot(index="anio", columns="tipo", values=["fecha", "precio_eur_mwh"])
                .to_string())
-    print(f"\nResultado guardado en {RUTA_SALIDA_CCAA} y {RUTA_SALIDA_PICOS_PRECIO}")
+    print(f"\nResultado guardado en {RUTA_SALIDA_CCAA}, {RUTA_SALIDA_CCAA_MES} "
+          f"y {RUTA_SALIDA_PICOS_PRECIO}")
