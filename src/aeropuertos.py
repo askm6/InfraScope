@@ -7,7 +7,6 @@ RUTA_MUNICIPIOS = "data/processed/municipios.csv"            # codigo_ine, munic
 RUTA_SALIDA_AEROPUERTOS = "data/processed/aeropuertos.csv"
 RUTA_SALIDA_MUNICIPIOS = "data/processed/aeropuertos_municipios.csv"
 
-NUM_MUNICIPIOS = 29
 RADIO_KM = 100                      # se cuentan los aeropuertos a menos de esta distancia
 DISTANCIA_MAXIMA_KM = 150           # a esta distancia (o más) del aeropuerto grande -> índice 0
 
@@ -16,18 +15,6 @@ LATITUD_MIN, LATITUD_MAX = 27.0, 44.5
 LONGITUD_MIN, LONGITUD_MAX = -18.5, 4.5
 
 TIPOS = {"large_airport": "grande", "medium_airport": "mediano", "small_airport": "pequeño"}
-
-# Código ISO de la región -> nombre de la comunidad como en el INE (igual que en energia.py)
-CCAA_ISO = {
-    "ES-AN": "Andalucía", "ES-AR": "Aragón", "ES-AS": "Asturias, Principado de",
-    "ES-IB": "Balears, Illes", "ES-CN": "Canarias", "ES-CB": "Cantabria",
-    "ES-CL": "Castilla y León", "ES-CM": "Castilla - La Mancha", "ES-CT": "Cataluña",
-    "ES-VC": "Comunitat Valenciana", "ES-EX": "Extremadura", "ES-GA": "Galicia",
-    "ES-MD": "Madrid, Comunidad de", "ES-MC": "Murcia, Región de",
-    "ES-NC": "Navarra, Comunidad Foral de", "ES-PV": "País Vasco", "ES-RI": "Rioja, La",
-    "ES-CE": "Ceuta", "ES-ML": "Melilla",
-}
-
 
 def cargar_datos():
     """Lee los aeropuertos y la lista de municipios (código INE como texto de 5 dígitos)."""
@@ -67,17 +54,15 @@ def limpiar_aeropuertos(df):
         df = df[~fuera]
 
     df["tipo"] = df["tipo"].map(TIPOS).fillna(df["tipo"])
-    df["ccaa"] = df["region_iso"].map(CCAA_ISO)
-    if df["ccaa"].isna().any():
-        print(f"Aviso: regiones sin traducir: {sorted(df.loc[df['ccaa'].isna(), 'region_iso'].unique())}")
-
-    columnas = ["codigo_icao", "codigo_iata", "nombre", "tipo", "ccaa", "localidad",
+    # Sin comunidad autónoma: el proyecto trabaja solo por municipio
+    columnas = ["codigo_icao", "codigo_iata", "nombre", "tipo", "localidad",
                 "latitud", "longitud"]
-    return df[columnas].sort_values(["ccaa", "nombre"]).reset_index(drop=True)
+    return df[columnas].sort_values("nombre").reset_index(drop=True)
 
 
 def limpiar_municipios(df):
-    """Comprueba que están los 29 municipios con coordenadas."""
+    """Quita duplicados y municipios sin coordenadas (antes se esperaban 29 fijos; ahora
+    es la lista maestra completa). No se guarda la provincia."""
     df = df.drop_duplicates(subset=["codigo_ine"]).copy()
     for col in ["latitud", "longitud"]:
         df[col] = pd.to_numeric(df[col], errors="coerce")
@@ -85,9 +70,7 @@ def limpiar_municipios(df):
     if len(sin_coordenadas):
         print(f"Aviso: municipios sin coordenadas (se quitan): {sin_coordenadas['municipio'].tolist()}")
         df = df.dropna(subset=["latitud", "longitud"])
-    if len(df) != NUM_MUNICIPIOS:
-        print(f"Aviso: hay {len(df)} municipios en vez de {NUM_MUNICIPIOS}")
-    return df[["codigo_ine", "municipio", "provincia", "latitud", "longitud"]]
+    return df[["codigo_ine", "municipio", "latitud", "longitud"]]
 
 
 def distancias_km(municipios, aeropuertos):

@@ -1,10 +1,12 @@
 import os
 
+import numpy as np
 import pandas as pd
 
 # ---------------- Configuración ----------------
 CARPETA_ENTRADA = "data/raw/socioeconomico/"
-RUTA_PARO = CARPETA_ENTRADA + "paro_municipios_sepe.csv"
+# El paro ya viene limpio y anual de src/paro.py (que trata el secreto estadístico "<5")
+RUTA_PARO = "data/processed/paro_municipios.csv"
 RUTA_RENTA = CARPETA_ENTRADA + "ine_renta_media_municipios.csv"
 RUTA_DEMOGRAFIA = CARPETA_ENTRADA + "ine_indicadores_demograficos_municipios.csv"
 RUTA_MUNICIPIOS = "data/processed/municipios.csv"     # lista maestra: código y nombre únicos
@@ -14,14 +16,13 @@ RUTA_SALIDA_MUNICIPIOS = "data/processed/socioeconomico_municipios.csv"
 
 ANIO_INICIO = 2023
 ANIO_FIN = 2025
-NUM_MUNICIPIOS = 29
 
-# Población por municipio para la tasa de paro aproximada.
+# Población por municipio (padrón del INE) para la tasa de paro aproximada.
 # Si la ruta es None o no existe, la tasa de paro se deja vacía.
-RUTA_POBLACION = None
+RUTA_POBLACION = "data/raw/poblacion/ine_padron_poblacion_municipios_2016_2025.csv"
 COLUMNA_CODIGO_POBLACION = "codigo_ine"
 COLUMNA_POBLACION = "poblacion"
-COLUMNA_ANIO_POBLACION = None        # p.ej. "anio" si la tabla tiene varios años
+COLUMNA_ANIO_POBLACION = "anio"      # la tabla tiene varios años: se usa el más reciente
 
 # Nombres cortos de los indicadores del INE (formato largo -> columnas)
 INDICADORES_RENTA = {
@@ -42,24 +43,31 @@ def codigo_ine(serie):
 
 
 def leer(ruta, columna_codigo="cod_ine"):
-    """Lee un CSV con el código INE como texto y lo renombra a 'codigo_ine'."""
-    df = pd.read_csv(ruta, dtype={columna_codigo: str}, encoding="utf-8")
+    """Lee un CSV con el código INE como texto y lo renombra a 'codigo_ine'.
+    Se lee con utf-8-sig porque algunos CSV (el padrón) empiezan con BOM: con utf-8 la
+    primera columna se llamaría '﻿codigo_ine' y el cruce fallaría."""
+    df = pd.read_csv(ruta, dtype={columna_codigo: str}, encoding="utf-8-sig")
     df = df.rename(columns={columna_codigo: "codigo_ine"})
     df["codigo_ine"] = codigo_ine(df["codigo_ine"])
     return df
 
 
 def cargar_datos():
-    """Lee las tres fuentes socioeconómicas y la lista maestra de municipios."""
-    paro = leer(RUTA_PARO)
+    """Lee las tres fuentes socioeconómicas y la lista maestra de municipios.
+    El paro sale de data/processed/paro_municipios.csv (columna codigo_ine), por eso
+    hay que ejecutar antes el paso "paro"."""
+    paro = leer(RUTA_PARO, "codigo_ine")
     renta = leer(RUTA_RENTA)
     demografia = leer(RUTA_DEMOGRAFIA)
-    municipios = leer(RUTA_MUNICIPIOS, "codigo_ine")[["codigo_ine", "municipio", "provincia"]]
+    # Sin provincia: el proyecto trabaja solo por municipio
+    municipios = leer(RUTA_MUNICIPIOS, "codigo_ine")[["codigo_ine", "municipio"]]
     return paro, renta, demografia, municipios
 
 
 def comprobar(df, nombre, claves, municipios):
-    """Avisa de duplicados, nulos y municipios que faltan o sobran; quita los duplicados."""
+    """Avisa de duplicados, nulos y municipios que faltan o sobran; quita los duplicados.
+    Compara con la lista maestra completa (antes se esperaban 29 municipios fijos) y solo
+    muestra los primeros códigos de cada lista, que ahora pueden ser cientos."""
     duplicados = df.duplicated(subset=claves).sum()
     if duplicados:
         print(f"Aviso [{nombre}]: {duplicados} filas duplicadas en {claves} (se quita la repetida)")
@@ -71,13 +79,13 @@ def comprobar(df, nombre, claves, municipios):
 
     esperados = set(municipios["codigo_ine"])
     encontrados = set(df["codigo_ine"])
-    if len(encontrados) != NUM_MUNICIPIOS:
-        print(f"Aviso [{nombre}]: {len(encontrados)} municipios en vez de {NUM_MUNICIPIOS}")
-    if esperados - encontrados:
-        print(f"Aviso [{nombre}]: faltan los códigos {sorted(esperados - encontrados)}")
-    if encontrados - esperados:
-        print(f"Aviso [{nombre}]: códigos que no están en {RUTA_MUNICIPIOS}: "
-              f"{sorted(encontrados - esperados)}")
+    faltan, sobran = sorted(esperados - encontrados), sorted(encontrados - esperados)
+    print(f"[{nombre}] {len(encontrados & esperados)} de {len(esperados)} municipios con datos")
+    if faltan:
+        print(f"Aviso [{nombre}]: faltan {len(faltan)} códigos, p. ej. {faltan[:10]}")
+    if sobran:
+        print(f"Aviso [{nombre}]: {len(sobran)} códigos que no están en {RUTA_MUNICIPIOS} "
+              f"(municipios fusionados o desaparecidos, se ignoran), p. ej. {sobran[:10]}")
     return df
 
 
@@ -122,7 +130,9 @@ def largo_a_ancho(df, columna_valor, indicadores, nombre, municipios):
 
 
 def unir_anual(municipios, paro, renta, demografia):
-    """Una fila por municipio y año del periodo. Lo que no exista en una fuente queda vacío."""
+    """Una fila por municipio y año del periodo. Lo que no exista en una fuente queda vacío.
+    Los enteros se redondean hacia arriba en los ,5 (round() de pandas redondea al par y
+    cambiaría el paro medio de algunos municipios respecto a los datos originales)."""
     rejilla = pd.MultiIndex.from_product(
         [municipios["codigo_ine"], range(ANIO_INICIO, ANIO_FIN + 1)],
         names=["codigo_ine", "anio"]).to_frame(index=False)
@@ -132,7 +142,7 @@ def unir_anual(municipios, paro, renta, demografia):
                  .merge(demografia, on=["codigo_ine", "anio"], how="left"))
     enteros = ["paro_medio_anual", "paro_diciembre", "meses_paro"] + list(INDICADORES_RENTA.values())
     for col in enteros:
-        df[col] = df[col].round().astype("Int64")   # enteros que admiten vacío
+        df[col] = np.floor(df[col].astype(float) + 0.5).astype("Int64")   # enteros que admiten vacío
     return df.sort_values(["codigo_ine", "anio"]).reset_index(drop=True)
 
 
@@ -145,10 +155,13 @@ def ultimo_dato(anual, columnas, sufijo_anio):
 
 
 def variacion_pct(anual, columna, nombre):
-    """Variación en % entre el primer y el último año con dato de cada municipio."""
+    """Variación en % entre el primer y el último año con dato de cada municipio.
+    Si el primer valor es 0 (municipios pequeños sin parados) la variación no existe: NaN
+    en vez de infinito."""
     datos = anual.dropna(subset=[columna]).sort_values("anio")
-    extremos = datos.groupby("codigo_ine")[columna].agg(["first", "last"])
-    resultado = ((extremos["last"] - extremos["first"]) / extremos["first"] * 100).round(1)
+    extremos = datos.groupby("codigo_ine")[columna].agg(["first", "last"]).astype(float)
+    base = extremos["first"].where(extremos["first"] != 0)
+    resultado = ((extremos["last"] - extremos["first"]) / base * 100).round(1)
     return resultado.rename(nombre).reset_index()
 
 
@@ -192,7 +205,7 @@ def calcular_municipios(anual, municipios):
         df["anio_poblacion"] = pd.NA
         df["tasa_paro_aprox"] = pd.NA
 
-    columnas = (["codigo_ine", "municipio", "provincia",
+    columnas = (["codigo_ine", "municipio",
                  "anio_paro", "paro_medio_anual", "paro_diciembre", "var_paro_pct",
                  "poblacion", "anio_poblacion", "tasa_paro_aprox",
                  "anio_renta"] + list(INDICADORES_RENTA.values()) + ["var_renta_persona_pct",

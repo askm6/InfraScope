@@ -1,63 +1,72 @@
+"""Población por municipio: data/processed/poblacion_municipios.csv.
+
+Origen: padrón municipal del INE, 2016-2025
+(data/raw/poblacion/ine_padron_poblacion_municipios_2016_2025.csv).
+Una fila por municipio de la lista maestra con la población del último año, su peso en
+España, su puesto y la evolución desde el primer año del padrón.
+"""
 import pandas as pd
- 
+
 # ---------------- Configuración ----------------
-RUTA_ENTRADA = "data/raw/poblacion/poblacion.csv"
-RUTA_SALIDA = "data/processed/poblacion_provincias.csv"
-MINIMO_HABITANTES = 200000          
-ANIO = None                    
- 
- 
+RUTA_ENTRADA = "data/raw/poblacion/ine_padron_poblacion_municipios_2016_2025.csv"
+RUTA_MUNICIPIOS = "data/processed/municipios.csv"      # lista maestra: codigo_ine, municipio
+RUTA_SALIDA = "data/processed/poblacion_municipios.csv"
+ANIO = None                     # None = el último año del padrón
+
+
 def cargar_datos(ruta):
-    """Lee el CSV del INE (tabla poblacion) y pone nombres de columnas cómodos."""
-    df = pd.read_csv(ruta, sep="\t", encoding="utf-8-sig", dtype=str, keep_default_na=False)
-    columnas = {df.columns[-1]: "poblacion"}
-    for col in df.columns:
-        if col.startswith("Comunidades"):
-            columnas[col] = "ccaa"
-        elif col.startswith("Provincias"):
-            columnas[col] = "provincia"
-        elif col.startswith("Sexo"):
-            columnas[col] = "sexo"
-        elif col.startswith("Periodo"):
-            columnas[col] = "anio"
-    df = df.rename(columns=columnas)
- 
-    # "7.113.886" -> 7113886 (el INE usa el punto para los miles)
-    df["poblacion"] = pd.to_numeric(df["poblacion"].str.replace(".", "", regex=False),
-                                    errors="coerce")
-    df["anio"] = pd.to_numeric(df["anio"], errors="coerce")
-    return df.dropna(subset=["poblacion", "anio"]).astype({"anio": int})
- 
- 
-def limpiar(df, anio=None):
-    """Solo filas de provincia, ambos sexos y un único año."""
-    df = df[df["provincia"].str.strip() != ""]      # fuera totales nacionales y de CCAA
-    df = df[df["sexo"] == "Total"]
-    df = df[df["anio"] == (anio or df["anio"].max())]
-    df = df.drop_duplicates(subset=["provincia", "anio"]).copy()
- 
-    # "08 Barcelona" -> codigo = "08", nombre = "Barcelona"
-    df[["codigo", "nombre"]] = df["provincia"].str.split(" ", n=1, expand=True)
-    df["ccaa"] = df["ccaa"].str.split(" ", n=1).str[1]
-    return df[["codigo", "nombre", "ccaa", "anio", "poblacion"]]
- 
- 
-def calcular(df):
-    """Añade el % sobre el total de España y el ranking."""
-    df = df.sort_values("poblacion", ascending=False).reset_index(drop=True)
-    df["pct_espana"] = (df["poblacion"] / df["poblacion"].sum() * 100).round(2)
-    df.insert(0, "ranking", range(1, len(df) + 1))
+    """Lee el padrón (una fila por municipio y año) con el código INE como texto."""
+    df = pd.read_csv(ruta, dtype={"codigo_ine": str}, encoding="utf-8-sig")
+    df["codigo_ine"] = df["codigo_ine"].str.strip().str.zfill(5)
+    for col in ["anio", "poblacion", "hombres", "mujeres"]:
+        df[col] = pd.to_numeric(df[col], errors="coerce")
+    return df.dropna(subset=["anio"]).astype({"anio": int})
+
+
+def limpiar(df):
+    """Quita duplicados (municipio, año) y poblaciones imposibles (<= 0 -> vacío)."""
+    duplicados = df.duplicated(["codigo_ine", "anio"]).sum()
+    if duplicados:
+        print(f"Aviso: {duplicados} filas repetidas (municipio, año): se quita la repetida")
+        df = df.drop_duplicates(["codigo_ine", "anio"], keep="last")
+    malos = df["poblacion"] <= 0
+    if malos.any():
+        print(f"Aviso: {malos.sum()} poblaciones <= 0 -> vacío")
+        df.loc[malos, "poblacion"] = pd.NA
     return df
- 
- 
+
+
+def calcular(padron, ruta_municipios, anio=None):
+    """Una fila por municipio de la lista maestra: población del año elegido, % sobre
+    España, puesto (1 = el más poblado) y variación desde el primer año del padrón."""
+    anio = anio or int(padron["anio"].max())
+    anio_ini = int(padron["anio"].min())
+    actual = padron[padron["anio"] == anio].set_index("codigo_ine")
+    inicial = padron[padron["anio"] == anio_ini].set_index("codigo_ine")["poblacion"]
+
+    muni = pd.read_csv(ruta_municipios, dtype={"codigo_ine": str}, encoding="utf-8-sig")
+    res = muni[["codigo_ine", "municipio"]].copy()
+    res["anio"] = anio
+    res = res.join(actual[["poblacion", "hombres", "mujeres"]], on="codigo_ine")
+    res["pct_espana"] = (res["poblacion"] / actual["poblacion"].sum() * 100).round(4)
+    res["ranking"] = res["poblacion"].rank(ascending=False, method="min").astype("Int64")
+    res[f"var_{anio_ini}_{anio}_pct"] = ((res["poblacion"] / res["codigo_ine"].map(inicial) - 1)
+                                         * 100).round(2)
+    for col in ["poblacion", "hombres", "mujeres"]:
+        res[col] = res[col].astype("Int64")
+    sin = res["poblacion"].isna()
+    if sin.any():
+        print(f"Aviso: {sin.sum()} municipios sin población en {anio}: {res.loc[sin, 'municipio'].tolist()[:10]}")
+    columnas = ["ranking", "codigo_ine", "municipio", "anio", "poblacion", "hombres", "mujeres",
+                "pct_espana", f"var_{anio_ini}_{anio}_pct"]
+    return res[columnas].sort_values("ranking").reset_index(drop=True)
+
+
 if __name__ == "__main__":
-    resultado = calcular(limpiar(cargar_datos(RUTA_ENTRADA), ANIO))
-    seleccion = resultado[resultado["poblacion"] >= MINIMO_HABITANTES]
-    seleccion.to_csv(RUTA_SALIDA, index=False, encoding="utf-8-sig")
- 
-    print(f"Año: {resultado['anio'].iloc[0]}")
-    print(f"Provincias analizadas: {len(resultado)}")
-    print(f"Población total: {resultado['poblacion'].sum():,}".replace(",", "."))
-    print(f"Con al menos {MINIMO_HABITANTES:,} habitantes: {len(seleccion)}")
-    print(seleccion.head(15).to_string(index=False))
+    resultado = calcular(limpiar(cargar_datos(RUTA_ENTRADA)), RUTA_MUNICIPIOS, ANIO)
+    resultado.to_csv(RUTA_SALIDA, index=False, encoding="utf-8-sig")
+
+    print(f"Año: {resultado['anio'].iloc[0]} | municipios: {len(resultado)} | "
+          f"población total: {resultado['poblacion'].sum():,}".replace(",", "."))
+    print(resultado.head(10).to_string(index=False))
     print(f"\nResultado guardado en {RUTA_SALIDA}")

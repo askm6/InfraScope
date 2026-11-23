@@ -7,10 +7,9 @@ except ImportError:                     # python src/proyeccion_poblacion.py
 
 # ---------------- Configuración ----------------
 RUTA_ENTRADA = "data/raw/poblacion/ine_proyeccion_poblacion_provincias_2026_2041.csv"
-RUTA_MUNICIPIOS = "data/processed/municipios.csv"      # lista maestra: codigo_ine, municipio, provincia
+RUTA_MUNICIPIOS = "data/processed/municipios.csv"      # lista maestra: codigo_ine, municipio
+RUTA_PADRON = "data/raw/poblacion/ine_padron_poblacion_municipios_2016_2025.csv"
 
-RUTA_SALIDA_ANUAL = "data/processed/proyeccion_poblacion_anual.csv"
-RUTA_SALIDA_PROVINCIAS = "data/processed/proyeccion_poblacion_provincias.csv"
 RUTA_SALIDA_MUNICIPIOS = "data/processed/proyeccion_poblacion_municipios.csv"
 
 HORIZONTE_ANIOS = 10                    # el enunciado pide previsiones a 10 años
@@ -101,30 +100,47 @@ def resumen_provincias(anual, horizonte=HORIZONTE_ANIOS):
     return res
 
 
-def asignar_municipios(resumen, ruta_municipios):
-    """Cada municipio de la lista maestra hereda la proyección de su provincia."""
-    muni = pd.read_csv(ruta_municipios, dtype={"codigo_ine": str}, encoding="utf-8")
+def asignar_municipios(resumen, anual, ruta_municipios, ruta_padron):
+    """Proyección por municipio, con una columna poblacion_AAAA por CADA año de la
+    proyección del INE (de `anual`). El INE solo proyecta provincias, así que cada municipio
+    conserva el peso que tiene en su provincia según el padrón del último año:
+    poblacion_municipio_año = poblacion_provincia_proyectada_año * (padrón municipio / padrón provincia).
+    Los crecimientos (%) y la tendencia son los de su provincia (de `resumen`). La provincia
+    solo se usa por dentro para cruzar (2 primeras cifras del código INE); no sale en el CSV."""
+    muni = pd.read_csv(ruta_municipios, dtype={"codigo_ine": str}, encoding="utf-8-sig")
     muni["codigo_ine"] = muni["codigo_ine"].str.zfill(5)
-    muni["codigo_provincia"] = muni["codigo_ine"].str[:2]
-    res = muni[["codigo_ine", "municipio", "codigo_provincia"]].merge(
-        resumen.drop(columns=["ranking_crecimiento"]), on="codigo_provincia", how="left")
-    sin_dato = res[res["provincia"].isna()]
+    padron = pd.read_csv(ruta_padron, dtype={"codigo_ine": str}, encoding="utf-8-sig",
+                         usecols=["codigo_ine", "anio", "poblacion"])
+    anio_padron = int(padron["anio"].max())
+    padron = padron[padron["anio"] == anio_padron].set_index("codigo_ine")["poblacion"]
+
+    res = muni[["codigo_ine", "municipio"]].copy()
+    res[f"poblacion_padron_{anio_padron}"] = res["codigo_ine"].map(padron).astype("Int64")
+    cod_prov = res["codigo_ine"].str[:2]
+    peso = res[f"poblacion_padron_{anio_padron}"] / padron.groupby(padron.index.str[:2]).sum().reindex(cod_prov).values
+    # Población provincial de cada año (una columna por año) -> la del municipio
+    por_anio = anual.pivot(index="codigo_provincia", columns="anio",
+                           values="poblacion_proyectada").reindex(cod_prov)
+    for anio in sorted(por_anio.columns):
+        res[f"poblacion_{anio}"] = (por_anio[anio].values * peso).round().astype("Int64")
+    prov = resumen.set_index("codigo_provincia").reindex(cod_prov)
+    for col in [c for c in resumen.columns if c.startswith(("crec_", "tasa_", "tendencia"))]:
+        res[col] = prov[col].values
+    sin_dato = res[res[f"poblacion_padron_{anio_padron}"].isna()]
     if len(sin_dato):
-        print(f"Aviso: municipios sin proyección: {list(sin_dato['municipio'])}")
-    return res.rename(columns={"provincia": "provincia_ine"})
+        print(f"Aviso: {len(sin_dato)} municipios sin padrón (proyección vacía): {list(sin_dato['municipio'])[:10]}")
+    return res
 
 
 if __name__ == "__main__":
+    # Las tablas provinciales solo se usan por dentro: el proyecto trabaja por municipio
     anual = calcular_anual(limpiar(cargar_datos(RUTA_ENTRADA)))
     resumen = resumen_provincias(anual)
-    municipios = asignar_municipios(resumen, RUTA_MUNICIPIOS)
-
-    anual.to_csv(RUTA_SALIDA_ANUAL, index=False, encoding="utf-8-sig")
-    resumen.to_csv(RUTA_SALIDA_PROVINCIAS, index=False, encoding="utf-8-sig")
+    municipios = asignar_municipios(resumen, anual, RUTA_MUNICIPIOS, RUTA_PADRON)
     municipios.to_csv(RUTA_SALIDA_MUNICIPIOS, index=False, encoding="utf-8-sig")
 
-    print(f"\nProvincias que más crecen en {HORIZONTE_ANIOS} años:")
-    print(resumen.head(8).to_string(index=False))
-    print(f"\nProvincias que más decrecen:")
-    print(resumen.tail(5).to_string(index=False))
-    print(f"\nGuardado: {RUTA_SALIDA_ANUAL}, {RUTA_SALIDA_PROVINCIAS}, {RUTA_SALIDA_MUNICIPIOS}")
+    columna = f"crec_{HORIZONTE_ANIOS}a_pct"
+    print(f"\nMunicipios grandes ordenados por crecimiento a {HORIZONTE_ANIOS} años:")
+    print(municipios.nlargest(300, municipios.columns[2]).sort_values(columna, ascending=False)
+          .head(8).to_string(index=False))
+    print(f"\nGuardado: {RUTA_SALIDA_MUNICIPIOS} ({len(municipios)} municipios)")
