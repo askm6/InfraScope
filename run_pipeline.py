@@ -1,7 +1,7 @@
 """Ejecuta con una sola orden todos los scripts de limpieza de datos.
 
 Uso:
-    python run_pipeline.py                      # descarga lo que falte y limpia todo
+    python run_pipeline.py                      # descarga lo que falte de REE y limpia todo
     python run_pipeline.py --descargar          # antes vuelve a descargar todo (AEMET y REE)
     python run_pipeline.py --solo agua energia  # solo los scripts indicados
     python run_pipeline.py --lista              # muestra los scripts disponibles
@@ -34,6 +34,11 @@ ARCHIVOS_DESCARGA = {
     "ree_ccaa_mensual_descarga": ["data/raw/energia/ree_demanda_ccaa_mensual.csv",
                                   "data/raw/energia/ree_generacion_renovable_ccaa_mensual.csv"],
 }
+
+
+# Descargas que nunca se lanzan solas (solo con --descargar o --solo): la de AEMET
+# tarda mucho y llena data/raw/aemet/ de JSON intermedios
+SOLO_A_MANO = {"aemet_descarga"}
 
 
 def faltan_datos(nombre):
@@ -81,7 +86,12 @@ def main():
     todos = {**DESCARGAS, **LIMPIEZAS}
     if args.lista:
         for nombre, descripcion in todos.items():
-            extra = "  (con --descargar o si faltan sus datos)" if nombre in DESCARGAS else ""
+            if nombre in SOLO_A_MANO:
+                extra = "  (solo con --descargar)"
+            elif nombre in DESCARGAS:
+                extra = "  (con --descargar o si faltan sus datos)"
+            else:
+                extra = ""
             print(f"  {nombre:<26} {descripcion}{extra}")
         return 0
 
@@ -91,10 +101,16 @@ def main():
             parser.error(f"scripts desconocidos: {', '.join(desconocidos)}. Usa --lista")
         pasos = {n: d for n, d in todos.items() if n in args.solo}
     else:
-        descargas = {n: d for n, d in DESCARGAS.items() if args.descargar or faltan_datos(n)}
-        for nombre in descargas:
-            if not args.descargar:
+        descargas = {}
+        for nombre, descripcion in DESCARGAS.items():
+            if args.descargar:
+                descargas[nombre] = descripcion
+            elif faltan_datos(nombre) and nombre in SOLO_A_MANO:
+                print(f"AVISO: faltan datos de {nombre} y no se descargan solos. Recupéralos con "
+                      "'git restore --source=c276ce6 data/raw' o usa --descargar")
+            elif faltan_datos(nombre):
                 print(f"Faltan datos de {nombre}: se descargan antes de limpiar")
+                descargas[nombre] = descripcion
         pasos = {**descargas, **LIMPIEZAS}
 
     if not RUTA_MUNICIPIOS.exists():

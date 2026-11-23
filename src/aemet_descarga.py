@@ -204,6 +204,10 @@ def main():
     pd.DataFrame(mensual).to_csv(
         DIR_AEMET / "aemet_mensual.csv", index=False, encoding=CSV_ENCODING
     )
+    # Los JSON mensuales solo sirven para retomar una descarga cortada: una vez
+    # creados los CSV se borran (estaciones.json se conserva)
+    for ruta in DIR_AEMET.glob("mensuales_*.json"):
+        ruta.unlink()
     print(f"Hecho: {len(filas)} municipios. CSV guardados en data/raw/aemet/")
 
 
