@@ -3,7 +3,7 @@
 Plataforma en Python que puntúa (0–100) la viabilidad de instalar un Centro de
 Procesamiento de Datos en cada municipio español y proyecta su sostenibilidad a 10 años.
 Usa datos públicos reales: AEMET, REE, Datadis, INE, MITMA, SEPE, PeeringDB, OpenStreetMap,
-EEA (Natura 2000), entre otros.
+MITECO (Red Natura 2000), Natural Earth, entre otros.
 
 ## Estructura
 
@@ -78,7 +78,9 @@ Otras opciones:
 Solo los datos de AEMET y REE tienen script de descarga. Si falta algún archivo de REE en
 `data/raw/`, el proceso lo descarga antes de limpiar. Los de AEMET nunca se descargan solos
 (tardan mucho): si faltan, el proceso avisa y hay que recuperarlos como en el apartado 2 o
-usar `--descargar`. Al terminar, la descarga de AEMET borra los `mensuales_*.json`
+usar `--descargar`. `espacios_protegidos` descarga por su cuenta, si no están en
+`data/raw/medioambiente/`, la capa de la Red Natura 2000 del MITECO (unos 200 MB) y el
+mapa de tierra de Natural Earth. Al terminar, la descarga de AEMET borra los `mensuales_*.json`
 intermedios y solo deja los CSV y `estaciones.json`. El resto de datos de origen se
 descargó a mano y solo se puede recuperar como se explica en el apartado 2. Usa `--descargar` si quieres
 actualizar los de AEMET y REE: tarda varios minutos y la descarga de AEMET necesita la API

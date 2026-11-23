@@ -106,7 +106,8 @@ def nombres_municipios(df):
     faltan = set(df["codigo_ine"]) - set(nombres.index)
     if faltan and len(nombres):
         print(f"Aviso: códigos que no están en {RUTA_MUNICIPIOS}: {sorted(faltan)}")
-    info = df[["codigo_ine", "municipio", "provincia", "habitantes", "hogares"]].copy()
+    # Sin provincia ni comunidad: el proyecto trabaja solo por municipio
+    info = df[["codigo_ine", "municipio", "habitantes", "hogares"]].copy()
     info["municipio"] = info["codigo_ine"].map(nombres).fillna(info["municipio"])
     return info
 
@@ -131,7 +132,7 @@ def calcular(largo, info):
     df["indice_conectividad"] = sum(peso * df[tec] / 100
                                     for tec, peso in PESOS_CONECTIVIDAD.items()).round(3)
 
-    columnas = (["codigo_ine", "municipio", "provincia", "habitantes", "hogares", "anio"]
+    columnas = (["codigo_ine", "municipio", "habitantes", "hogares", "anio"]
                 + list(TECNOLOGIAS.values())
                 + [f"var_{tec}_pp" for tec in TECNOLOGIAS_VARIACION]
                 + ["indice_conectividad"])

@@ -8,9 +8,8 @@ except ImportError:                     # python src/agua_suministro.py
 # ---------------- Configuración ----------------
 RUTA_ENTRADA = "data/raw/agua/ine_suministro_agua_ccaa_2016_2024.csv"
 RUTA_PADRON = "data/raw/poblacion/ine_padron_poblacion_municipios_2016_2025.csv"
-RUTA_MUNICIPIOS = "data/processed/municipios.csv"      # lista maestra: codigo_ine, municipio, provincia
+RUTA_MUNICIPIOS = "data/processed/municipios.csv"      # lista maestra: codigo_ine, municipio
 
-RUTA_SALIDA_ANUAL = "data/processed/agua_suministro_ccaa_anual.csv"
 RUTA_SALIDA_MUNICIPIOS = "data/processed/agua_suministro_municipios.csv"
 
 # Volúmenes del INE en miles de m3 -> litros (1 m3 = 1.000 L)
@@ -110,7 +109,8 @@ def calcular(df, poblacion):
 
 def asignar_municipios(anual, ruta_municipios):
     """Cada municipio de la lista maestra recibe los indicadores de su comunidad (último año)
-    y la media de todos los años, para suavizar años raros."""
+    y la media de todos los años, para suavizar años raros. La comunidad solo se usa por
+    dentro para cruzar (sale de las 2 primeras cifras del código INE): no se guarda."""
     ccaa = anual[anual["ambito"] == "ccaa"]
     ultimo = ccaa["anio"].max()
     indicadores = ["coste_unitario_eur_m3", "pct_perdidas_reales", "perdidas_reales_m3_km_anio",
@@ -118,13 +118,13 @@ def asignar_municipios(anual, ruta_municipios):
     actual = ccaa[ccaa["anio"] == ultimo][["ccaa"] + indicadores]
     media = ccaa.groupby("ccaa")[indicadores].mean().round(2).add_suffix("_media").reset_index()
 
-    muni = pd.read_csv(ruta_municipios, dtype={"codigo_ine": str}, encoding="utf-8")
+    muni = pd.read_csv(ruta_municipios, dtype={"codigo_ine": str}, encoding="utf-8-sig")
     muni["codigo_ine"] = muni["codigo_ine"].str.zfill(5)
     muni["ccaa"] = muni["codigo_ine"].str[:2].map(lambda c: PROVINCIAS.get(c, (None, None))[1])
     muni["ccaa"] = muni["ccaa"].replace({"Ceuta": "Ceuta y Melilla", "Melilla": "Ceuta y Melilla"})
     res = muni[["codigo_ine", "municipio", "ccaa"]].merge(actual, on="ccaa", how="left")
-    res = res.merge(media, on="ccaa", how="left")
-    res.insert(3, "anio", ultimo)
+    res = res.merge(media, on="ccaa", how="left").drop(columns="ccaa")
+    res.insert(2, "anio", ultimo)
     sin_dato = res[res["coste_unitario_eur_m3"].isna()]
     if len(sin_dato):
         print(f"Aviso: municipios sin datos de agua: {list(sin_dato['municipio'])}")
@@ -134,8 +134,7 @@ def asignar_municipios(anual, ruta_municipios):
 if __name__ == "__main__":
     anual = calcular(limpiar(cargar_datos(RUTA_ENTRADA)), poblacion_ccaa(RUTA_PADRON))
     municipios = asignar_municipios(anual, RUTA_MUNICIPIOS)
-
-    anual.to_csv(RUTA_SALIDA_ANUAL, index=False, encoding="utf-8-sig")
+    # La tabla por comunidad solo se usa por dentro: el proyecto trabaja por municipio
     municipios.to_csv(RUTA_SALIDA_MUNICIPIOS, index=False, encoding="utf-8-sig")
 
     ultimo = anual[anual["anio"] == anual["anio"].max()]
@@ -143,4 +142,4 @@ if __name__ == "__main__":
                 "suministro_total_l_hab_dia"]
     print(f"\nAño {anual['anio'].max()} por coste del agua:")
     print(ultimo.sort_values("coste_unitario_eur_m3")[columnas].to_string(index=False))
-    print(f"\nGuardado: {RUTA_SALIDA_ANUAL}, {RUTA_SALIDA_MUNICIPIOS}")
+    print(f"\nGuardado: {RUTA_SALIDA_MUNICIPIOS} ({len(municipios)} municipios)")

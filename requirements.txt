@@ -1,5 +1,7 @@
 numpy>=1.26
 pandas>=2.1
+scipy>=1.11
+pillow>=10.0
 pyarrow>=15.0
 openpyxl>=3.1
 pyyaml>=6.0

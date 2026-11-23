@@ -1,8 +1,9 @@
 """Ejecuta con una sola orden todos los scripts de limpieza de datos.
 
 Uso:
-    python run_pipeline.py                      # descarga lo que falte de REE y limpia todo
-    python run_pipeline.py --descargar          # antes vuelve a descargar todo (AEMET y REE)
+    python run_pipeline.py                      # descarga lo que falte (salvo AEMET) y limpia todo
+    python run_pipeline.py --descargar          # antes vuelve a descargar todo (AEMET, REE, SEPE,
+                                                # INE y Natura 2000)
     python run_pipeline.py --solo agua energia  # solo los scripts indicados
     python run_pipeline.py --lista              # muestra los scripts disponibles
 
@@ -24,6 +25,9 @@ DESCARGAS = {
     "aemet_descarga": "Clima de AEMET (necesita AEMET_API_KEY en .env)",
     "ree_precios_descarga": "Precios horarios de la electricidad (REE)",
     "ree_ccaa_mensual_descarga": "Demanda y generación mensual por comunidad (REE)",
+    "paro_descarga": "Paro registrado mensual de todos los municipios (SEPE)",
+    "socioeconomico_descarga": "Renta y demografía de todos los municipios (INE)",
+    "natura2000_descarga": "Red Natura 2000 (MITECO) y mapa de tierra (Natural Earth)",
 }
 
 # Archivos que deja cada descarga: si falta alguno, hay que descargar
@@ -33,6 +37,11 @@ ARCHIVOS_DESCARGA = {
     "ree_precios_descarga": ["data/raw/energia/ree_precios_horarios.csv"],
     "ree_ccaa_mensual_descarga": ["data/raw/energia/ree_demanda_ccaa_mensual.csv",
                                   "data/raw/energia/ree_generacion_renovable_ccaa_mensual.csv"],
+    "paro_descarga": ["data/raw/socioeconomico/paro_municipios_sepe_mensual.csv"],
+    "socioeconomico_descarga": ["data/raw/socioeconomico/ine_renta_media_municipios.csv",
+                                "data/raw/socioeconomico/ine_indicadores_demograficos_municipios.csv"],
+    "natura2000_descarga": ["data/raw/medioambiente/miteco_rednatura2000_2025_gml.zip",
+                            "data/raw/medioambiente/naturalearth_10m_tierra.geojson"],
 }
 
 
@@ -47,18 +56,20 @@ def faltan_datos(nombre):
 
 # Limpieza: lee data/raw/ y escribe en data/processed/.
 LIMPIEZAS = {
+    "municipios": "Lista maestra de municipios (INE + coordenadas de Wikidata)",
     "aemet_limpieza": "Clima por municipio y extremos",
     "agua": "Embalses y cuencas",
     "agua_suministro": "Suministro y coste del agua",
-    "energia": "Demanda, renovables y picos de precio",
+    "energia": "Renovables, demanda y precio de la luz por municipio",
     "aeropuertos": "Distancia a aeropuertos",
     "cobertura": "Cobertura de banda ancha",
     "cpd_existentes": "CPD existentes cerca de cada municipio",
     "espacios_protegidos": "Espacios protegidos Natura 2000",
-    "poblacion": "Población por provincia",
-    "proyeccion_poblacion": "Proyección de población",
+    "poblacion": "Población por municipio (padrón)",
+    "proyeccion_poblacion": "Proyección de población por municipio",
     "riesgos": "Riesgo sísmico y de inundación",
-    "socioeconomico": "Renta, paro e indicadores demográficos",
+    "paro": "Paro registrado por municipio",
+    "socioeconomico": "Renta, paro e indicadores demográficos (usa la salida de paro)",
 }
 
 
@@ -77,7 +88,7 @@ def ejecutar(nombre, descripcion):
 def main():
     parser = argparse.ArgumentParser(description="Pipeline Proyecto 3 · Viabilidad CPD")
     parser.add_argument("--descargar", action="store_true",
-                        help="vuelve a descargar todos los datos de AEMET y REE antes de limpiar")
+                        help="vuelve a descargar todos los datos de origen (AEMET, REE, SEPE, INE, Natura 2000) antes de limpiar")
     parser.add_argument("--solo", nargs="+", metavar="SCRIPT",
                         help="ejecuta solo estos scripts (ver --lista)")
     parser.add_argument("--lista", action="store_true", help="muestra los scripts y sale")
@@ -113,10 +124,11 @@ def main():
                 descargas[nombre] = descripcion
         pasos = {**descargas, **LIMPIEZAS}
 
-    if not RUTA_MUNICIPIOS.exists():
+    # municipios.csv lo genera el paso "municipios"; sin él (ni el paso) no se puede seguir
+    if not RUTA_MUNICIPIOS.exists() and "municipios" not in pasos:
         print(f"ERROR: falta la lista maestra de municipios: {RUTA_MUNICIPIOS.relative_to(RAIZ)}\n"
               "Casi todos los scripts la necesitan (codigo_ine, municipio, provincia, "
-              "latitud, longitud).")
+              "latitud, longitud). Genérala con: python run_pipeline.py --solo municipios")
         return 1
 
     inicio = time.time()
