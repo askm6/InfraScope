@@ -31,13 +31,15 @@ COPIA = RAIZ.parent / "Proyecto3_backup_processed"
 POR_MUNICIPIO = [
     "aeropuertos_municipios", "agua_suministro_municipios", "cpd_municipios",
     "energia_municipios", "espacios_protegidos_municipios", "poblacion_municipios",
-    "proyeccion_poblacion_municipios", "socioeconomico_municipios",
+    "proyeccion_poblacion_municipios", "socioeconomico_municipios", "movilidad_laboral_municipios",
     # Aún con 29 municipios (puntos B, C y E pendientes): se avisa, no falla
     "cobertura_municipios", "riesgos_municipios",
 ]
 PENDIENTES = {"cobertura_municipios", "riesgos_municipios"}
 # Archivos con una fila por municipio y año
 POR_MUNICIPIO_Y_ANIO = ["paro_municipios", "socioeconomico_anual"]
+# Archivo con una fila por municipio y tasa anual de emigración intermunicipal
+MOVILIDAD = "movilidad_laboral_municipios"
 # Archivos que ya no deben existir (eran por comunidad o provincia)
 OBSOLETOS = ["energia_ccaa_anual", "energia_ccaa_mensual", "energia_picos_precio",
              "agua_suministro_ccaa_anual", "poblacion_provincias",
@@ -100,6 +102,18 @@ def comprobar_por_municipio_y_anio(maestra):
                f"{df['codigo_ine'].nunique()} municipios, años {df['anio'].min()}-{df['anio'].max()}")
 
 
+def comprobar_movilidad_laboral(maestra):
+    """Comprueba el porcentaje de ocupados que trabajan fuera del municipio."""
+    if not (PROCESSED / f"{MOVILIDAD}.csv").exists():
+        anotar(False, f"existe {MOVILIDAD}.csv")
+        return
+    df = leer(MOVILIDAD)
+    anotar(not df["codigo_ine"].duplicated().any(), f"{MOVILIDAD}: una fila por municipio")
+    anotar(set(df["codigo_ine"]) == maestra, f"{MOVILIDAD}: municipios completos",
+           f"{df['codigo_ine'].nunique()} municipios")
+    pct = df["porcentaje_trabaja_fuera_municipio"]
+    anotar(pct.dropna().between(0, 100).all(), f"{MOVILIDAD}: porcentajes entre 0 y 100")
+
 def comprobar_columnas():
     for ruta in sorted(PROCESSED.glob("*.csv")):
         cols = pd.read_csv(ruta, nrows=0, encoding="utf-8-sig").columns
@@ -154,6 +168,7 @@ if __name__ == "__main__":
     maestra = comprobar_maestra()
     comprobar_por_municipio(maestra)
     comprobar_por_municipio_y_anio(maestra)
+    comprobar_movilidad_laboral(maestra)
     comprobar_columnas()
     comprobar_totales()
     comprobar_copia()

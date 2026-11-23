@@ -28,6 +28,7 @@ DESCARGAS = {
     "paro_descarga": "Paro registrado mensual de todos los municipios (SEPE)",
     "socioeconomico_descarga": "Renta y demografía de todos los municipios (INE)",
     "natura2000_descarga": "Red Natura 2000 (MITECO) y mapa de tierra (Natural Earth)",
+    "movilidad_laboral_descarga": "Matriz de residencia y trabajo del INE",
 }
 
 # Archivos que deja cada descarga: si falta alguno, hay que descargar
@@ -42,6 +43,7 @@ ARCHIVOS_DESCARGA = {
                                 "data/raw/socioeconomico/ine_indicadores_demograficos_municipios.csv"],
     "natura2000_descarga": ["data/raw/medioambiente/miteco_rednatura2000_2025_gml.zip",
                             "data/raw/medioambiente/naturalearth_10m_tierra.geojson"],
+    "movilidad_laboral_descarga": ["data/raw/trabajo/matriz_residencia_trabajo_2023.xlsb"],
 }
 
 
@@ -66,6 +68,7 @@ LIMPIEZAS = {
     "cpd_existentes": "CPD existentes cerca de cada municipio",
     "espacios_protegidos": "Espacios protegidos Natura 2000",
     "poblacion": "Población por municipio (padrón)",
+    "movilidad_laboral": "% de ocupados residentes que trabajan fuera del municipio (INE)",
     "proyeccion_poblacion": "Proyección de población por municipio",
     "riesgos": "Riesgo sísmico y de inundación",
     "paro": "Paro registrado por municipio",
@@ -111,6 +114,8 @@ def main():
         if desconocidos:
             parser.error(f"scripts desconocidos: {', '.join(desconocidos)}. Usa --lista")
         pasos = {n: d for n, d in todos.items() if n in args.solo}
+        if "movilidad_laboral" in args.solo and faltan_datos("movilidad_laboral_descarga"):
+            pasos = {"movilidad_laboral_descarga": DESCARGAS["movilidad_laboral_descarga"], **pasos}
     else:
         descargas = {}
         for nombre, descripcion in DESCARGAS.items():

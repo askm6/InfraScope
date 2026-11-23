@@ -21,6 +21,8 @@ src/
                               un script de limpieza por fuente: lee data/raw/
                               y escribe en data/processed/
   territorio.py               códigos INE de provincias y comunidades
+  movilidad_laboral.py        porcentaje de ocupados que trabaja fuera del municipio,
+                              ver docs/movilidad_laboral.md
   etl.py, warehouse.py, modelos.py, simulador.py, dashboard.py
                               pendientes (todavía vacíos)
 run_pipeline.py               ejecuta descargas y limpiezas con una sola orden
@@ -110,6 +112,9 @@ Después se limpia con:
 python src/consumo_electrico.py
 ```
 
+#### Desplazamientos al trabajo fuera del municipio
+
+`src/movilidad_laboral.py` calcula qué porcentaje de las personas ocupadas residentes en cada municipio trabaja en otro municipio, usando la matriz residencia-trabajo del Censo Anual del INE (2023). Consulta [documentación](docs/movilidad_laboral.md) para descargar la matriz y generar `data/processed/movilidad_laboral_municipios.csv`.
 #### Si algo falla
 
 - *Falta la lista maestra de municipios*: copia `municipios.csv` en `data/processed/`
