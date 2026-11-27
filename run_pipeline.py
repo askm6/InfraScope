@@ -8,7 +8,8 @@ Uso:
     python run_pipeline.py --lista              # muestra los scripts disponibles
 
 Los datos de origen están en data/raw/ (capa Bronze), los scripts de limpieza dejan sus CSV
-en data/processed/ y el último paso los pasa a Parquet en data/silver/ y data/gold/.
+en data/processed/, etl.py junta lo principal en una tabla única por municipio y el último
+paso lo pasa todo a Parquet en data/silver/ y data/gold/.
 """
 import argparse
 import os
@@ -60,6 +61,7 @@ def faltan_datos(nombre):
 # Limpieza: lee data/raw/ y escribe en data/processed/.
 LIMPIEZAS = {
     "municipios": "Lista maestra de municipios (INE + coordenadas de Wikidata)",
+    "municipios_limites": "Superficie de cada municipio (límites oficiales del IGN)",
     "aemet_limpieza": "Clima por municipio y extremos",
     "agua": "Embalses y cuencas",
     "agua_suministro": "Suministro y coste del agua",
@@ -76,8 +78,10 @@ LIMPIEZAS = {
     "socioeconomico": "Renta, paro e indicadores demográficos (usa la salida de paro)",
 }
 
-# Capas del Data Lake: se ejecutan después de la limpieza (leen data/processed/)
+# Capas del Data Lake: se ejecutan después de la limpieza (leen data/processed/), en orden:
+# primero la tabla única por municipio y después el paso de todo a Parquet
 CAPAS = {
+    "etl": "Tabla única por municipio con los datasets limpios (tabla_integrada.csv)",
     "convertir_parquet": "Pasa los CSV limpios a Parquet tipado (data/silver/ y data/gold/)",
 }
 

@@ -22,15 +22,19 @@ src/
   aemet_limpieza.py, agua.py, energia.py, cobertura.py, ...
                               un script de limpieza por fuente: lee data/raw/
                               y escribe en data/processed/
+  municipios_limites.py       superficie de cada municipio con los límites oficiales del IGN
+  etl.py                      junta los datasets limpios en una tabla única por municipio
+                              (tabla_integrada.csv, que acaba en la capa Gold)
   convertir_parquet.py        pasa los CSV de data/processed/ a Parquet (Silver y Gold)
   lago.py                     capas del Data Lake y leer("dataset") para cargar un Parquet
   territorio.py               códigos INE de provincias y comunidades
   movilidad_laboral.py        porcentaje de ocupados que trabaja fuera del municipio,
                               ver docs/movilidad_laboral.md
-  etl.py, warehouse.py, modelos.py, simulador.py, dashboard.py
-                              pendientes (todavía vacíos)
+  warehouse.py, modelos.py, simulador.py, dashboard.py
+                              pendientes (todavía vacíos, ver las issues)
 tests/                        tests automáticos (python -m pytest)
-run_pipeline.py               ejecuta descargas, limpiezas y el paso a Parquet con una sola orden
+comprobar_datos.py            comprueba que los datos generados están completos y cuadran
+run_pipeline.py               ejecuta descargas, limpiezas, la tabla única y el paso a Parquet
 ```
 
 ## Uso
@@ -71,10 +75,18 @@ python run_pipeline.py
 ```
 
 Ejecuta, uno detrás de otro, todos los scripts de limpieza de `src/`. Cada uno lee sus
-datos de `data/raw/` y guarda el resultado en `data/processed/`. El último paso,
-`convertir_parquet`, pasa esos CSV a Parquet en `data/silver/` y `data/gold/` (ver
+datos de `data/raw/` y guarda el resultado en `data/processed/`. Después, `etl` junta lo
+principal en una tabla única por municipio (`tabla_integrada.csv`) y el último paso,
+`convertir_parquet`, lo pasa todo a Parquet en `data/silver/` y `data/gold/` (ver
 [docs/data_lake.md](docs/data_lake.md)). Al final aparece un resumen con los scripts que han
 ido bien y los que han fallado.
+
+Para comprobar que los datos generados están completos y cuadran con cifras oficiales
+(población, paro, superficie de España):
+
+```powershell
+python comprobar_datos.py
+```
 
 Otras opciones:
 

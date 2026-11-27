@@ -42,12 +42,13 @@ except ModuleNotFoundError as error:    # python src/convertir_parquet.py
 
 # ---------------- Configuración ----------------
 # Súbelo cuando cambien las reglas de tipado o validación: obliga a reconvertir todo
-VERSION_ESQUEMA = 1
+VERSION_ESQUEMA = 2                         # 2: código IGN de 11 cifras (municipios_limites)
 
 # Tablas finales, listas para el dashboard y los modelos: van a Gold (el resto, a Silver)
 DATASETS_GOLD = {"tabla_integrada"}          # tabla única por municipio (issue #34)
 
-ANCHO_CODIGO = {"codigo_ine": 5, "codigo_provincia": 2}   # se guardan como texto con ceros
+ANCHO_CODIGO = {"codigo_ine": 5, "codigo_provincia": 2,   # se guardan como texto con ceros
+                "codigo_ign": 11}                          # código nacional del IGN
 PATRON_CODIGO = re.compile(r"^(cod|codigo)_|_ine$")       # otros códigos: se avisa si son números
 
 # Columnas que deben ser números enteros (años, meses, contadores y personas)
@@ -62,6 +63,7 @@ MAYOR_ENTERO_EXACTO = 2 ** 53                              # a partir de aquí u
 # *_municipios que no aparecen aquí tienen una fila por municipio: clave codigo_ine
 CLAVES = {
     "municipios": ["codigo_ine"],
+    "municipios_limites": ["codigo_ign"],    # también condominios y territorios sin código INE
     "paro_municipios": ["codigo_ine", "anio"],
     "socioeconomico_anual": ["codigo_ine", "anio"],
     "consumo_electrico_mensual": ["codigo_ine", "anio", "mes"],
