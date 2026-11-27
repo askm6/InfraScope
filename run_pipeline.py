@@ -7,7 +7,8 @@ Uso:
     python run_pipeline.py --solo agua energia  # solo los scripts indicados
     python run_pipeline.py --lista              # muestra los scripts disponibles
 
-Los datos de origen están en data/raw/ y los resultados se guardan en data/processed/.
+Los datos de origen están en data/raw/ (capa Bronze), los scripts de limpieza dejan sus CSV
+en data/processed/ y el último paso los pasa a Parquet en data/silver/ y data/gold/.
 """
 import argparse
 import os
@@ -75,6 +76,11 @@ LIMPIEZAS = {
     "socioeconomico": "Renta, paro e indicadores demográficos (usa la salida de paro)",
 }
 
+# Capas del Data Lake: se ejecutan después de la limpieza (leen data/processed/)
+CAPAS = {
+    "convertir_parquet": "Pasa los CSV limpios a Parquet tipado (data/silver/ y data/gold/)",
+}
+
 
 def ejecutar(nombre, descripcion):
     """Ejecuta src/<nombre>.py desde la raíz del proyecto. Devuelve True si va bien."""
@@ -97,7 +103,7 @@ def main():
     parser.add_argument("--lista", action="store_true", help="muestra los scripts y sale")
     args = parser.parse_args()
 
-    todos = {**DESCARGAS, **LIMPIEZAS}
+    todos = {**DESCARGAS, **LIMPIEZAS, **CAPAS}
     if args.lista:
         for nombre, descripcion in todos.items():
             if nombre in SOLO_A_MANO:
@@ -127,7 +133,7 @@ def main():
             elif faltan_datos(nombre):
                 print(f"Faltan datos de {nombre}: se descargan antes de limpiar")
                 descargas[nombre] = descripcion
-        pasos = {**descargas, **LIMPIEZAS}
+        pasos = {**descargas, **LIMPIEZAS, **CAPAS}
 
     # municipios.csv lo genera el paso "municipios"; sin él (ni el paso) no se puede seguir
     if not RUTA_MUNICIPIOS.exists() and "municipios" not in pasos:
@@ -144,7 +150,7 @@ def main():
     if fallidos:
         print(f"Fallaron: {', '.join(fallidos)} (mira el error encima de cada uno)")
         return 1
-    print("Resultados en data/processed/")
+    print("Resultados en data/processed/ (CSV) y en data/silver/ y data/gold/ (Parquet)")
     return 0
 
 

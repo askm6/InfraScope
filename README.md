@@ -11,21 +11,26 @@ MITECO (Red Natura 2000), Natural Earth, entre otros.
 config/
   config.yaml                 parámetros del proyecto (CPD de referencia, etc.)
 data/                         no se sube a GitHub (ver "Conseguir los datos")
-  raw/                        datos de origen, una carpeta por fuente
-  processed/                  datos limpios por municipio, listos para el modelo
-docs/                         informes y manuales
+  raw/                        capa Bronze: datos de origen, una carpeta por fuente
+  processed/                  zona de trabajo: CSV que dejan los scripts de limpieza
+  silver/                     capa Silver: los datos limpios en Parquet, tipados y validados
+  gold/                       capa Gold: tablas finales para modelos y dashboard (Parquet)
+docs/                         informes y manuales (ver docs/data_lake.md)
 src/
   *_descarga.py               descargan datos de una API a data/raw/
                               (aemet, ree_precios, ree_ccaa_mensual, datadis)
   aemet_limpieza.py, agua.py, energia.py, cobertura.py, ...
                               un script de limpieza por fuente: lee data/raw/
                               y escribe en data/processed/
+  convertir_parquet.py        pasa los CSV de data/processed/ a Parquet (Silver y Gold)
+  lago.py                     capas del Data Lake y leer("dataset") para cargar un Parquet
   territorio.py               códigos INE de provincias y comunidades
   movilidad_laboral.py        porcentaje de ocupados que trabaja fuera del municipio,
                               ver docs/movilidad_laboral.md
   etl.py, warehouse.py, modelos.py, simulador.py, dashboard.py
                               pendientes (todavía vacíos)
-run_pipeline.py               ejecuta descargas y limpiezas con una sola orden
+tests/                        tests automáticos (python -m pytest)
+run_pipeline.py               ejecuta descargas, limpiezas y el paso a Parquet con una sola orden
 ```
 
 ## Uso
@@ -66,8 +71,10 @@ python run_pipeline.py
 ```
 
 Ejecuta, uno detrás de otro, todos los scripts de limpieza de `src/`. Cada uno lee sus
-datos de `data/raw/` y guarda el resultado en `data/processed/`. Al final aparece un
-resumen con los scripts que han ido bien y los que han fallado.
+datos de `data/raw/` y guarda el resultado en `data/processed/`. El último paso,
+`convertir_parquet`, pasa esos CSV a Parquet en `data/silver/` y `data/gold/` (ver
+[docs/data_lake.md](docs/data_lake.md)). Al final aparece un resumen con los scripts que han
+ido bien y los que han fallado.
 
 Otras opciones:
 
@@ -76,6 +83,7 @@ Otras opciones:
 | `python run_pipeline.py --lista` | Muestra todos los scripts que se pueden ejecutar |
 | `python run_pipeline.py --solo agua energia` | Ejecuta solo los scripts indicados |
 | `python run_pipeline.py --descargar` | Vuelve a descargar los datos de AEMET y REE y después limpia todo |
+| `python run_pipeline.py --solo convertir_parquet` | Solo pasa a Parquet los CSV que han cambiado |
 
 Solo los datos de AEMET y REE tienen script de descarga. Si falta algún archivo de REE en
 `data/raw/`, el proceso lo descarga antes de limpiar. Los de AEMET nunca se descargan solos
@@ -126,7 +134,23 @@ python src/consumo_electrico.py
 - Para repetir solo lo que ha fallado, usa `--solo` con los nombres que aparecen en el
   resumen final.
 
-### 4. Cuadro de mandos (pendiente)
+### 4. Leer los datos en Parquet
+
+Los modelos, los notebooks y el cuadro de mandos leen los datos de Silver y Gold, no los CSV:
+
+```python
+from src.lago import leer
+
+paro = leer("paro_municipios")                                     # tabla completa
+energia = leer("energia_municipios", ["codigo_ine", "renovable_pct"])  # solo esas columnas
+```
+
+En Parquet, `codigo_ine` ya es texto de 5 cifras (`01001`) y los años son números enteros.
+Qué columnas, tipos y huecos tiene cada dataset está en `data/silver/catalogo.json`.
+
+Tests: `python -m pytest`
+
+### 5. Cuadro de mandos (pendiente)
 
 `src/dashboard.py` todavía está vacío. Cuando esté hecho se abrirá con:
 
