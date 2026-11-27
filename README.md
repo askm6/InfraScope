@@ -147,6 +147,8 @@ energia = leer("energia_municipios", ["codigo_ine", "renovable_pct"])  # solo es
 
 En Parquet, `codigo_ine` ya es texto de 5 cifras (`01001`) y los años son números enteros.
 Qué columnas, tipos y huecos tiene cada dataset está en `data/silver/catalogo.json`.
+Por qué Parquet, qué es cada capa (Bronze, Silver, Gold) y cómo se valida cada tabla:
+[docs/data_lake.md](docs/data_lake.md).
 
 Tests: `python -m pytest`
 
@@ -156,4 +158,56 @@ Tests: `python -m pytest`
 
 ```powershell
 streamlit run src/dashboard.py
+```
+
+## Cómo trabajamos (issues, ramas y pull requests)
+
+Todo el trabajo se organiza en GitHub, en
+[issues](https://github.com/askm6/InfraScope/issues) agrupadas en 4 fases (milestones):
+Fase 1 · Datos, Fase 2 · Frontend, Fase 3 · Modelos y Fase 4 · Entrega. Cada issue lleva una
+etiqueta (`datos`, `frontend`, `modelos`, `documentation`, `testing`) y una persona asignada.
+
+Nadie trabaja directamente en `main`. Para cada issue:
+
+1. **Crear la rama desde la issue** (botón *Create a branch* de la issue o con `gh`). La rama
+   se llama como la issue, por ejemplo `35-pasar-los-datasets-a-parquet`:
+
+   ```powershell
+   git checkout main
+   git pull
+   gh issue develop 35 --checkout
+   ```
+
+2. **Trabajar y guardar los cambios** con commits pequeños que expliquen qué se ha hecho:
+
+   ```powershell
+   git add src/mi_script.py tests/test_mi_script.py
+   git commit -m "feat: descripción corta de lo que se ha hecho"
+   git push -u origin 35-pasar-los-datasets-a-parquet
+   ```
+
+   Antes de subir, ejecuta los tests: `python -m pytest`.
+
+3. **Abrir una pull request (PR) a `main`** que explique qué hace, por qué y cómo probarlo.
+   Escribe `Closes #35` en la descripción para que la issue se cierre sola al hacer merge.
+
+4. **Revisión:** otra persona del equipo revisa la PR y deja comentarios si hace falta.
+
+5. **Subir a `main` (merge):** cuando la PR está revisada, se hace *Merge pull request* en
+   GitHub (o `gh pr merge <número de la PR> --merge --delete-branch`; ojo, el número de la
+   PR no es el de la issue). Los cambios pasan a `main`, la rama se borra y la issue se cierra.
+
+6. **Actualizar tu copia local** para empezar la siguiente issue desde lo último:
+
+   ```powershell
+   git checkout main
+   git pull
+   ```
+
+La primera vez en un ordenador nuevo, configura tu nombre para los commits. Usa el correo
+privado que da GitHub (*Settings → Emails*) si no quieres que se vea el tuyo:
+
+```powershell
+git config --global user.name "Tu Nombre"
+git config --global user.email "ID+usuario@users.noreply.github.com"
 ```
