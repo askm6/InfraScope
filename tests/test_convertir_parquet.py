@@ -28,6 +28,11 @@ def test_codigo_provincia_tiene_dos_cifras():
     assert resultado["codigo_provincia"].tolist() == ["08", "28"]
 
 
+def test_codigo_ign_se_guarda_como_texto_de_11_cifras():
+    resultado = cp.tipar(pd.DataFrame({"codigo_ign": [34130228079]}))
+    assert resultado["codigo_ign"].iloc[0] == "34130228079"
+
+
 def test_anio_con_huecos_pasa_a_entero():
     resultado = cp.tipar(pd.DataFrame({"anio_renta": [2024.0, None]}))
     assert str(resultado["anio_renta"].dtype) == "Int64"

@@ -8,10 +8,13 @@ Qué comprueba:
   1. Que existen los archivos esperados y no quedan los antiguos por comunidad/provincia.
   2. Que municipios.csv es la lista maestra: códigos de 5 cifras, sin duplicados y con
      coordenadas.
-  3. Que cada *_municipios.csv tiene una fila por municipio de la lista maestra (los mismos
-     códigos, sin duplicados) y qué % de municipios tiene datos.
-  4. Que ningún CSV tiene columnas de provincia o comunidad autónoma.
-  5. Que los totales cuadran con cifras oficiales conocidas (población, paro).
+  3. Que cada *_municipios.csv y la tabla única (tabla_integrada.csv) tienen una fila por
+     municipio de la lista maestra (los mismos códigos, sin duplicados) y qué % de
+     municipios tiene datos.
+  4. Que ningún CSV tiene columnas de provincia o comunidad autónoma (salvo
+     codigo_provincia, que sale del código INE).
+  5. Que los totales cuadran con cifras oficiales conocidas (población, paro, superficie
+     de España) y que todos los municipios tienen superficie (municipios_limites.csv).
   6. Si existe la copia ../Proyecto3_backup_processed/, que los municipios que ya tenían
      datos conservan los mismos valores (es informativo: algunas diferencias son esperadas).
 
@@ -34,6 +37,8 @@ POR_MUNICIPIO = [
     "proyeccion_poblacion_municipios", "socioeconomico_municipios", "movilidad_laboral_municipios",
     # Aún con 29 municipios (puntos B, C y E pendientes): se avisa, no falla
     "cobertura_municipios", "riesgos_municipios",
+    # Tabla única por municipio que genera src/etl.py (capa Gold)
+    "tabla_integrada",
 ]
 PENDIENTES = {"cobertura_municipios", "riesgos_municipios"}
 # Archivos con una fila por municipio y año
@@ -45,6 +50,16 @@ OBSOLETOS = ["energia_ccaa_anual", "energia_ccaa_mensual", "energia_picos_precio
              "agua_suministro_ccaa_anual", "poblacion_provincias",
              "proyeccion_poblacion_anual", "proyeccion_poblacion_provincias", "paro_provincias"]
 PALABRAS_PROHIBIDAS = ["provincia", "ccaa", "comunidad"]
+# Excepción: el código de provincia sale del propio código INE (sus 2 primeras cifras) y la
+# tabla única lo necesita para agrupar en el mapa por provincias; no es un dato por provincia
+COLUMNAS_PERMITIDAS = {"codigo_provincia"}
+# Superficie: todos los municipios con superficie y España entera, unos 506.000 km²
+LIMITES = "municipios_limites"
+SUPERFICIE_ESPANA_KM2 = (504_000, 508_000)          # oficial: unos 505.990 km²
+TABLA_UNICA = "tabla_integrada"
+# Columnas de identificación (siempre rellenas): no cuentan como "datos" de un municipio
+COLUMNAS_IDENTIFICACION = {"codigo_ine", "municipio", "anio", "ranking", "codigo_provincia",
+                           "latitud", "longitud"}
 
 resultados = []          # (estado, comprobación, detalle)
 
@@ -59,7 +74,7 @@ def leer(nombre, carpeta=PROCESSED):
 
 
 def columnas_de_datos(df):
-    return [c for c in df.columns if c not in ("codigo_ine", "municipio", "anio", "ranking")]
+    return [c for c in df.columns if c not in COLUMNAS_IDENTIFICACION]
 
 
 def comprobar_archivos():
@@ -114,10 +129,32 @@ def comprobar_movilidad_laboral(maestra):
     pct = df["porcentaje_trabaja_fuera_municipio"]
     anotar(pct.dropna().between(0, 100).all(), f"{MOVILIDAD}: porcentajes entre 0 y 100")
 
+def comprobar_limites(maestra):
+    """Superficie de los municipios (src/municipios_limites.py, límites del IGN)."""
+    if not (PROCESSED / f"{LIMITES}.csv").exists():
+        anotar(False, f"existe {LIMITES}.csv")
+        return
+    df = leer(LIMITES)
+    municipios = df[df["tipo_recinto"] == "municipio"]
+    anotar(set(municipios["codigo_ine"]) == maestra, f"{LIMITES}: todos los municipios",
+           f"{municipios['codigo_ine'].nunique()} de {len(maestra)}")
+    anotar((municipios["superficie_km2"] > 0).all(), f"{LIMITES}: superficie mayor que 0")
+    total = df["superficie_km2"].sum()
+    minimo, maximo = SUPERFICIE_ESPANA_KM2
+    anotar(minimo < total < maximo, "superficie total de España razonable", f"{total:,.0f} km²")
+    # La tabla única tiene que llevar la superficie de todos los municipios (si falta
+    # municipios_limites.csv, etl.py solo avisa y la tabla saldría sin ella)
+    if (PROCESSED / f"{TABLA_UNICA}.csv").exists():
+        tabla = leer(TABLA_UNICA)
+        completa = "superficie_km2" in tabla.columns and tabla["superficie_km2"].notna().all()
+        anotar(completa, f"{TABLA_UNICA}: superficie de todos los municipios")
+
+
 def comprobar_columnas():
     for ruta in sorted(PROCESSED.glob("*.csv")):
         cols = pd.read_csv(ruta, nrows=0, encoding="utf-8-sig").columns
-        malas = [c for c in cols if any(p in c.lower() for p in PALABRAS_PROHIBIDAS)]
+        malas = [c for c in cols if c not in COLUMNAS_PERMITIDAS
+                 and any(p in c.lower() for p in PALABRAS_PROHIBIDAS)]
         if malas:
             anotar(False, f"{ruta.name}: sin columnas de provincia/comunidad", str(malas))
     if not any(r[1].endswith("sin columnas de provincia/comunidad") for r in resultados):
@@ -169,6 +206,7 @@ if __name__ == "__main__":
     comprobar_por_municipio(maestra)
     comprobar_por_municipio_y_anio(maestra)
     comprobar_movilidad_laboral(maestra)
+    comprobar_limites(maestra)
     comprobar_columnas()
     comprobar_totales()
     comprobar_copia()

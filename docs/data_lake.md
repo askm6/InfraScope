@@ -15,15 +15,23 @@ Ninguna de estas carpetas se sube a GitHub (`.gitignore`): se regeneran con `pyt
 
 ```
 Fuentes (APIs, descargas) ──> Bronze: data/raw/
-                                 │  scripts de limpieza (src/*.py)
+                                 │  scripts de limpieza (src/*.py), incluido
+                                 │  src/municipios_limites.py (superficie, IGN)
                                  ▼
                               data/processed/*.csv
+                                 │  src/etl.py ──> data/processed/tabla_integrada.csv
                                  │  src/convertir_parquet.py (tipar + validar)
                                  ▼
-                              Silver: data/silver/*.parquet ──> Gold: data/gold/*.parquet
-                                                                   │
-                                          DuckDB (issue #36), modelos y dashboard
+          Silver: data/silver/*.parquet          Gold: data/gold/tabla_integrada.parquet
+          (un dataset limpio por fuente)          (tabla única por municipio)
+                                 │                         │
+                                 └──── src/lago.py: leer("dataset") ────┘
+                                                   │
+                              DuckDB (issue #36), modelos y dashboard
 ```
+
+Todo esto lo hace `python run_pipeline.py` en orden: limpiezas → `etl` → `convertir_parquet`.
+Después, `python comprobar_datos.py` revisa que todo esté completo y cuadre con cifras oficiales.
 
 ## Por qué Parquet
 
